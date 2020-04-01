@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="themes/icon.css">
+<link rel="stylesheet" type="text/css" href="demo/demo.css">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.easyui.min.js"></script>
+<style scoped>
+.f1 {
+	width: 200px;
+}
+</style>
+<script type="text/javascript">
+	$(function() {
+
+		$(
+				'<audio id="chatAudio"><source src="notify.mp3" type="audio/mp3"><source src="notify.mp3" type="audio/mpeg"><source src="notify.mp3" type="audio/mp3"></audio>')
+				.appendTo('body');
+		//如果没有输入合同号，则焦点在合同号上，否则焦点在二维码上
+		var dl01 = $("#dl01").val();
+		if (dl01.length == 0)
+			$('#dl01').next('span').find('input').focus();
+		else
+			$('#message').next('span').find('input').focus();
+		var strDate = myformatter(new Date());
+		$("#date").datebox("setValue", strDate);
+		$("#pages").textbox("setValue", "1");
+		$("#countnb").textbox("setValue", "1");
+
+		$('#cc').layout();
+		setHeight();
+		$("#message").textbox('textbox').bind('keyup',function(e) {
+			var len = $("#message").val().length;
+			if (e.keyCode == 13 && len > 1) {
+				$("#submit").click();
+			}
+		});
+		
+		$("#ff").form({
+			onSubmit : function() {
+				var len = $("#message").val().trim().length;
+				if (len <= 0)
+					return false;
+				var printer = $("#printer").val();
+				/*if (printer != "WGQ" && printer != "WGQ1"
+						&& printer != "WGQ2" && printer != "WGQ3"
+						&& printer != "WGQ4" && printer != "WGQ5" && printer!="ZJ") {
+					printer = "WGQ";
+					$("#printer").textbox("setValue", "WGQ");
+				}*/
+
+				var data = {
+					dl01 : $("#dl01").val(),
+					vr01 : $("#vr01").val(),
+					message : $("#message").val().replace(/\^/g, "("),
+					date : $("#date").val(),
+					pages : $("#pages").val(),
+					countnb : $("#countnb").val(),
+					printer : printer
+
+				};
+				$.ajax({
+					url : "insertscan!insertScan",
+					type : "POST",
+					data : data,
+					datatype : "json",
+					success : function(data) {
+						if (data == "1") {
+							$('#chatAudio')[0].pause();
+							$('#chatAudio')[0].play();
+							alert("请检查产品数量和型号");
+						}
+						loadscan();
+					}
+				});
+			},
+			success : function(data) {
+				load();
+
+				$('#message').next('span').find('input').focus();
+				$("#message").textbox("setValue", " ");
+			}
+		});
+
+		$(function() {
+			$('#dg').datagrid();
+		});
+
+		$(function() {
+			$('#scan').datagrid();
+		});
+
+		$("#query").click(function() {
+			loadscan();
+		});
+
+		$("input", $("#dl01").next("span")).blur(function() {
+			var dl01 = $("#dl01").val();
+			$("#dl01").textbox("setValue", dl01.toUpperCase());
+		});
+
+		$("input", $("#vr01").next("span")).blur(function() {
+			var dl01 = $("#vr01").val();
+			$("#vr01").textbox("setValue", dl01.toUpperCase());
+		});
+
+		$("input", $("#printer").next("span")).blur(function() {
+			var dl01 = $("#printer").val();
+			$("#printer").textbox("setValue", dl01.toUpperCase());
+		});
+		$('#dlg').dialog('close');
+		$("#date_dlg").dialog('close');
+
+		
+		
+		$("#submit").on('click', function(event) {
+			$('#new_date').datebox('setValue', $('#date').val());
+			data = {
+				message : $("#message").val().replace(/\^/g, "(")
+			}
+			$.ajax({
+				url : "requirelist!requireList",
+				type : "post",
+				data : data,
+				datatype : "json",
+				success : function(data) {
+					if (data == "1") {
+						$('#date_dlg').dialog('open');
+					} else
+						$("#ff").submit();
+				}
+			});
+		});
+
+	});
+	function load() {
+		var dl01 = $("#dl01").val();
+		var vr01 = $("#vr01").val();
+		var message = $("#message").val().replace(/\^/g, "(");
+		var date = $("#date").val();
+		$('#dg').datagrid(
+				{
+					url : 'queryLicence!queryBean?dl01=' + dl01 + "&vr01="
+							+ vr01 + "&message=" + message + "&date=" + date,
+					rowStyler : function(index, row) {
+						if (new Date(Date.parse(row.RHEFFT)) < new Date()) {
+							return 'background-color:red';
+						}
+					}
+				});
+	}
+
+	function loadscan() {
+		var dl01 = $("#dl01").val();
+		var vr01 = $("#vr01").val();
+		$('#scan').datagrid({
+			url : 'queryScan!queryForScanResult?dl01=' + dl01 + "&vr01=" + vr01
+		});
+
+	}
+
+	function setHeight() {
+		var c = $('#cc');
+		var p = c.layout('panel', 'center'); // get the center panel
+		var oldHeight = p.panel('panel').outerHeight();
+		p.panel('resize', {
+			height : 'auto'
+		});
+		var newHeight = p.panel('panel').outerHeight();
+		c.layout('resize', {
+			height : (c.height() + newHeight - oldHeight)
+		});
+	}
+
+	function myformatter(date) {
+		var y = date.getFullYear();
+		var m = date.getMonth() + 1;
+		var d = date.getDate();
+		return y + '-' + (m < 10 ? ('0' + m) : m) + '-'
+				+ (d < 10 ? ('0' + d) : d);
+	}
+	function myparser(s) {
+		if (!s)
+			return new Date();
+		var ss = (s.split('-'));
+		var y = parseInt(ss[0], 10);
+		var m = parseInt(ss[1], 10);
+		var d = parseInt(ss[2], 10);
+		if (!isNaN(y) && !isNaN(m) && !isNaN(d)) {
+			return new Date(y, m - 1, d);
+		} else {
+			return new Date();
+		}
+	}
+</script>
+<title>打印中文标签</title>
+</head>
+
+<body>
+	<div id="main" class="divcss5">
+		<div id="cc" class="easyui-layout" style="width: 95%; height: 1050px">
+			<div data-options="region:'south'" style="padding: 5px; border: 0">
+				<div class="easyui-layout" data-options="fit:true">
+					<div data-options="region:'north',split:true"
+						style="height: 200px; border: 0">
+						<!-- form -->
+						<div class="easyui-panel" title="扫描"
+							style="width: 100%; padding: 10px;">
+							<form id="ff" action="insertscan!insertScan" method="post">
+								<table style="width: 100%;">
+									<tr>
+										<td>合同号:</td>
+										<td><input name="dl01" class="f1 easyui-textbox"
+											data-options="required:true" id='dl01'></input></td>
+										<td>&nbsp;</td>
+										<td>采购单号:</td>
+										<td><input name="vr01" class="f1 easyui-textbox"
+											data-options="required:true" id='vr01'></input></td>
+										<td>&nbsp;</td>
+									</tr>
+
+									<tr>
+										<td>生产日期:</td>
+										<td><input id="date" name="date"
+											class="f1 easyui-datebox"
+											data-options="formatter:myformatter,parser:myparser"></input></td>
+										<td>&nbsp;</td>
+										<td>打印份数:</td>
+										<td><input name="pages" class="f1 easyui-textbox"
+											id="pages"></input></td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>计数数量:</td>
+										<td><input name="countnb" class="f1 easyui-textbox"
+											id='countnb'></input></td>
+										<td>&nbsp;</td>
+										<td>打印机编号:</td>
+										<td><input name="printer" class="f1 easyui-textbox"
+											data-options="required:true" id="printer"></input></td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>条码:</td>
+										<td><input name="message" class="f1 easyui-textbox"
+											id="message"></input></td>
+										<td>&nbsp;
+											<div id='newMessageDIV'></div>
+										</td>
+										<td>&nbsp;</td>
+										<td><input type="button" value="打印" id="submit"></input><input
+											type="button" value="查询" id="query"></td>
+										<td><a href="javascript:void(0)"
+											class="easyui-linkbutton"
+											onclick="$('#dlg').dialog('open');$('#reprint').contentWindow.location.reload(true)">重打印</a></td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+					<div data-options="region:'center',split:true"
+						style="height: 150px; border: 0" id="licence">
+						<table id="dg" title="注册证" class="easyui-datagrid"
+							style="width: 100%; height: 150px" fitColumns="true"
+							singleSelect="true">
+							<thead>
+								<tr>
+									<th field="RHLOTN" width="50">注册证号</th>
+									<th field="RHALPH" width="60">注册证名称</th>
+									<th field="RDAITM" width="40">规格型号</th>
+									<th field="RDLITM" width="40">产品编号</th>
+									<th field="RDADD4" width="80">说明书编号</th>
+									<th field="RHEFFT" width="35">截止日期</th>
+									<th field="RDSRP6" width="20">注册证状态</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+					<div data-options="region:'south',split:true"
+						style="height: 450px; border: 0" id="scanlist">
+						<table id="scan" title="扫描列表" class="easyui-datagrid"
+							style="width: 100%; height: 350px" fitColumns="true"
+							singleSelect="true">
+							<thead>
+								<tr>
+									<th field="DL10" width="50">合同号</th>
+									<th field="VR01" width="40">定单号</th>
+									<th field="LITM" width="50">产品编号</th>
+									<th field="PQOH" width="30">预计到货数量</th>
+									<th field="UORG" width="30">已扫描数量</th>
+									<th field="DIFF" width="30">差异数量</th>
+									<th field="CNID" width="50">GR号</th>
+								</tr>
+							</thead>
+						</table>
+
+					</div>
+				</div>
+			</div>
+			<div data-options="region:'center'" style="border: 0">
+				<table>
+					<tr>
+						<td><img src="img/logo.png"></td>
+						<td style="font-size: 40px">中文标签打印</td>
+					</tr>
+				</table>
+			</div>
+			<div id="dlg" class="easyui-dialog" title="重打印條碼"
+				data-options="iconCls:'icon-save'"
+				style="width: 70%; height: 500px; padding: 10px">
+				<iframe id='reprint' src="scan" width="100%" height='100%'
+					frameborder="0" scrolling="yes"></iframe>
+			</div>
+
+			<div id="date_dlg" class="easyui-dialog" title="确认生产日期"
+				style="width: 40%; height: 200px; padding: 10px"
+				data-options="
+				iconCls: 'icon-save',
+				buttons: [{
+					text:'Ok',
+					iconCls:'icon-ok',
+					handler:function(){
+						$('#date').datebox('setValue', $('#new_date').val());
+						$('#date_dlg').dialog('close');
+						$('#ff').submit();
+					}
+				},{
+					text:'Cancel',
+					handler:function(){
+						$('#date_dlg').dialog('close');
+					}
+				}]
+			">
+				<table style="width: 100%;">
+					<tr>
+						<td>生产日期:</td>
+						<td><input id="new_date" name="new_date"
+							class="f1 easyui-datebox"
+							data-options="formatter:myformatter,parser:myparser"></input></td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+	</div>
+	<audio id="chatAudio"> <source src="notify.mp3"
+		type="audio/mp3"> <source src="notify.mp3" type="audio/mp3">
+	<source src="notify.mp3" type="audio/mp3"></audio>
+</body>
+</html>
