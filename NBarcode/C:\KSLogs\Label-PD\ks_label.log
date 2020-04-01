@@ -8,3 +8,13 @@ INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
 INFO:select * from CRPDTA.F550002 inner join CRPDTA.F550001 on RDLOTN=RHLOTN inner join CRPDTA.F4101 on RDITM=IMITM where RDLITM='28132AA' and RDLOTN=N'国械注进20143065692' and RDSRP6='Y'
 2020-04-02 00:53:06 上午 [Thread: qtp13846559-31][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.doInCallableStatement(ChinaTagModel.java:174) ]
 INFO:TagDetailBean(rhalph=脊柱外科内窥镜, rdaitm=28132AA, rdagen=HOPKINS® II 0°内窥镜，直径4 mm，工作长度180 mm，带光纤接口，可高温高压消毒, rhlotn=国械注进20143065692, date=, rdcmddsc01=见说明书, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区龙东大道3000号5号楼701A室, imsrp1=AAA, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=28132AA, content=)
+2020-04-02 01:17:02 上午 [Thread: qtp1389726643-28][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:125) ]
+INFO:(240)28132AA(21)AAAA
+2020-04-02 01:17:02 上午 [Thread: qtp1389726643-28][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:32) ]
+INFO:(240)28132AA(21)AAAA
+2020-04-02 01:17:04 上午 [Thread: qtp1389726643-28][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:104) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-04-02 01:17:04 上午 [Thread: qtp1389726643-28][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetTagDetail(ChinaTagModel.java:161) ]
+INFO:select * from CRPDTA.F550002 inner join CRPDTA.F550001 on RDLOTN=RHLOTN inner join CRPDTA.F4101 on RDITM=IMITM where RDLITM='28132AA' and RDLOTN=N'国械注进20143065692' and RDSRP6='Y'
+2020-04-02 01:17:04 上午 [Thread: qtp1389726643-28][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.doInCallableStatement(ChinaTagModel.java:174) ]
+INFO:TagDetailBean(rhalph=脊柱外科内窥镜, rdaitm=28132AA, rdagen=HOPKINS® II 0°内窥镜，直径4 mm，工作长度180 mm，带光纤接口，可高温高压消毒, rhlotn=国械注进20143065692, date=, rdcmddsc01=见说明书, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区龙东大道3000号5号楼701A室, imsrp1=AAA, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=28132AA, content=)
