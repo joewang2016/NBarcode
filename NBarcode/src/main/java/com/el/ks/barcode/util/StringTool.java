@@ -36,7 +36,7 @@ public class StringTool {
 		return !isNull(str);
 	}
 
-	// 大写首字毄1�7
+	// 
 	public static String up1stLetter(String word) {
 		char[] chars = word.toCharArray();
 		if (chars[0] >= 'a' && chars[0] < 'z') {
@@ -46,7 +46,7 @@ public class StringTool {
 		return up1srWord;
 	}
 
-	// 小写首字毄1�7
+	// 
 	public static String lower1stLetter(String word) {
 		char[] chars = word.toCharArray();
 		if (chars[0] >= 'A' && chars[0] < 'Z') {

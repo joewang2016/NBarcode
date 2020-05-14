@@ -4,19 +4,22 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.el.ks.barcode.bean.SNBean;
-import com.el.ks.barcode.config.BarcodeConfig;
+import com.el.ks.barcode.config.TagConfig;
 import com.el.ks.barcode.service.Const;
 
-import lombok.Data;
-
-@Data
+@Component
 public class SNParaseUtil {
 
 	Logger log = Logger.getLogger(this.getClass());
 
-	private BarcodeConfig config;
+	@Autowired
+	private TagConfig config;
+	
+	@Autowired
 	private RedisUtil util;
 
 	public SNBean ParseTag(String sn) {
@@ -38,7 +41,6 @@ public class SNParaseUtil {
 			reg = config.getReg();
 		else
 			reg = "\\d{0,16}[\\(]{0,}240[\\)]{0,}([\\w-*&]+)[\\(]{0,1}[\\(]{0,}([0-2,7]{0,2})[\\)]{0,}([\\w -_ ]*)";
-
 		pattern = Pattern.compile(reg);
 		matcher = pattern.matcher(sn);
 		int c = 0;
@@ -68,7 +70,7 @@ public class SNParaseUtil {
 			}
 		}
 		if (bean.getLot1().trim().equals("") && bean.getLotn().trim().equals(""))
-			bean.setLot1("9999");
+			bean.setLot1(Const.MAX_LOT1);
 		util.set(sn, bean, Const.EXPIRED);
 		return bean;
 	}

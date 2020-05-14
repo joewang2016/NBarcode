@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="themes/black/easyui.css">
 <link rel="stylesheet" type="text/css" href="themes/icon.css">
 <link rel="stylesheet" type="text/css" href="demo/demo.css">
 <script type="text/javascript" src="jquery.min.js"></script>
@@ -50,7 +50,6 @@
 					printer = "WGQ";
 					$("#printer").textbox("setValue", "WGQ");
 				}*/
-
 				var data = {
 					dl01 : $("#dl01").val(),
 					vr01 : $("#vr01").val(),
@@ -62,10 +61,11 @@
 
 				};
 				$.ajax({
-					url : "insertscan!insertScan",
+					url : "insertScan",
 					type : "POST",
-					data : data,
+					data : JSON.stringify(data),
 					datatype : "json",
+					contentType: "application/json",
 					success : function(data) {
 						if (data == "1") {
 							$('#chatAudio')[0].pause();
@@ -78,7 +78,7 @@
 			},
 			success : function(data) {
 				load();
-
+				
 				$('#message').next('span').find('input').focus();
 				$("#message").textbox("setValue", " ");
 			}
@@ -121,15 +121,16 @@
 				message : $("#message").val().replace(/\^/g, "(")
 			}
 			$.ajax({
-				url : "requirelist!requireList",
+				url : "requireList",
 				type : "post",
 				data : data,
 				datatype : "json",
 				success : function(data) {
 					if (data == "1") {
 						$('#date_dlg').dialog('open');
-					} else
+					} else{
 						$("#ff").submit();
+					}
 				}
 			});
 		});
@@ -142,7 +143,7 @@
 		var date = $("#date").val();
 		$('#dg').datagrid(
 				{
-					url : 'queryLicence!queryBean?dl01=' + dl01 + "&vr01="
+					url : 'queryLicence?dl01=' + dl01 + "&vr01="
 							+ vr01 + "&message=" + message + "&date=" + date,
 					rowStyler : function(index, row) {
 						if (new Date(Date.parse(row.RHEFFT)) < new Date()) {
@@ -156,7 +157,7 @@
 		var dl01 = $("#dl01").val();
 		var vr01 = $("#vr01").val();
 		$('#scan').datagrid({
-			url : 'queryScan!queryForScanResult?dl01=' + dl01 + "&vr01=" + vr01
+			url : 'queryForScanResult?dl01=' + dl01 + "&vr01=" + vr01
 		});
 
 	}
@@ -208,7 +209,7 @@
 						<!-- form -->
 						<div class="easyui-panel" title="扫描"
 							style="width: 100%; padding: 10px;">
-							<form id="ff" action="insertscan!insertScan" method="post">
+							<form id="ff" action="insertScan" method="post">
 								<table style="width: 100%;">
 									<tr>
 										<td>合同号:</td>
@@ -267,13 +268,13 @@
 							singleSelect="true">
 							<thead>
 								<tr>
-									<th field="RHLOTN" width="50">注册证号</th>
-									<th field="RHALPH" width="60">注册证名称</th>
-									<th field="RDAITM" width="40">规格型号</th>
-									<th field="RDLITM" width="40">产品编号</th>
-									<th field="RDADD4" width="80">说明书编号</th>
-									<th field="RHEFFT" width="35">截止日期</th>
-									<th field="RDSRP6" width="20">注册证状态</th>
+									<th field="rHLOTN" width="50">注册证号</th>
+									<th field="rHALPH" width="60">注册证名称</th>
+									<th field="rDAITM" width="40">规格型号</th>
+									<th field="rDLITM" width="40">产品编号</th>
+									<th field="rDADD4" width="80">说明书编号</th>
+									<th field="rHEFFT" width="35">截止日期</th>
+									<th field="rDSRP6" width="20">注册证状态</th>
 								</tr>
 							</thead>
 						</table>
@@ -285,13 +286,13 @@
 							singleSelect="true">
 							<thead>
 								<tr>
-									<th field="DL10" width="50">合同号</th>
-									<th field="VR01" width="40">定单号</th>
-									<th field="LITM" width="50">产品编号</th>
-									<th field="PQOH" width="30">预计到货数量</th>
-									<th field="UORG" width="30">已扫描数量</th>
-									<th field="DIFF" width="30">差异数量</th>
-									<th field="CNID" width="50">GR号</th>
+									<th field="dL10" width="50">合同号</th>
+									<th field="vR01" width="40">定单号</th>
+									<th field="lITM" width="50">产品编号</th>
+									<th field="pQOH" width="30">预计到货数量</th>
+									<th field="uORG" width="30">已扫描数量</th>
+									<th field="dIFF" width="30">差异数量</th>
+									<th field="cNID" width="50">GR号</th>
 								</tr>
 							</thead>
 						</table>
@@ -299,11 +300,11 @@
 					</div>
 				</div>
 			</div>
-			<div data-options="region:'center'" style="border: 0">
+			<div data-options="region:'center'" style="border: 0;background:#fff;color:#000">
 				<table>
 					<tr>
 						<td><img src="img/logo.png"></td>
-						<td style="font-size: 40px">中文标签打印</td>
+						<td style="font-size: 50px">中文标签打印</td>
 					</tr>
 				</table>
 			</div>

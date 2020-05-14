@@ -11,5 +11,10 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 public @interface TagDetail {
 	String name() default "";
+
 	boolean db() default true;
+
+	String pos() default "L";
+
+	int index() default 0;
 }

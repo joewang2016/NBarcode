@@ -8,7 +8,11 @@ import lombok.Data;
 @Data
 @Configuration
 @ConfigurationProperties(prefix = "tag")
-public class BarcodeConfig {
+public class TagConfig {
 	private String reg;
-	private String schema;
+	private String fontwidth;
+	private String fontheight;
+	private String vpadding;
+	private String workspace;
+	private String qtheight;
 }

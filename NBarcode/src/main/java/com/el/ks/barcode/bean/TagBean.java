@@ -1,10 +1,13 @@
 package com.el.ks.barcode.bean;
 
+import org.springframework.stereotype.Component;
+
 import com.el.ks.barcode.util.RedisUtil;
 import com.el.ks.barcode.util.SNParaseUtil;
 
 import lombok.Data;
 
+@Component
 @Data
 public class TagBean {
 	private String dl01;
@@ -16,25 +19,5 @@ public class TagBean {
 	private String message;
 	private SNBean entity;
 	private String license;
-	private RedisUtil util;
 
-	public TagBean(RedisUtil util, String message) {
-		this.message = message;
-		this.util = util;
-		SNParaseUtil service = new SNParaseUtil();
-		service.setUtil(util);
-		entity = service.ParseTag(message);
-	}
-
-	public TagBean() {
-
-	}
-
-	public void ParseMessage() {
-		if (message != null && util != null) {
-			SNParaseUtil service = new SNParaseUtil();
-			service.setUtil(util);
-			entity = service.ParseTag(message);
-		}
-	}
 }

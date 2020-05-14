@@ -1,12 +1,28 @@
+server:
+  port: 8080
 spring:
   datasource:
+    #url: jdbc:sqlserver://10.88.1.141:1433;DatabaseName=JDE_PRODUCTION
+    #username: Barcode
+    #password: BarcodeOPT
     url: jdbc:sqlserver://10.88.1.141:1433;DatabaseName=JDE_CRP
     username: eldeveloper
     password: el123
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      #schema: PRODDTA
+      schema: CRPDTA
+      pool-name: barcode
+      minimum-idle: 10
+      idle-timeout: 500000
+      maximum-pool-size: 1000
+      auto-commit: true
+      connection-timeout: 60000
+      connection-test-query: SELECT 1
   redis:
     host: 127.0.0.1
-    port: 6379
+    port: 6380
     database: 0
     timeout: 1000s
     jedis:
@@ -22,3 +38,6 @@ spring:
     view:
       prefix: /pages/
       suffix: .html
+##mybatis:
+  ##mapper-locations: classpath:mapper/*.xml
+  ##type-aliases-package: com.el.ks.barcode.entity

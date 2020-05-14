@@ -17,9 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableCaching
 public class NBarcodeApplication extends SpringBootServletInitializer{
 	
-	@Autowired
-	JdbcTemplate template;
-
 	Logger log = Logger.getLogger(this.getClass());
 	
 	public static void main(String[] args) {

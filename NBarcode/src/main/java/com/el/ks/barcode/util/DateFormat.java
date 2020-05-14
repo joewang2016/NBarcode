@@ -77,4 +77,11 @@ public class DateFormat extends SimpleDateFormat {
 	public static void main(String[] args) {
 		System.out.println(DateFormat.CJDETime());
 	}
+	
+	public static int getJulianDate() {
+		Date date = new Date();
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+		String time = format.format(date);
+		return DateFormat.CJDEInt(time);
+	}
 }

@@ -1,10 +1,11 @@
 package com.el.ks.barcode.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,12 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.alibaba.fastjson.JSONObject;
+import com.el.ks.barcode.action.ChinaTagQueryAction;
+import com.el.ks.barcode.action.PrintTagAction;
+import com.el.ks.barcode.bean.OpenQuantityBean;
 import com.el.ks.barcode.bean.TagBean;
 import com.el.ks.barcode.bean.TagDetailBean;
 import com.el.ks.barcode.bean.TagScanResultBean;
-import com.el.ks.barcode.config.BarcodeConfig;
-import com.el.ks.barcode.model.ChinaTagModel;
-import com.el.ks.barcode.util.RedisUtil;
+import com.el.ks.barcode.service.Const;
 
 @Controller
 public class BarcodeController {
@@ -25,50 +28,115 @@ public class BarcodeController {
 	Logger log = Logger.getLogger(this.getClass());
 
 	@Autowired
-	RedisUtil util;
-	
+	private TagBean tag;
+
 	@Autowired
-	private JdbcTemplate jdbcTemplate;
-	
+	private ChinaTagQueryAction tagAction;
+
 	@Autowired
-	private BarcodeConfig config;
+	private PrintTagAction printAction;
 
 	@GetMapping("main")
 	public String main() {
 		return "main";
 	}
 
+	@GetMapping("preview")
+	public String preview() {
+		return "preview";
+	}
+
 	@RequestMapping("test")
 	@ResponseBody
 	public String test() {
-		TagBean tag = new TagBean();
 		tag.setCountnb("1");
 		tag.setDate("2020-3-31");
 		tag.setDl01("19R44");
 		tag.setVr01("KS-ID8273CN");
 		tag.setPages("1");
 		tag.setPrinter("ZJ");
-		tag.setUtil(util);
 		tag.setMessage("(240)28132AA(21)AAAA");
-		tag.ParseMessage();
-		ChinaTagModel model = new ChinaTagModel();
-		model.setJdbcTemplate(jdbcTemplate);
-		model.setConfig(config);
-		List<TagDetailBean> lresult = model.GetTagDetail(tag);
+
+		List<TagDetailBean> lresult = tagAction.GetTagDetail();
 		return "index";
 	}
 
-	@RequestMapping(value = "insertscanresult", method = RequestMethod.POST)
+	@RequestMapping(value = "insertScan", method = RequestMethod.POST)
 	@ResponseBody
 	public String insertscan(@RequestBody TagBean tag) {
 		log.info(tag);
-		ChinaTagModel model = new ChinaTagModel();
-		List<TagScanResultBean> lresult = model.GetLicenseList(tag);
-		if(lresult.size()>0){
-			TagScanResultBean scan = lresult.get(0);
-			String licence = scan.getRHLOTN();
-			model.SaveScanData(tag,scan);
+		tagAction.setTag(tag);
+		if (this.validateItem()) {
+			List<TagScanResultBean> lresult = tagAction.GetLicenseList();
+			if (lresult.size() > 0) {
+				TagScanResultBean scan = lresult.get(0);
+				String licence = scan.getRHLOTN();
+				tagAction.setTag(tag);
+				tagAction.SaveScanData(scan);
+
+				// Print China Tag
+				PrintTag(scan);
+			}
+			return Const.SUCCESS;
+		} else
+			return "1";
+	}
+
+	private void PrintTag(TagScanResultBean scan) {
+		// TODO Auto-generated method stub
+		printAction.setTag(tag);
+		printAction.PrintTagAll();
+	}
+
+	@RequestMapping(value = "queryForScanResult", method = RequestMethod.POST)
+	@ResponseBody
+	public JSONObject queryForScanResult(String dl01, String vr01) {
+		tag.setDl01(dl01);
+		tag.setVr01(vr01);
+		tagAction.setTag(tag);
+
+		List<OpenQuantityBean> lresult = tagAction.GetOpenQuantity();
+		if (lresult != null) {
+			Map<String, Object> jsonMap = new HashMap<String, Object>();
+			jsonMap.put("total", lresult.size());
+			jsonMap.put("rows", lresult);
+			JSONObject jsonObj = (JSONObject) JSONObject.toJSON(jsonMap);
+			log.info(jsonObj);
+			return jsonObj;
 		}
-		return "";
+		return null;
+	}
+
+	@RequestMapping(value = "requireList", method = RequestMethod.POST)
+	@ResponseBody
+	public String RequireList(String message) {
+		tag.setMessage(message);
+		tag.setEntity(null);
+		tagAction.setTag(tag);
+		return tagAction.RequiryList();
+	}
+
+	@RequestMapping(value = "queryLicence", method = RequestMethod.POST)
+	@ResponseBody
+	public JSONObject GetLicence(String dl01, String vr01, String message, String date) {
+		tag.setDl01(dl01);
+		tag.setVr01(vr01);
+		tag.setMessage(message);
+		tag.setDate(date);
+		tagAction.setTag(tag);
+		List<TagScanResultBean> resultList = tagAction.GetLicenseList();
+		if (resultList != null) {
+			Map<String, Object> jsonMap = new HashMap<String, Object>();
+			jsonMap.put("total", resultList.size());
+			jsonMap.put("rows", resultList);
+			JSONObject jsonObj = (JSONObject) JSONObject.toJSON(jsonMap);
+			log.info(jsonObj);
+			return jsonObj;
+		}
+		return null;
+	}
+
+	private boolean validateItem() {
+		return tagAction.ValidateItem();
 	}
 }
