@@ -1,0 +1,204 @@
+2020-04-28 11:52:24 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:37) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='CRPDTA' and TABLE_NAME='F0101' 
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAN8
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABALKY
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABTAX
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABALPH
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABDC
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABMCU
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABSIC
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABLNGP
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAT1
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABCM
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABTAXC
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAT2
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAT3
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAT4
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAT5
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABATP
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABATR
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABATPR
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAB3
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABATE
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABSBLI
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABEFTB
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAN81
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAN82
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAN83
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAN84
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAN86
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAN85
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC01
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC02
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC03
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC04
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC05
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC06
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC07
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC08
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC09
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC10
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC11
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC12
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC13
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC14
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC15
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC16
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC17
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC18
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC19
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC20
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC21
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC22
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC23
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC24
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC25
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC26
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC27
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC28
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC29
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAC30
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABGLBA
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABPTI
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABPDI
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABMSGA
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABRMK
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABTXCT
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABTX2
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABALP1
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABURCD
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABURDT
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABURAT
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABURAB
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABURRF
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABUSER
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABPID
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABUPMJ
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABJOBN
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABUPMT
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABPRGF
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABSCCLTP
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABTICKER
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABEXCHG
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABDUNS
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABCLASS01
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABCLASS02
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABCLASS03
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABCLASS04
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABCLASS05
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABNOE
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABGROWTHR
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABYEARSTAR
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABAEMPGP
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABACTIN
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABREVRNG
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABSYNCS
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABPERRS
+2020-04-28 11:52:25 上午 [Thread: qtp1144858644-19][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController$1.processRow(BackupController.java:45) ]
+INFO:ABCAAD
+2020-04-28 15:52:38 下午 [Thread: qtp1291665179-71][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:48) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='CRPDTA' and TABLE_NAME='F0101' 
+2020-04-28 15:58:33 下午 [Thread: qtp1770831674-24][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:49) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='CRPDTA' and TABLE_NAME='F0101' 
+2020-04-28 16:06:40 下午 [Thread: qtp236278535-72][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:50) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='CRPDTA' and TABLE_NAME='F0101' 
+2020-04-28 16:07:42 下午 [Thread: qtp2093115857-24][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:50) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='CRPDTA' and TABLE_NAME='F0101' 
+2020-04-28 16:12:39 下午 [Thread: qtp915183198-24][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:50) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='CRPDTA' and TABLE_NAME='F0101' 
+2020-04-28 16:13:11 下午 [Thread: qtp425834477-55][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:50) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='PRODDTA' and TABLE_NAME='F0101' 

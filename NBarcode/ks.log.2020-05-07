@@ -1,0 +1,3 @@
+2020-05-07 00:22:24,585 [qtp2109485482-27] INFO  [com.el.ks.barcode.controller.BackupController] - select column_name from information_schema.columns where TABLE_SCHEMA='dbo' and TABLE_NAME='F0101' 
+2020-05-07 00:34:02,444 [qtp1615521981-27] INFO  [com.el.ks.barcode.controller.BackupController] - select column_name from information_schema.columns where TABLE_SCHEMA='PRODDTA' and TABLE_NAME='F0101' 
+2020-05-07 00:36:06,114 [qtp1659192929-27] INFO  [com.el.ks.barcode.controller.BackupController] - select column_name from information_schema.columns where TABLE_SCHEMA='PRODDTA' and TABLE_NAME='F0101' 

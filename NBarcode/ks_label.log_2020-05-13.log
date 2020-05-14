@@ -1,0 +1,1164 @@
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number: 24026008BAC(21)1003R7
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-21][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message=24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-21][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-21][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-21][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-27][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-27][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 09:54:56 上午 [Thread: qtp652019012-27][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 09:54:58 上午 [Thread: qtp652019012-21][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 09:55:47 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 09:55:47 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:55:47 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:55:47 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 09:55:47 上午 [Thread: qtp652019012-25][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 09:55:48 上午 [Thread: qtp652019012-25][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:55:48 上午 [Thread: qtp652019012-25][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:55:48 上午 [Thread: qtp652019012-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 09:55:48 上午 [Thread: qtp652019012-21][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:55:48 上午 [Thread: qtp652019012-21][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:55:48 上午 [Thread: qtp652019012-21][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 09:55:48 上午 [Thread: qtp652019012-21][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 09:55:48 上午 [Thread: qtp652019012-21][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 09:55:55 上午 [Thread: qtp652019012-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-27][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-27][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-25][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-25][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-25][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 09:56:10 上午 [Thread: qtp652019012-28][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 09:56:17 上午 [Thread: qtp652019012-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 09:57:06 上午 [Thread: qtp804546228-70][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 09:57:06 上午 [Thread: qtp804546228-70][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:57:06 上午 [Thread: qtp804546228-70][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:57:06 上午 [Thread: qtp804546228-70][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 09:57:06 上午 [Thread: qtp804546228-66][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 09:57:06 上午 [Thread: qtp804546228-66][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:57:06 上午 [Thread: qtp804546228-66][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:57:06 上午 [Thread: qtp804546228-66][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 09:57:07 上午 [Thread: qtp804546228-65][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:57:07 上午 [Thread: qtp804546228-65][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:57:07 上午 [Thread: qtp804546228-65][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 09:57:07 上午 [Thread: qtp804546228-65][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 09:57:07 上午 [Thread: qtp804546228-65][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 09:57:11 上午 [Thread: qtp804546228-66][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG) PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-101][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-101][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-101][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-101][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-97][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-97][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-97][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-97][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-96][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-96][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-96][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-96][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 09:59:17 上午 [Thread: qtp1020248510-96][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 09:59:21 上午 [Thread: qtp1020248510-97][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-100][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-100][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-100][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-100][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-102][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-102][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-102][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-102][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-101][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-101][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-101][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-101][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:00:02 上午 [Thread: qtp1020248510-101][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:00:15 上午 [Thread: qtp1020248510-102][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-131][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-131][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-131][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-131][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-134][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-134][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-134][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-134][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-127][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-127][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-127][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-127][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:31:07 上午 [Thread: qtp1601396735-127][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:31:20 上午 [Thread: qtp1601396735-134][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:31:26 上午 [Thread: qtp1601396735-134][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:445) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 10:31:26 上午 [Thread: qtp1601396735-134][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:455) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-130][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-130][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-130][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-130][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-129][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-129][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-129][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-129][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-131][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-131][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-131][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-131][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:32:11 上午 [Thread: qtp1601396735-131][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:32:17 上午 [Thread: qtp1601396735-129][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:32:21 上午 [Thread: qtp1601396735-129][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:445) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 10:32:36 上午 [Thread: qtp1601396735-129][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:455) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-204][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-204][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-204][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-204][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:34:28 上午 [Thread: qtp622145642-204][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:34:34 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:445) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 10:34:36 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:455) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 10:34:44 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:465) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 10:34:52 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:34:52 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:34:52 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:34:52 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:34:52 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:34:52 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:34:52 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:261) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 10:34:53 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:178) ]
+INFO:*********************
+2020-05-13 10:34:53 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:179) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=null, countnb=0, printer=null, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 10:34:53 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:180) ]
+INFO:*********************
+2020-05-13 10:34:53 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:185) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:35:28 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:35:31 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:445) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 10:35:31 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:455) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 10:35:31 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:465) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 10:35:31 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:35:31 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:35:31 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:35:31 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:35:34 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:35:34 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:35:35 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:261) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 10:35:37 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:178) ]
+INFO:*********************
+2020-05-13 10:35:38 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:179) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=null, countnb=0, printer=null, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 10:35:38 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:180) ]
+INFO:*********************
+2020-05-13 10:35:42 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:185) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-207][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-207][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-207][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-207][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:36:20 上午 [Thread: qtp622145642-207][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:36:24 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:445) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 10:36:24 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:455) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 10:36:24 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:465) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 10:36:24 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:36:24 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:36:24 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:36:25 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:36:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:36:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:36:28 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:261) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 10:36:29 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:178) ]
+INFO:*********************
+2020-05-13 10:36:29 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:179) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=null, countnb=0, printer=null, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 10:36:29 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:180) ]
+INFO:*********************
+2020-05-13 10:36:31 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:185) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 10:38:40 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:38:40 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:38:40 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:38:41 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:38:41 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:38:41 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:38:41 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:38:41 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:38:41 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:38:41 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:38:41 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:38:41 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:38:41 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:38:41 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:38:44 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:445) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 10:38:44 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:455) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 10:38:44 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:465) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 10:38:44 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:38:44 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:38:44 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:38:44 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:38:51 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:38:51 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:38:51 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:261) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 10:38:51 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:178) ]
+INFO:*********************
+2020-05-13 10:38:51 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:179) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=null, countnb=0, printer=null, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 10:38:51 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:180) ]
+INFO:*********************
+2020-05-13 10:38:51 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:185) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-211][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-211][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-211][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-211][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:39:14 上午 [Thread: qtp622145642-211][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:445) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:455) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:465) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:261) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:178) ]
+INFO:*********************
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:179) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=null, countnb=0, printer=null, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:180) ]
+INFO:*********************
+2020-05-13 10:39:19 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:185) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:445) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:455) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:465) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:261) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:178) ]
+INFO:*********************
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:179) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=null, countnb=0, printer=null, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:180) ]
+INFO:*********************
+2020-05-13 10:41:37 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:185) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:445) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:455) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:42:06 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:42:07 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:465) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 10:42:07 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:42:07 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:42:07 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:42:07 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:42:07 上午 [Thread: qtp622145642-208][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:42:07 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:42:23 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:42:23 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:42:46 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:261) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 10:42:46 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:178) ]
+INFO:*********************
+2020-05-13 10:42:46 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:179) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=null, countnb=0, printer=null, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 10:42:46 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:180) ]
+INFO:*********************
+2020-05-13 10:42:46 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:185) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 10:43:09 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:43:09 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:43:09 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:43:09 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:43:09 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:43:09 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:43:09 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:43:09 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:43:09 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:43:09 上午 [Thread: qtp622145642-205][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:43:40 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:43:40 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:43:40 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:43:40 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:43:40 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:445) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 10:43:40 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:455) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 10:43:40 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:465) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 10:43:44 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:43:44 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:43:44 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:43:44 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:44:19 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:44:19 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:44:23 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:261) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 10:44:24 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:178) ]
+INFO:*********************
+2020-05-13 10:44:24 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:179) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 10:44:25 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:180) ]
+INFO:*********************
+2020-05-13 10:44:26 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:185) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 10:44:44 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:223) ]
+INFO:insert into CRPDTA.F56B4311 (PLEV01,PLVR01,PLDOCO,PLKCOO,PLDCTO,PLLITM,PLUORG,PLLOT1,PLLOCN,PLCNID,PLURDT,PLDGL,PLDL10,PLUSD1,PLURAT,PLURRF,PLINIKEY,PLPID,PLUSER,PLUPMJ,PLUPMT,PLIR05,PLMCU,PLLOTN,PLURCD,PLDL12) values ('0','KS-ID8254CN','18601278','00430','OF','26008BAC                 ','0','1003R7','1000                ','GR1902-096          ','119045','119045','19R44','120134','100','1',newid(),'BARCODE',' ',120134,104439,'92463335                      ','      430903',N'国械注进20163225157               ','Y     ','26008BAC                 ')
+2020-05-13 10:44:54 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:229) ]
+INFO:update CRPDTA.F56B4310 set ABEV01='1',ABMATH01=ABMATH01+0 where ABDOCO='18601278' and ABDCTO='OF' and ABKCOO='00430' and ABLITM='26008BAC                 ' and ABUKID=135218
+2020-05-13 10:44:54 上午 [Thread: qtp622145642-210][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:235) ]
+INFO:update CRPDTA.F56B4311 set PLUSD1 = 120134,PLLOTN=N'国械注进20163225157               ' where PLVR01='KS-ID8254CN' and PLLITM='26008BAC                 ' and PLLOT1='1003R7' and PLCNID='GR1902-096          ' and PLDL10='19R44'
+2020-05-13 10:44:54 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetOpenQty(ChinaTagModel.java:384) ]
+INFO:select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-13 10:44:54 上午 [Thread: qtp622145642-209][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.queryForScanResult(BarcodeController.java:95) ]
+INFO:{"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-2","dIFF":"4","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-13 10:52:10 上午 [Thread: qtp1500257585-242][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:349) ]
+INFO:Check Serial Number:  24026008BAC(21)1003R7
+2020-05-13 10:52:10 上午 [Thread: qtp1500257585-242][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:52:10 上午 [Thread: qtp1500257585-242][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:52:10 上午 [Thread: qtp1500257585-242][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:359) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 10:52:10 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:69) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 10:52:10 上午 [Thread: qtp1500257585-237][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:52:10 上午 [Thread: qtp1500257585-237][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:52:10 上午 [Thread: qtp1500257585-237][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:52:10 上午 [Thread: qtp1500257585-237][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:52:10 上午 [Thread: qtp1500257585-237][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:121) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 10:52:13 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:52:13 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:52:13 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:496) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 10:52:13 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:481) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 10:52:13 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:445) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 10:52:13 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:455) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 10:52:14 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:465) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 10:52:14 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:52:14 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:52:14 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:137) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 10:52:14 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:93) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 10:52:16 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 10:52:16 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 10:52:16 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:261) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 10:52:16 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:178) ]
+INFO:*********************
+2020-05-13 10:52:16 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:179) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 10:52:16 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:180) ]
+INFO:*********************
+2020-05-13 10:52:16 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:185) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 10:52:24 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:223) ]
+INFO:insert into CRPDTA.F56B4311 (PLEV01,PLVR01,PLDOCO,PLKCOO,PLDCTO,PLLITM,PLUORG,PLLOT1,PLLOCN,PLCNID,PLURDT,PLDGL,PLDL10,PLUSD1,PLURAT,PLURRF,PLINIKEY,PLPID,PLUSER,PLUPMJ,PLUPMT,PLIR05,PLMCU,PLLOTN,PLURCD,PLDL12) values ('0','KS-ID8254CN','18601278','00430','OF','26008BAC                 ','0','1003R7','1000                ','GR1902-096          ','119045','119045','19R44','120134','100','WG',newid(),'BARCODE',' ',120134,105221,'92463335                      ','      430903',N'国械注进20163225157               ','Y     ','26008BAC                 ')
+2020-05-13 10:52:24 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:229) ]
+INFO:update CRPDTA.F56B4310 set ABEV01='1',ABMATH01=ABMATH01+0 where ABDOCO='18601278' and ABDCTO='OF' and ABKCOO='00430' and ABLITM='26008BAC                 ' and ABUKID=135218
+2020-05-13 10:52:24 上午 [Thread: qtp1500257585-238][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:235) ]
+INFO:update CRPDTA.F56B4311 set PLUSD1 = 120134,PLLOTN=N'国械注进20163225157               ' where PLVR01='KS-ID8254CN' and PLLITM='26008BAC                 ' and PLLOT1='1003R7' and PLCNID='GR1902-096          ' and PLDL10='19R44'
+2020-05-13 10:52:24 上午 [Thread: qtp1500257585-241][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetOpenQty(ChinaTagModel.java:384) ]
+INFO:select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-13 10:52:25 上午 [Thread: qtp1500257585-241][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.queryForScanResult(BarcodeController.java:95) ]
+INFO:{"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-2","dIFF":"4","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-13 12:06:17 下午 [Thread: qtp1901925332-26][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetOpenQty(ChinaTagModel.java:381) ]
+INFO:select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-13 12:06:18 下午 [Thread: qtp1901925332-26][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.queryForScanResult(BarcodeController.java:102) ]
+INFO:{"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-2","dIFF":"4","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-13 12:06:20 下午 [Thread: qtp1901925332-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:346) ]
+INFO:Check Serial Number: 24026008BAC(21)1003R7 
+2020-05-13 12:09:39 下午 [Thread: qtp296179285-26][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetOpenQty(ChinaTagModel.java:380) ]
+INFO:select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-13 12:09:39 下午 [Thread: qtp296179285-26][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.queryForScanResult(BarcodeController.java:102) ]
+INFO:{"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-2","dIFF":"4","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-13 12:10:04 下午 [Thread: qtp296179285-28][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:10:04 下午 [Thread: qtp296179285-28][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:10:20 下午 [Thread: qtp296179285-28][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:355) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 12:10:21 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:68) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message=24026008BAC(21)1003R7 , entity=null, license=null)
+2020-05-13 12:10:29 下午 [Thread: qtp296179285-21][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:10:29 下午 [Thread: qtp296179285-21][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:10:29 下午 [Thread: qtp296179285-21][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:130) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 12:10:46 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:10:46 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:10:52 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:492) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 12:10:52 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:477) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 12:10:52 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:441) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 12:10:52 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:451) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 12:10:52 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:461) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 12:10:52 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:10:52 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:10:55 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:258) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 12:10:59 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:175) ]
+INFO:*********************
+2020-05-13 12:10:59 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:176) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message=24026008BAC(21)1003R7 , entity=SNBean(sn=24026008BAC(21)1003R7 , litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 12:10:59 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:177) ]
+INFO:*********************
+2020-05-13 12:10:59 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:182) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 12:11:06 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:220) ]
+INFO:insert into CRPDTA.F56B4311 (PLEV01,PLVR01,PLDOCO,PLKCOO,PLDCTO,PLLITM,PLUORG,PLLOT1,PLLOCN,PLCNID,PLURDT,PLDGL,PLDL10,PLUSD1,PLURAT,PLURRF,PLINIKEY,PLPID,PLUSER,PLUPMJ,PLUPMT,PLIR05,PLMCU,PLLOTN,PLURCD,PLDL12) values ('0','KS-ID8254CN','18601278','00430','OF','26008BAC                 ','0','1003R7','1000                ','GR1902-096          ','119045','119045','19R44','120134','100','WG',newid(),'BARCODE',' ',120134,121102,'92463335                      ','      430903',N'国械注进20163225157               ','Y     ','26008BAC                 ')
+2020-05-13 12:11:06 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:226) ]
+INFO:update CRPDTA.F56B4310 set ABEV01='1',ABMATH01=ABMATH01+0 where ABDOCO='18601278' and ABDCTO='OF' and ABKCOO='00430' and ABLITM='26008BAC                 ' and ABUKID=135218
+2020-05-13 12:11:06 下午 [Thread: qtp296179285-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:232) ]
+INFO:update CRPDTA.F56B4311 set PLUSD1 = 120134,PLLOTN=N'国械注进20163225157               ' where PLVR01='KS-ID8254CN' and PLLITM='26008BAC                 ' and PLLOT1='1003R7' and PLCNID='GR1902-096          ' and PLDL10='19R44'
+2020-05-13 12:11:11 下午 [Thread: qtp296179285-21][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetOpenQty(ChinaTagModel.java:380) ]
+INFO:select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-13 12:11:11 下午 [Thread: qtp296179285-21][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.queryForScanResult(BarcodeController.java:102) ]
+INFO:{"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-2","dIFF":"4","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-13 12:14:20 下午 [Thread: qtp296179285-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetOpenQty(ChinaTagModel.java:380) ]
+INFO:select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-13 12:14:20 下午 [Thread: qtp296179285-27][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.queryForScanResult(BarcodeController.java:102) ]
+INFO:{"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-2","dIFF":"4","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-13 12:15:14 下午 [Thread: qtp1493960938-26][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetOpenQty(ChinaTagModel.java:380) ]
+INFO:select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-13 12:15:15 下午 [Thread: qtp1493960938-26][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.queryForScanResult(BarcodeController.java:102) ]
+INFO:{"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-2","dIFF":"4","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-13 12:15:37 下午 [Thread: qtp1493960938-23][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:15:37 下午 [Thread: qtp1493960938-23][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:15:47 下午 [Thread: qtp1493960938-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:355) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 12:15:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:68) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 12:16:30 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:16:30 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:16:30 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:492) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 12:16:30 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:477) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 12:16:30 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:441) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 12:16:30 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:451) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 12:16:30 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:461) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 12:16:30 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:16:30 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:16:52 下午 [Thread: qtp1493960938-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:16:53 下午 [Thread: qtp1493960938-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:16:53 下午 [Thread: qtp1493960938-22][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:130) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 12:16:57 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:258) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 12:16:57 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:175) ]
+INFO:*********************
+2020-05-13 12:16:57 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:176) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=null, countnb=0, printer=null, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7 , litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 12:16:57 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:177) ]
+INFO:*********************
+2020-05-13 12:16:57 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:182) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 12:17:40 下午 [Thread: qtp1493960938-21][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:355) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 12:17:40 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:68) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:492) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:477) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:441) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:451) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:461) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:258) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:175) ]
+INFO:*********************
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:176) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7 , litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:177) ]
+INFO:*********************
+2020-05-13 12:17:47 下午 [Thread: qtp1493960938-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:182) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 12:17:53 下午 [Thread: qtp1493960938-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:17:53 下午 [Thread: qtp1493960938-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:17:53 下午 [Thread: qtp1493960938-27][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:130) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 12:18:45 下午 [Thread: qtp51304045-26][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:18:45 下午 [Thread: qtp51304045-26][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:19:05 下午 [Thread: qtp51304045-26][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:355) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 12:19:36 下午 [Thread: qtp51304045-28][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:68) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 12:20:29 下午 [Thread: qtp779357876-26][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:20:29 下午 [Thread: qtp779357876-26][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:20:57 下午 [Thread: qtp779357876-26][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:355) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 12:21:22 下午 [Thread: qtp779357876-28][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:68) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 12:22:04 下午 [Thread: qtp1052789411-26][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:22:04 下午 [Thread: qtp1052789411-26][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:22:22 下午 [Thread: qtp1052789411-26][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:355) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 12:22:23 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:68) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 12:22:51 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:22:51 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:22:53 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:492) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 12:22:53 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:477) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 12:22:54 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:441) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 12:22:54 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:451) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 12:22:54 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:461) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 12:22:54 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:22:54 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:22:54 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:258) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 12:22:54 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:175) ]
+INFO:*********************
+2020-05-13 12:22:54 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:176) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7 , litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 12:22:54 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:177) ]
+INFO:*********************
+2020-05-13 12:22:54 下午 [Thread: qtp1052789411-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:182) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 12:22:55 下午 [Thread: qtp1052789411-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:22:55 下午 [Thread: qtp1052789411-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:22:56 下午 [Thread: qtp1052789411-22][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:130) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 12:23:36 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:355) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 12:23:36 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:68) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 12:23:48 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:23:48 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:492) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:477) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:441) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:451) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:461) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:258) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:175) ]
+INFO:*********************
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:176) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7 , litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:177) ]
+INFO:*********************
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:182) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:220) ]
+INFO:insert into CRPDTA.F56B4311 (PLEV01,PLVR01,PLDOCO,PLKCOO,PLDCTO,PLLITM,PLUORG,PLLOT1,PLLOCN,PLCNID,PLURDT,PLDGL,PLDL10,PLUSD1,PLURAT,PLURRF,PLINIKEY,PLPID,PLUSER,PLUPMJ,PLUPMT,PLIR05,PLMCU,PLLOTN,PLURCD,PLDL12) values ('0','KS-ID8254CN','18601278','00430','OF','26008BAC                 ','0','1003R7','1000                ','GR1902-096          ','119045','119045','19R44','120134','100','WG',newid(),'BARCODE',' ',120134,122351,'92463335                      ','      430903',N'国械注进20163225157               ','Y     ','26008BAC                 ')
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:226) ]
+INFO:update CRPDTA.F56B4310 set ABEV01='1',ABMATH01=ABMATH01+0 where ABDOCO='18601278' and ABDCTO='OF' and ABKCOO='00430' and ABLITM='26008BAC                 ' and ABUKID=135218
+2020-05-13 12:23:51 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:232) ]
+INFO:update CRPDTA.F56B4311 set PLUSD1 = 120134,PLLOTN=N'国械注进20163225157               ' where PLVR01='KS-ID8254CN' and PLLITM='26008BAC                 ' and PLLOT1='1003R7' and PLCNID='GR1902-096          ' and PLDL10='19R44'
+2020-05-13 12:23:53 下午 [Thread: qtp1052789411-24][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:23:53 下午 [Thread: qtp1052789411-24][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:23:53 下午 [Thread: qtp1052789411-24][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:130) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 12:23:56 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetOpenQty(ChinaTagModel.java:380) ]
+INFO:select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-13 12:23:56 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.queryForScanResult(BarcodeController.java:102) ]
+INFO:{"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-2","dIFF":"4","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-13 12:24:15 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:355) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 12:24:15 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:68) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 12:24:17 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:24:17 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:492) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:477) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:441) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:451) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:461) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:258) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:175) ]
+INFO:*********************
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:176) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7 , litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:177) ]
+INFO:*********************
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:182) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:220) ]
+INFO:insert into CRPDTA.F56B4311 (PLEV01,PLVR01,PLDOCO,PLKCOO,PLDCTO,PLLITM,PLUORG,PLLOT1,PLLOCN,PLCNID,PLURDT,PLDGL,PLDL10,PLUSD1,PLURAT,PLURRF,PLINIKEY,PLPID,PLUSER,PLUPMJ,PLUPMT,PLIR05,PLMCU,PLLOTN,PLURCD,PLDL12) values ('0','KS-ID8254CN','18601278','00430','OF','26008BAC                 ','0','1003R7','1000                ','GR1902-096          ','119045','119045','19R44','120134','100','WG',newid(),'BARCODE',' ',120134,122418,'92463335                      ','      430903',N'国械注进20163225157               ','Y     ','26008BAC                 ')
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:226) ]
+INFO:update CRPDTA.F56B4310 set ABEV01='1',ABMATH01=ABMATH01+0 where ABDOCO='18601278' and ABDCTO='OF' and ABKCOO='00430' and ABLITM='26008BAC                 ' and ABUKID=135218
+2020-05-13 12:24:18 下午 [Thread: qtp1052789411-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:232) ]
+INFO:update CRPDTA.F56B4311 set PLUSD1 = 120134,PLLOTN=N'国械注进20163225157               ' where PLVR01='KS-ID8254CN' and PLLITM='26008BAC                 ' and PLLOT1='1003R7' and PLCNID='GR1902-096          ' and PLDL10='19R44'
+2020-05-13 12:24:20 下午 [Thread: qtp1052789411-26][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:24:20 下午 [Thread: qtp1052789411-26][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:24:20 下午 [Thread: qtp1052789411-26][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:130) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 12:24:21 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetOpenQty(ChinaTagModel.java:380) ]
+INFO:select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-13 12:24:22 下午 [Thread: qtp1052789411-25][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.queryForScanResult(BarcodeController.java:102) ]
+INFO:{"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-2","dIFF":"4","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-13 12:25:40 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:25:40 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:25:52 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:355) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 12:25:56 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:68) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 12:26:14 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:26:14 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:26:19 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:492) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 12:26:21 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:477) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:441) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:451) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:461) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:258) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:175) ]
+INFO:*********************
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:176) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7 , litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:177) ]
+INFO:*********************
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:182) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:220) ]
+INFO:insert into CRPDTA.F56B4311 (PLEV01,PLVR01,PLDOCO,PLKCOO,PLDCTO,PLLITM,PLUORG,PLLOT1,PLLOCN,PLCNID,PLURDT,PLDGL,PLDL10,PLUSD1,PLURAT,PLURRF,PLINIKEY,PLPID,PLUSER,PLUPMJ,PLUPMT,PLIR05,PLMCU,PLLOTN,PLURCD,PLDL12) values ('0','KS-ID8254CN','18601278','00430','OF','26008BAC                 ','0','1003R7','1000                ','GR1902-096          ','119045','119045','19R44','120134','100','WG',newid(),'BARCODE',' ',120134,122622,'92463335                      ','      430903',N'国械注进20163225157               ','Y     ','26008BAC                 ')
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:226) ]
+INFO:update CRPDTA.F56B4310 set ABEV01='1',ABMATH01=ABMATH01+0 where ABDOCO='18601278' and ABDCTO='OF' and ABKCOO='00430' and ABLITM='26008BAC                 ' and ABUKID=135218
+2020-05-13 12:26:22 下午 [Thread: qtp1934786933-57][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:232) ]
+INFO:update CRPDTA.F56B4311 set PLUSD1 = 120134,PLLOTN=N'国械注进20163225157               ' where PLVR01='KS-ID8254CN' and PLLITM='26008BAC                 ' and PLLOT1='1003R7' and PLCNID='GR1902-096          ' and PLDL10='19R44'
+2020-05-13 12:26:25 下午 [Thread: qtp1934786933-56][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:26:25 下午 [Thread: qtp1934786933-56][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:26:25 下午 [Thread: qtp1934786933-56][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:131) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 12:26:27 下午 [Thread: qtp1934786933-60][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetOpenQty(ChinaTagModel.java:380) ]
+INFO:select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-13 12:26:27 下午 [Thread: qtp1934786933-60][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.queryForScanResult(BarcodeController.java:102) ]
+INFO:{"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-2","dIFF":"4","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-13 12:27:34 下午 [Thread: qtp1934786933-59][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:27:34 下午 [Thread: qtp1934786933-59][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:28:09 下午 [Thread: qtp1934786933-59][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.CheckRequiredList(ChinaTagModel.java:355) ]
+INFO:select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-13 12:28:09 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.insertscan(BarcodeController.java:68) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-13 12:28:14 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:24026008BAC(21)1003R7
+2020-05-13 12:28:14 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)26008BAC(21)1003R7
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkSN(ChinaTagModel.java:492) ]
+INFO:select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkUORG(ChinaTagModel.java:477) ]
+INFO:select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:441) ]
+INFO:select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:451) ]
+INFO:select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.checkExists(ChinaTagModel.java:461) ]
+INFO:select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetNextSerialNumber(ChinaTagModel.java:258) ]
+INFO:select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120134 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:175) ]
+INFO:*********************
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:176) ]
+INFO:TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-13, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn=24026008BAC(21)1003R7 , litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:177) ]
+INFO:*********************
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.SaveScanData(ChinaTagModel.java:182) ]
+INFO:select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:220) ]
+INFO:insert into CRPDTA.F56B4311 (PLEV01,PLVR01,PLDOCO,PLKCOO,PLDCTO,PLLITM,PLUORG,PLLOT1,PLLOCN,PLCNID,PLURDT,PLDGL,PLDL10,PLUSD1,PLURAT,PLURRF,PLINIKEY,PLPID,PLUSER,PLUPMJ,PLUPMT,PLIR05,PLMCU,PLLOTN,PLURCD,PLDL12) values ('0','KS-ID8254CN','18601278','00430','OF','26008BAC                 ','0','1003R7','1000                ','GR1902-096          ','119045','119045','19R44','120134','100','WG',newid(),'BARCODE',' ',120134,122817,'92463335                      ','      430903',N'国械注进20163225157               ','Y     ','26008BAC                 ')
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:226) ]
+INFO:update CRPDTA.F56B4310 set ABEV01='1',ABMATH01=ABMATH01+0 where ABDOCO='18601278' and ABDCTO='OF' and ABKCOO='00430' and ABLITM='26008BAC                 ' and ABUKID=135218
+2020-05-13 12:28:17 下午 [Thread: qtp1934786933-61][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$4.processRow(ChinaTagModel.java:232) ]
+INFO:update CRPDTA.F56B4311 set PLUSD1 = 120134,PLLOTN=N'国械注进20163225157               ' where PLVR01='KS-ID8254CN' and PLLITM='26008BAC                 ' and PLLOT1='1003R7' and PLCNID='GR1902-096          ' and PLDL10='19R44'
+2020-05-13 12:28:18 下午 [Thread: qtp1934786933-62][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:134) ]
+INFO:execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-13 12:28:18 下午 [Thread: qtp1934786933-62][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetLicenseList(ChinaTagModel.java:90) ]
+INFO:select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-13 12:28:18 下午 [Thread: qtp1934786933-62][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.GetLicence(BarcodeController.java:131) ]
+INFO:{"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-13 12:28:20 下午 [Thread: qtp1934786933-59][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetOpenQty(ChinaTagModel.java:380) ]
+INFO:select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-13 12:28:20 下午 [Thread: qtp1934786933-59][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.queryForScanResult(BarcodeController.java:102) ]
+INFO:{"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-2","dIFF":"4","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
