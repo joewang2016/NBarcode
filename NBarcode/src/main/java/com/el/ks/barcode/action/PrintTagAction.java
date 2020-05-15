@@ -19,6 +19,7 @@ import org.springframework.stereotype.Service;
 
 import com.el.ks.barcode.bean.TagBean;
 import com.el.ks.barcode.bean.TagDetailBean;
+import com.el.ks.barcode.bean.TagDetailThirdBean;
 import com.el.ks.barcode.bean.TagTemplateBean;
 import com.el.ks.barcode.config.PrinterConfig;
 import com.el.ks.barcode.config.TagConfig;
@@ -26,6 +27,7 @@ import com.el.ks.barcode.config.TagDCConfig;
 import com.el.ks.barcode.config.TagLeftConfig;
 import com.el.ks.barcode.config.TagLogoConfig;
 import com.el.ks.barcode.config.TagRightConfig;
+import com.el.ks.barcode.config.TagThirdConfig;
 import com.el.ks.barcode.model.ChinaTagModel;
 import com.el.ks.barcode.service.Const;
 import com.el.ks.barcode.service.TagDetail;
@@ -53,6 +55,8 @@ public class PrintTagAction {
 	@Autowired
 	private TagDCConfig dcConfig;
 	@Autowired
+	private TagThirdConfig thirdConfig;
+	@Autowired
 	private ChinaTagModel model;
 
 	// tag content
@@ -75,24 +79,63 @@ public class PrintTagAction {
 	Map<String, String> protectMap = new HashMap<String, String>();
 
 	public void PrintTagAll() {
-		List<TagDetailBean> list = model.GetTagDetail();
+		List list = model.GetTagDetail();
 		prnBuff = new StringBuffer();
-		for (TagDetailBean ele : list) {
-			GetTagDetail(ele);
+		for (Object ele : list) {
 			BeginPrint();
-			PrintLeftPart();
-			PrintQMark();
-			PrintLogo();
-			ChangeFont(config.getFontheight(), config.getFontwidth(), 0);
-			PrintRightPart();
-			PrintRightDimensionString(StringUtils.substring(ele.getImsrp1(), 0, 1) + getKSDimensionCode());
-			PrintDimensionCode(dcConfig.getLeftmargin(), dcConfig.getTopmargin(), dcConfig.getFontheight(),
-					getKSDimensionCode());
+			if (ele instanceof TagDetailBean) {
+				TagDetailBean detail = (TagDetailBean) ele;
+				GetTagDetail(detail);
+				ChangeFont(config.getFontheight(), config.getFontwidth(), 0);
+				PrintLeftPart();
+				PrintQMark();
+				PrintLogo();
+				ChangeFont(config.getFontheight(), config.getFontwidth(), 0);
+				PrintRightPart();
+				PrintRightDimensionString(StringUtils.substring(detail.getImsrp1(), 0, 1) + getKSDimensionCode());
+				PrintDimensionCode(dcConfig.getLeftmargin(), dcConfig.getTopmargin(), dcConfig.getFontheight(),
+						getKSDimensionCode());
+			} else if (ele instanceof TagDetailThirdBean) {
+				TagDetailThirdBean detail = (TagDetailThirdBean) ele;
+				GetTagDetail(detail);
+				PrintThirdTag();
+			} else if (ele instanceof String) {
+				String detail = (String) ele;
+				ChangeFont(thirdConfig.getFontheight(), thirdConfig.getFontwidth(), 0);
+				PrintEmptyTagRow();
+			}
 			EndPrint();
 			log.info(prnBuff);
 			WriteLog();
 			PrintOut();
 		}
+	}
+
+	private void PrintEmptyTagRow() {
+		// TODO Auto-generated method stub
+
+	}
+
+	private void PrintThirdTag() {
+		// TODO Auto-generated method stub
+		for (TagTemplateBean ele : tleft) {
+			if (ele.getIndex() == 0) {
+				String desc = ele.getValue();
+				desc = desc.replace("，", ",");
+				if (desc.indexOf(",") > 0)
+					desc = desc.substring(0, desc.indexOf(","));
+				ele.setValue(desc);
+			}
+			if (ele.getIndex() == 2)
+				ele.setValue(tag.getDate());
+
+			PrintThirdRow();
+		}
+	}
+
+	private void PrintThirdRow() {
+		// TODO Auto-generated method stub
+
 	}
 
 	private void PrintOut() {
@@ -147,6 +190,13 @@ public class PrintTagAction {
 				continue;
 			if (ele.getIndex() == 4)
 				ele.setValue(tag.getDate());
+			if (ele.getIndex() == 2) {
+				String desc = ele.getValue();
+				desc = desc.replace("，", ",");
+				if (desc.indexOf(",") > 0)
+					desc = desc.substring(0, desc.indexOf(","));
+				ele.setValue(desc);
+			}
 			PrintLeftRow(ele);
 		}
 	}
@@ -183,10 +233,9 @@ public class PrintTagAction {
 		prnBuff.append("^CW1,E:FONTR.TTF\r\n");
 		prnBuff.append("^SEE:GB18030.DAT^CI28,21,36\r\n");
 		prnBuff.append("^LH10,10\r\n");
-		ChangeFont(config.getFontheight(), config.getFontwidth(), 0);
 	}
 
-	private void GetTagDetail(TagDetailBean bean) {
+	private void GetTagDetail(Object bean) {
 		if (bean == null)
 			return;
 		Class clazz = bean.getClass();
@@ -227,8 +276,8 @@ public class PrintTagAction {
 			prnBuff.append("^A@N,").append(h).append(",").append(w).append(",E:KARLSTOR.TTF\r\n");
 	}
 
-	private Integer NextRow(Integer top) {
-		top += Integer.parseInt(config.getFontheight()) + Integer.parseInt(config.getVpadding());
+	private Integer NextRow(Integer top, Integer vpadding) {
+		top += Integer.parseInt(config.getFontheight()) + vpadding;
 		return top;
 	}
 
@@ -246,15 +295,15 @@ public class PrintTagAction {
 				ChangeFont(config.getFontheight(), config.getFontwidth(), 0);
 			} else
 				PrintRow(rleft, rtop, content);
-			rtop = NextRow(rtop);
+			rtop = NextRow(rtop, Integer.parseInt(config.getVpadding()));
 		} else if (list.size() > 1) {
 			PrintRow(rleft, rtop, label);
-			rtop = NextRow(rtop);
+			rtop = NextRow(rtop, Integer.parseInt(config.getVpadding()));
 			Double len = StringLen(label);
 			Integer width = (int) (Integer.parseInt(rconfig.getWidth())
 					- len * Integer.parseInt(config.getFontwidth()));
 			PrintBlock(width, value, rtop, list.size());
-			rtop = NextRow(rtop);
+			rtop = NextRow(rtop, Integer.parseInt(config.getVpadding()));
 		}
 	}
 
@@ -271,15 +320,15 @@ public class PrintTagAction {
 			} else
 				PrintRow(lleft, ltop, content);
 			if (bean.getIndex() != 5)
-				ltop = NextRow(ltop);
+				ltop = NextRow(ltop, Integer.parseInt(config.getVpadding()));
 		} else if (list.size() > 1) {
 			PrintRow(lleft, ltop, label);
-			ltop = NextRow(ltop);
+			ltop = NextRow(ltop, Integer.parseInt(config.getVpadding()));
 			Double len = StringLen(label);
 			Integer width = (int) (Integer.parseInt(lconfig.getWidth())
 					- len * Integer.parseInt(config.getFontwidth()));
 			PrintBlock(width, value, ltop, list.size());
-			ltop = NextRow(ltop);
+			ltop = NextRow(ltop, Integer.parseInt(config.getVpadding()));
 		}
 	}
 
@@ -295,11 +344,15 @@ public class PrintTagAction {
 	}
 
 	private void PrintRow(Integer left, Integer top, String arg) {
+		PrintRow(left, top, config.getFontheight(), config.getFontwidth(), arg);
+	}
+
+	private void PrintRow(Integer left, Integer top, String height, String width, String arg) {
 		prnBuff.append("^FT");
 		if (left != 0)
 			prnBuff.append(left).append(",").append(top);
 
-		prnBuff.append("^A1N,").append(config.getFontheight()).append(",").append(config.getFontwidth());
+		prnBuff.append("^A1N,").append(height).append(",").append(width);
 		if (StringUtils.contains(arg, '~')) {
 			prnBuff.append("^FH");
 			arg = arg.replace("~", "_7E");

@@ -26,16 +26,15 @@ import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
 import com.el.ks.barcode.bean.OpenQuantityBean;
-import com.el.ks.barcode.bean.SNBean;
 import com.el.ks.barcode.bean.TagBean;
 import com.el.ks.barcode.bean.TagDetailBean;
+import com.el.ks.barcode.bean.TagDetailThirdBean;
 import com.el.ks.barcode.bean.TagScanResultBean;
 import com.el.ks.barcode.config.TagConfig;
 import com.el.ks.barcode.service.Const;
 import com.el.ks.barcode.service.TagDetail;
 import com.el.ks.barcode.util.DateFormat;
 import com.el.ks.barcode.util.DateTool;
-import com.el.ks.barcode.util.SNParaseUtil;
 import com.el.ks.barcode.util.StringTool;
 import com.zaxxer.hikari.HikariDataSource;
 
@@ -277,7 +276,7 @@ public class ChinaTagModel {
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public List<TagDetailBean> GetTagDetail() {
+	public List GetTagDetail() {
 
 		List lstatus = ExecStoreGetLicenseStatus();
 		Map row = (HashMap) lstatus.get(0);
@@ -285,36 +284,71 @@ public class ChinaTagModel {
 		String CFDAStus = (String) row.get("CFDAStus");
 		String LabelTy = (String) row.get("LabelTy");
 
-		String szLotn = "";
-		if (CFDAID.compareTo(" ") > 0)
-			szLotn = "RDLOTN=N'" + CFDAID + "'";
-		else
-			szLotn = "1=1";
+		String sql = "";
+		List lresult = new ArrayList();
 
-		String sql = "select * from %s.F550002 inner join %s.F550001 on RDLOTN=RHLOTN inner join %s.F4101 on RDITM=IMITM where RDLITM='%s' "
-				+ "and %s and RDSRP6='%s'";
-		sql = String.format(sql, schema, schema, schema, tag.getEntity().getLitm(), szLotn, CFDAStus);
-		log.info(sql);
+		if ("T".equals(LabelTy) && CFDAID.compareTo(" ") <= 0) {
+			sql = "select IMDSC1,IMDSC2 from %s.F4101 where IMLITM='%s'";
+			sql = String.format(sql, schema, tag.getEntity().getLitm());
+			log.info(sql);
+			jdbcTemplate.query(sql, new RowCallbackHandler() {
 
-		List<TagDetailBean> lresult = new ArrayList<TagDetailBean>();
+				@Override
+				public void processRow(ResultSet rs) throws SQLException {
+					// TODO Auto-generated method stub
+					String desc = StringUtils.join(rs.getString("IMDSC1"), rs.getString("IMDSC2"));
+					if (StringUtils.compare(desc, " ") > 0) {
+						lresult.add("产品名称: " + desc);
+						lresult.add("型号: " + tag.getEntity().getLitm());
+						lresult.add("生产日期: " + tag.getDate());
+						lresult.add("销售商名称: 卡尔史托斯内窥镜（上海）有限公司");
+						lresult.add("销售商联系方式: 800-819-9500/400-670-9500");
+						lresult.add("销售商住所: 中国（上海）自由贸易试验区龙东大道3000号5号楼701A室");
+					}
+				}
+			});
+		} else if (LabelTy.compareTo(" ") > 0) {
+			String szLotn = "";
+			if (CFDAID.compareTo(" ") > 0)
+				szLotn = "RDLOTN=N'" + CFDAID + "'";
+			else
+				szLotn = "1=1";
 
-		jdbcTemplate.query(sql, new RowCallbackHandler() {
+			sql = "select * from %s.F550002 inner join %s.F550001 on RDLOTN=RHLOTN inner join %s.F4101 on RDITM=IMITM where RDLITM='%s' "
+					+ "and %s and RDSRP6='%s'";
+			sql = String.format(sql, schema, schema, schema, tag.getEntity().getLitm(), szLotn, CFDAStus);
+			log.info(sql);
+			if (CFDAStus.equals("Y"))
+				jdbcTemplate.query(sql, new RowCallbackHandler() {
 
-			@Override
-			public void processRow(ResultSet rs) throws SQLException {
-				// TODO Auto-generated method stub
-				System.out.println("Query");
-				TagDetailBean detail = new TagDetailBean();
-				WrapTagDetail(rs, detail);
-				log.info(detail);
-				lresult.add(detail);
-			}
-		});
+					@Override
+					public void processRow(ResultSet rs) throws SQLException {
+						// TODO Auto-generated method stub
+						System.out.println("Query");
+						TagDetailBean detail = new TagDetailBean();
+						WrapTagDetail(rs, detail);
+						log.info(detail);
+						lresult.add(detail);
+					}
+				});
+			else
+				jdbcTemplate.query(sql, new RowCallbackHandler() {
 
+					@Override
+					public void processRow(ResultSet rs) throws SQLException {
+						// TODO Auto-generated method stub
+						System.out.println("Query");
+						TagDetailThirdBean detail = new TagDetailThirdBean();
+						WrapTagDetail(rs, detail);
+						log.info(detail);
+						lresult.add(detail);
+					}
+				});
+		}
 		return lresult;
 	}
 
-	private void WrapTagDetail(ResultSet rs, TagDetailBean bean) {
+	private void WrapTagDetail(ResultSet rs, Object bean) {
 		if (bean == null)
 			return;
 		Class clazz = bean.getClass();

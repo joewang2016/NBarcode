@@ -1064,3 +1064,275 @@
 2020-05-15 00:58:09,753 [qtp995025211-244] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/Desktop/tmp2672007855498770001.txt
 2020-05-15 00:58:09,790 [qtp995025211-247] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
 2020-05-15 00:58:09,871 [qtp995025211-247] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-1","dIFF":"3","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-15 14:36:55,859 [qtp98337044-24] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:36:55,871 [qtp98337044-24] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:36:56,533 [qtp98337044-24] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F554101A where MALITM='' and MAEV01='Y'
+2020-05-15 14:36:57,407 [qtp98337044-24] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 14:36:57,422 [qtp98337044-26] INFO  [com.el.ks.barcode.controller.BarcodeController] - TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-15, pages=1, countnb=1, printer=WG, message=4026008BAC(21)1003R7, entity=null, license=null)
+2020-05-15 14:36:57,425 [qtp98337044-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:36:57,426 [qtp98337044-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:36:57,476 [qtp98337044-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='' and ABLOTN='9999'
+2020-05-15 14:36:57,547 [qtp98337044-24] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='' and RDSRP6=''
+2020-05-15 14:36:57,747 [qtp98337044-24] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":" ","rHLOTN":" ","rDLITM":" ","rHALPH":" ","rDAITM":" ","rDSRP6":" ","rHEFFT":" "}],"total":1}
+2020-05-15 14:38:13,024 [qtp98337044-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-15 14:38:14,031 [qtp98337044-26] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-1","dIFF":"3","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-15 14:38:16,983 [qtp98337044-24] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:38:16,983 [qtp98337044-24] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:38:16,988 [qtp98337044-24] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F554101A where MALITM='' and MAEV01='Y'
+2020-05-15 14:38:17,031 [qtp98337044-26] INFO  [com.el.ks.barcode.controller.BarcodeController] - TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-15, pages=1, countnb=0, printer=WG, message= 4026008BAC(21)1003R7, entity=null, license=null)
+2020-05-15 14:38:17,034 [qtp98337044-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:38:17,035 [qtp98337044-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:38:17,047 [qtp98337044-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='' and ABLOTN='9999'
+2020-05-15 14:38:17,097 [qtp98337044-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 14:38:17,128 [qtp98337044-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='' and RDSRP6=''
+2020-05-15 14:38:17,141 [qtp98337044-22] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":" ","rHLOTN":" ","rDLITM":" ","rHALPH":" ","rDAITM":" ","rDSRP6":" ","rHEFFT":" "}],"total":1}
+2020-05-15 14:39:19,040 [qtp98337044-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:39:19,044 [qtp98337044-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:39:19,051 [qtp98337044-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F554101A where MALITM='' and MAEV01='Y'
+2020-05-15 14:39:19,093 [qtp98337044-24] INFO  [com.el.ks.barcode.controller.BarcodeController] - TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-15, pages=1, countnb=0, printer=WG, message= 4026008BAC(21)1003R7, entity=null, license=null)
+2020-05-15 14:39:19,093 [qtp98337044-24] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:39:19,094 [qtp98337044-24] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 4026008BAC(21)1003R7
+2020-05-15 14:39:19,105 [qtp98337044-24] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='' and ABLOTN='9999'
+2020-05-15 14:39:19,218 [qtp98337044-39] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 14:39:19,246 [qtp98337044-39] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='' and RDSRP6=''
+2020-05-15 14:39:19,272 [qtp98337044-39] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":" ","rHLOTN":" ","rDLITM":" ","rHALPH":" ","rDAITM":" ","rDSRP6":" ","rHEFFT":" "}],"total":1}
+2020-05-15 14:40:45,134 [qtp98337044-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 24026008BAC(21)1003R7
+2020-05-15 14:40:45,137 [qtp98337044-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)26008BAC(21)1003R7
+2020-05-15 14:40:45,142 [qtp98337044-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-15 14:40:45,207 [qtp98337044-21] INFO  [com.el.ks.barcode.controller.BarcodeController] - TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-15, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-15 14:40:45,208 [qtp98337044-21] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 24026008BAC(21)1003R7
+2020-05-15 14:40:45,209 [qtp98337044-21] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)26008BAC(21)1003R7
+2020-05-15 14:40:45,344 [qtp98337044-39] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 14:40:45,378 [qtp98337044-39] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-15 14:40:45,406 [qtp98337044-39] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-15 14:40:49,382 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-15 14:41:06,142 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-15 14:41:06,208 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-15 14:41:06,323 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-15 14:41:06,431 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-15 14:41:06,451 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 14:41:06,488 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-15 14:41:06,504 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120136 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-15 14:41:06,532 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - ********************
+2020-05-15 14:41:06,533 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-15, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn= 24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-15 14:41:06,533 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - ********************
+2020-05-15 14:41:06,534 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-15 14:41:06,559 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - insert into CRPDTA.F56B4311 (PLEV01,PLVR01,PLDOCO,PLKCOO,PLDCTO,PLLITM,PLUORG,PLLOT1,PLLOCN,PLCNID,PLURDT,PLDGL,PLDL10,PLUSD1,PLURAT,PLURRF,PLINIKEY,PLPID,PLUSER,PLUPMJ,PLUPMT,PLIR05,PLMCU,PLLOTN,PLURCD,PLDL12) values ('0','KS-ID8254CN','18601278','00430','OF','26008BAC                 ','0','1003R7','1000                ','GR1902-096          ','119045','119045','19R44','120136','100','WG',newid(),'BARCODE',' ',120136,144106,'92463335                      ','      430903',N'国械注进20163225157               ','Y     ','26008BAC                 ')
+2020-05-15 14:41:06,642 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - update CRPDTA.F56B4310 set ABEV01='1',ABMATH01=ABMATH01+0 where ABDOCO='18601278' and ABDCTO='OF' and ABKCOO='00430' and ABLITM='26008BAC                 ' and ABUKID=135218
+2020-05-15 14:41:06,674 [qtp98337044-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - update CRPDTA.F56B4311 set PLUSD1 = 120136,PLLOTN=N'国械注进20163225157               ' where PLVR01='KS-ID8254CN' and PLLITM='26008BAC                 ' and PLLOT1='1003R7' and PLCNID='GR1902-096          ' and PLDL10='19R44'
+2020-05-15 14:43:09,398 [qtp1321855456-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 24026008BAC(21)1003R7
+2020-05-15 14:43:09,405 [qtp1321855456-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)26008BAC(21)1003R7
+2020-05-15 14:43:09,874 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-15 14:43:10,441 [qtp1321855456-26] INFO  [com.el.ks.barcode.controller.BarcodeController] - TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-15, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-15 14:43:10,445 [qtp1321855456-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 24026008BAC(21)1003R7
+2020-05-15 14:43:10,446 [qtp1321855456-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)26008BAC(21)1003R7
+2020-05-15 14:43:10,541 [qtp1321855456-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 14:43:10,644 [qtp1321855456-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-15 14:43:10,845 [qtp1321855456-21] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-15 14:43:15,987 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-15 14:43:20,909 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-15 14:43:20,938 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-15 14:43:20,953 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-15 14:43:20,998 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-15 14:43:21,010 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 14:43:21,035 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-15 14:43:21,051 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120136 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-15 14:43:21,062 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - ********************
+2020-05-15 14:43:21,063 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-15, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn= 24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-15 14:43:21,064 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - ********************
+2020-05-15 14:43:21,064 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-15 14:43:21,083 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - insert into CRPDTA.F56B4311 (PLEV01,PLVR01,PLDOCO,PLKCOO,PLDCTO,PLLITM,PLUORG,PLLOT1,PLLOCN,PLCNID,PLURDT,PLDGL,PLDL10,PLUSD1,PLURAT,PLURRF,PLINIKEY,PLPID,PLUSER,PLUPMJ,PLUPMT,PLIR05,PLMCU,PLLOTN,PLURCD,PLDL12) values ('0','KS-ID8254CN','18601278','00430','OF','26008BAC                 ','0','1003R7','1000                ','GR1902-096          ','119045','119045','19R44','120136','100','WG',newid(),'BARCODE',' ',120136,144321,'92463335                      ','      430903',N'国械注进20163225157               ','Y     ','26008BAC                 ')
+2020-05-15 14:43:21,126 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - update CRPDTA.F56B4310 set ABEV01='1',ABMATH01=ABMATH01+0 where ABDOCO='18601278' and ABDCTO='OF' and ABKCOO='00430' and ABLITM='26008BAC                 ' and ABUKID=135218
+2020-05-15 14:43:21,140 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - update CRPDTA.F56B4311 set PLUSD1 = 120136,PLLOTN=N'国械注进20163225157               ' where PLVR01='KS-ID8254CN' and PLLITM='26008BAC                 ' and PLLOT1='1003R7' and PLCNID='GR1902-096          ' and PLDL10='19R44'
+2020-05-15 14:43:21,173 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 14:43:32,324 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from CRPDTA.F550002 inner join CRPDTA.F550001 on RDLOTN=RHLOTN inner join CRPDTA.F4101 on RDITM=IMITM where RDLITM='26008BAC' and RDLOTN=N'国械注进20163225157' and RDSRP6='Y'
+2020-05-15 14:43:34,207 [qtp1321855456-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=宫腔电切镜及附件, rdaitm=26008BAC, rdagen=HOPKINS II 30°内窥镜，直径2.9mm，长度240mm，广角，带光纤接口，颜色标识：红，可高温高压消毒, rhlotn=国械注进20163225157, date=, rdcmddsc01=见说明书, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8,78532 Tuttlingen,Germany, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区龙东大道3000号5号楼701A室, imsrp1=LAC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=26008BAC)
+2020-05-15 14:43:39,993 [qtp1321855456-26] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 宫腔电切镜及附件^FS
+^FT20,67^A1N,25,24^FD规格型号: 26008BAC^FS
+^FT20,104^A1N,25,24^FD产品描述: HOPKINS II 30°内窥镜^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20163225157^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-05-15^FS
+^FT^A1N,25,24^FD    使用期限: 见说明书^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8,78532 Tuttlingen,Germany^FS
+^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区龙东大道3000号5号楼701A室^FS
+^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
+^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDC^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
+^FT745,365^A1N,25,24^FD订货号: 26008BAC^FS
+^FT20,680^A1N,25,24^FB1200,1,,R
+^FDL(240)26008BAC(21)1003R7^FS
+^FT825,642
+^BXN,8,200
+^FD(240)26008BAC(21)1003R7^KS
+^MMC
+^XZ
+
+2020-05-15 14:43:40,009 [qtp1321855456-26] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/Desktop/tmp8487572167863573258.txt
+2020-05-15 14:43:40,087 [qtp1321855456-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-15 14:43:40,158 [qtp1321855456-22] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-1","dIFF":"3","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-15 14:49:10,551 [qtp1549019658-193] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 24026008BAC(21)1003R7
+2020-05-15 14:49:10,555 [qtp1549019658-193] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)26008BAC(21)1003R7
+2020-05-15 14:49:10,586 [qtp1549019658-193] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-15 14:49:10,776 [qtp1549019658-189] INFO  [com.el.ks.barcode.controller.BarcodeController] - TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-15, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-15 14:49:10,778 [qtp1549019658-189] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 24026008BAC(21)1003R7
+2020-05-15 14:49:10,778 [qtp1549019658-189] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)26008BAC(21)1003R7
+2020-05-15 14:49:10,793 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-15 14:49:10,805 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-15 14:49:10,896 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-15 14:49:10,904 [qtp1549019658-188] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 14:49:10,910 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-15 14:49:10,943 [qtp1549019658-188] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-15 14:49:10,960 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-15 14:49:10,967 [qtp1549019658-188] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-15 14:49:10,972 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 14:49:10,995 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-15 14:49:11,009 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120136 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-15 14:49:11,019 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - ********************
+2020-05-15 14:49:11,019 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-15, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn= 24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-15 14:49:11,020 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - ********************
+2020-05-15 14:49:11,020 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-15 14:49:11,036 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - insert into CRPDTA.F56B4311 (PLEV01,PLVR01,PLDOCO,PLKCOO,PLDCTO,PLLITM,PLUORG,PLLOT1,PLLOCN,PLCNID,PLURDT,PLDGL,PLDL10,PLUSD1,PLURAT,PLURRF,PLINIKEY,PLPID,PLUSER,PLUPMJ,PLUPMT,PLIR05,PLMCU,PLLOTN,PLURCD,PLDL12) values ('0','KS-ID8254CN','18601278','00430','OF','26008BAC                 ','0','1003R7','1000                ','GR1902-096          ','119045','119045','19R44','120136','100','WG',newid(),'BARCODE',' ',120136,144911,'92463335                      ','      430903',N'国械注进20163225157               ','Y     ','26008BAC                 ')
+2020-05-15 14:49:11,066 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - update CRPDTA.F56B4310 set ABEV01='1',ABMATH01=ABMATH01+0 where ABDOCO='18601278' and ABDCTO='OF' and ABKCOO='00430' and ABLITM='26008BAC                 ' and ABUKID=135218
+2020-05-15 14:49:11,080 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - update CRPDTA.F56B4311 set PLUSD1 = 120136,PLLOTN=N'国械注进20163225157               ' where PLVR01='KS-ID8254CN' and PLLITM='26008BAC                 ' and PLLOT1='1003R7' and PLCNID='GR1902-096          ' and PLDL10='19R44'
+2020-05-15 14:49:11,185 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 14:49:16,127 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from CRPDTA.F550002 inner join CRPDTA.F550001 on RDLOTN=RHLOTN inner join CRPDTA.F4101 on RDITM=IMITM where RDLITM='26008BAC' and RDLOTN=N'国械注进20163225157' and RDSRP6='Y'
+2020-05-15 14:49:16,166 [qtp1549019658-189] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=宫腔电切镜及附件, rdaitm=26008BAC, rdagen=HOPKINS II 30°内窥镜，直径2.9mm，长度240mm，广角，带光纤接口，颜色标识：红，可高温高压消毒, rhlotn=国械注进20163225157, date=, rdcmddsc01=见说明书, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8,78532 Tuttlingen,Germany, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区龙东大道3000号5号楼701A室, imsrp1=LAC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=26008BAC)
+2020-05-15 14:49:16,169 [qtp1549019658-189] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 宫腔电切镜及附件^FS
+^FT20,67^A1N,25,24^FD规格型号: 26008BAC^FS
+^FT20,104^A1N,25,24^FD产品描述: HOPKINS II 30°内窥镜^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20163225157^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-05-15^FS
+^FT^A1N,25,24^FD    使用期限: 见说明书^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8,78532 Tuttlingen,Germany^FS
+^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区龙东大道3000号5号楼701A室^FS
+^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
+^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDC^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
+^FT745,365^A1N,25,24^FD订货号: 26008BAC^FS
+^FT20,680^A1N,25,24^FB1200,1,,R
+^FDL(240)26008BAC(21)1003R7^FS
+^FT825,642
+^BXN,8,200
+^FD(240)26008BAC(21)1003R7^KS
+^MMC
+^XZ
+
+2020-05-15 14:49:16,174 [qtp1549019658-189] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/Desktop/tmp7070560487209145146.txt
+2020-05-15 14:49:16,232 [qtp1549019658-192] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-15 14:49:16,420 [qtp1549019658-192] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-1","dIFF":"3","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
+2020-05-15 16:15:27,841 [qtp990737015-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 24026008BAC(21)1003R7
+2020-05-15 16:15:27,865 [qtp990737015-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)26008BAC(21)1003R7
+2020-05-15 16:15:28,275 [qtp990737015-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F554101A where MALITM='26008BAC' and MAEV01='Y'
+2020-05-15 16:15:28,928 [qtp990737015-22] INFO  [com.el.ks.barcode.controller.BarcodeController] - TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-15, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=null, license=null)
+2020-05-15 16:15:28,932 [qtp990737015-22] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 24026008BAC(21)1003R7
+2020-05-15 16:15:28,933 [qtp990737015-22] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)26008BAC(21)1003R7
+2020-05-15 16:15:28,954 [qtp990737015-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 16:15:29,013 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F56B4310 where ABVR01='KS-ID8254CN' and ABDL10='19R44' and ABLITM='26008BAC' and ABLOTN='1003R7'
+2020-05-15 16:15:29,049 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select sum(PLUORG)/100 PLUORG from CRPDTA.F56B4311 where PLLITM='26008BAC' and PLLOT1='1003R7' and PLEV01!='4' and PLDL10='19R44'
+2020-05-15 16:15:29,335 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select 1 from CRPDTA.F4311 inner join (select distinct ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO where PDLTTR!='980' and PDUOPN!=0
+2020-05-15 16:15:29,353 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from (select sum(PDUOPN) PDUOPN,ABDL10,ABVR01,PDLITM,ABCNID from CRPDTA.F4311 inner join (select distinct ABLITM,ABDL10,ABVR01,ABCNID,ABKCOO,ABDCTO,ABDOCO from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC') V1 on PDDOCO=ABDOCO and PDDCTO=ABDCTO and PDKCOO=ABKCOO and ABLITM=PDLITM where PDLTTR!='980' and PDUOPN!=0 group by ABDL10,ABVR01,PDLITM,ABCNID) V3 left join (select sum(PLUORG) PLUORG,PLDL10,PLVR01,PLLITM,PLCNID from CRPDTA.F56B4311 where PLEV01!='3' and PLDL10='19R44' and PLVR01='KS-ID8254CN' and PLLITM='26008BAC' and PLEV01!='4' and PLUORG!=0 group by PLDL10,PLVR01,PLLITM,PLCNID) V2 on ABDL10=PLDL10 and ABVR01=PLVR01 and PLLITM=PDLITM
+2020-05-15 16:15:29,389 [qtp990737015-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-15 16:15:29,400 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select sum(ABUORG)/100 PDUOPN,ABDL10,ABVR01,ABLITM,ABCNID from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' group by ABDL10,ABVR01,ABLITM,ABCNID
+2020-05-15 16:15:29,412 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 16:15:29,440 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select RHLOTN,RHALPH,RDAITM,RDLITM,RDADD4,RHEFFT,RDSRP6 from CRPDTA.F56B4310 inner join CRPDTA.F550002 on ABDL01=RDLOTN and ABLITM=RDLITM inner join CRPDTA.F550001 on RDLOTN=RHLOTN where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and RDSRP6='Y'
+2020-05-15 16:15:29,453 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select SLLOT1 from CRPDTA.F56B4313 where SLUPMJ=120136 and SLVR01='KS-ID8254CN' and SLLITM='26008BAC'
+2020-05-15 16:15:29,466 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - ********************
+2020-05-15 16:15:29,467 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagBean(dl01=19R44, vr01=KS-ID8254CN, date=2020-05-15, pages=1, countnb=0, printer=WG, message= 24026008BAC(21)1003R7, entity=SNBean(sn= 24026008BAC(21)1003R7, litm=26008BAC, lotn=1003R7, lot1=1003R7, tag=21), license=null)
+2020-05-15 16:15:29,467 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - ********************
+2020-05-15 16:15:29,468 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select F56B4310.*,(ABUORG-ABMATH01) ABUOPN from CRPDTA.F56B4310 where ABDL10='19R44' and ABVR01='KS-ID8254CN' and ABLITM='26008BAC' and (1=1) and ABLOTN='1003R7'
+2020-05-15 16:15:29,488 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - insert into CRPDTA.F56B4311 (PLEV01,PLVR01,PLDOCO,PLKCOO,PLDCTO,PLLITM,PLUORG,PLLOT1,PLLOCN,PLCNID,PLURDT,PLDGL,PLDL10,PLUSD1,PLURAT,PLURRF,PLINIKEY,PLPID,PLUSER,PLUPMJ,PLUPMT,PLIR05,PLMCU,PLLOTN,PLURCD,PLDL12) values ('0','KS-ID8254CN','18601278','00430','OF','26008BAC                 ','0','1003R7','1000                ','GR1902-096          ','119045','119045','19R44','120136','100','WG',newid(),'BARCODE',' ',120136,161529,'92463335                      ','      430903',N'国械注进20163225157               ','Y     ','26008BAC                 ')
+2020-05-15 16:15:29,499 [qtp990737015-21] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"},{"rDADD4":"B91_V1                                  ","rHLOTN":"国械注进20163225157               ","rDLITM":"26008BAC                 ","rHALPH":"宫腔电切镜及附件                                ","rDAITM":"26008BAC                 ","rDSRP6":"Y     ","rHEFFT":"12/27/2021"}],"total":2}
+2020-05-15 16:15:29,534 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - update CRPDTA.F56B4310 set ABEV01='1',ABMATH01=ABMATH01+0 where ABDOCO='18601278' and ABDCTO='OF' and ABKCOO='00430' and ABLITM='26008BAC                 ' and ABUKID=135218
+2020-05-15 16:15:29,548 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - update CRPDTA.F56B4311 set PLUSD1 = 120136,PLLOTN=N'国械注进20163225157               ' where PLVR01='KS-ID8254CN' and PLLITM='26008BAC                 ' and PLLOT1='1003R7' and PLCNID='GR1902-096          ' and PLDL10='19R44'
+2020-05-15 16:15:29,582 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute CRPDTA.BarcodeLabel ?,?,?,?
+2020-05-15 16:15:29,605 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from CRPDTA.F550002 inner join CRPDTA.F550001 on RDLOTN=RHLOTN inner join CRPDTA.F4101 on RDITM=IMITM where RDLITM='26008BAC' and RDLOTN=N'国械注进20163225157' and RDSRP6='Y'
+2020-05-15 16:15:29,633 [qtp990737015-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=宫腔电切镜及附件, rdaitm=26008BAC, rdagen=HOPKINS II 30°内窥镜，直径2.9mm，长度240mm，广角，带光纤接口，颜色标识：红，可高温高压消毒, rhlotn=国械注进20163225157, date=, rdcmddsc01=见说明书, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8,78532 Tuttlingen,Germany, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区龙东大道3000号5号楼701A室, imsrp1=LAC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=26008BAC)
+2020-05-15 16:15:29,638 [qtp990737015-22] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 宫腔电切镜及附件^FS
+^FT20,67^A1N,25,24^FD规格型号: 26008BAC^FS
+^FT20,104^A1N,25,24^FD产品描述: HOPKINS II 30°内窥镜^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20163225157^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-05-15^FS
+^FT^A1N,25,24^FD    使用期限: 见说明书^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8,78532 Tuttlingen,Germany^FS
+^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区龙东大道3000号5号楼701A室^FS
+^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
+^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDC^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
+^FT745,365^A1N,25,24^FD订货号: 26008BAC^FS
+^FT20,680^A1N,25,24^FB1200,1,,R
+^FDL(240)26008BAC(21)1003R7^FS
+^FT825,642
+^BXN,8,200
+^FD(240)26008BAC(21)1003R7^KS
+^MMC
+^XZ
+
+2020-05-15 16:15:29,650 [qtp990737015-22] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/Desktop/tmp2065066911798763351.txt
+2020-05-15 16:15:29,694 [qtp990737015-25] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from View_Barcode_Label_ScanList where ABDL10='19R44' and ABVR01='KS-ID8254CN'
+2020-05-15 16:15:29,757 [qtp990737015-25] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"lITM":"26008BAC                 ","cNID":"GR1902-096          ","dL10":"19R44                         ","uORG":"-1","dIFF":"3","vR01":"KS-ID8254CN              ","pQOH":"2"}],"total":1}
