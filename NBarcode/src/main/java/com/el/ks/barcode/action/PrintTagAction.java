@@ -27,7 +27,7 @@ import com.el.ks.barcode.config.TagDCConfig;
 import com.el.ks.barcode.config.TagLeftConfig;
 import com.el.ks.barcode.config.TagLogoConfig;
 import com.el.ks.barcode.config.TagRightConfig;
-import com.el.ks.barcode.config.TagThirdConfig;
+import com.el.ks.barcode.config.TagEmptyConfig;
 import com.el.ks.barcode.model.ChinaTagModel;
 import com.el.ks.barcode.service.Const;
 import com.el.ks.barcode.service.TagDetail;
@@ -55,7 +55,7 @@ public class PrintTagAction {
 	@Autowired
 	private TagDCConfig dcConfig;
 	@Autowired
-	private TagThirdConfig thirdConfig;
+	private TagEmptyConfig emptyConfig;
 	@Autowired
 	private ChinaTagModel model;
 
@@ -74,6 +74,8 @@ public class PrintTagAction {
 	Integer ltop = 0;
 	Integer rleft = 0;
 	Integer rtop = 0;
+	Integer etop = 0;
+	Integer eleft = 0;
 	String filename = "";
 
 	Map<String, String> protectMap = new HashMap<String, String>();
@@ -81,8 +83,10 @@ public class PrintTagAction {
 	public void PrintTagAll() {
 		List list = model.GetTagDetail();
 		prnBuff = new StringBuffer();
+		BeginPrint();
+		ChangeFont(emptyConfig.getFontheight(), emptyConfig.getFontwidth(), 0);
+		Boolean empty = false;
 		for (Object ele : list) {
-			BeginPrint();
 			if (ele instanceof TagDetailBean) {
 				TagDetailBean detail = (TagDetailBean) ele;
 				GetTagDetail(detail);
@@ -101,19 +105,34 @@ public class PrintTagAction {
 				PrintThirdTag();
 			} else if (ele instanceof String) {
 				String detail = (String) ele;
-				ChangeFont(thirdConfig.getFontheight(), thirdConfig.getFontwidth(), 0);
-				PrintEmptyTagRow();
+				PrintEmptyTagRow(detail);
+				empty = true;
 			}
-			EndPrint();
-			log.info(prnBuff);
-			WriteLog();
-			PrintOut();
 		}
+		if (empty) {
+			PrintLogo();
+			PrintRightDimensionString(emptyConfig.getFontheight(), emptyConfig.getFontwidth(), emptyConfig.getWidth(),
+					getKSDimensionCode());
+			PrintDimensionCode(dcConfig.getLeftmargin(), dcConfig.getTopmargin(), dcConfig.getFontheight(),
+					getKSDimensionCode());
+		}
+		EndPrint();
+		log.info(prnBuff);
+		WriteLog();
+		PrintOut();
 	}
 
-	private void PrintEmptyTagRow() {
+	private void PrintEmptyTagRow(String detail) {
 		// TODO Auto-generated method stub
-
+		List<String> list = this.LineBreak(detail, Integer.parseInt(emptyConfig.getChars()));
+		if (list.size() == 1) {
+			PrintRow(eleft, etop, emptyConfig.getFontheight(), emptyConfig.getFontwidth(), detail);
+			etop = NextRow(etop, Integer.parseInt(emptyConfig.getVpadding()));
+		} else {
+			etop = NextRow(etop, Integer.parseInt(emptyConfig.getVpadding()));
+			PrintBlock(Integer.parseInt(emptyConfig.getWidth()), eleft, etop, emptyConfig.getFontheight(),
+					emptyConfig.getFontwidth(), emptyConfig.getVpadding(), detail);
+		}
 	}
 
 	private void PrintThirdTag() {
@@ -174,9 +193,15 @@ public class PrintTagAction {
 
 	private void PrintRightDimensionString(String arg) {
 		// TODO Auto-generated method stub
+
+		PrintRightDimensionString(config.getFontheight(), config.getFontwidth(), dcConfig.getStrwidth(), arg);
+	}
+
+	private void PrintRightDimensionString(String fheight, String fwidth, String width, String arg) {
+		// TODO Auto-generated method stub
 		prnBuff.append("^FT").append(dcConfig.getStrleft()).append(",").append(dcConfig.getStrtop());
-		prnBuff.append("^A1N,").append(config.getFontheight()).append(",").append(config.getFontwidth());
-		prnBuff.append("^FB").append(dcConfig.getStrwidth()).append(",1,,R\r\n");
+		prnBuff.append("^A1N,").append(fheight).append(",").append(fwidth);
+		prnBuff.append("^FB").append(width).append(",1,,R\r\n");
 		if (StringUtils.contains(arg, '~')) {
 			prnBuff.append("^FH");
 			arg = arg.replace("~", "_7E");
@@ -213,6 +238,8 @@ public class PrintTagAction {
 		ltop = Integer.parseInt(lconfig.getTopmargin());
 		rleft = Integer.parseInt(rconfig.getLeftmargin());
 		rtop = Integer.parseInt(rconfig.getTopmargin());
+		eleft = Integer.parseInt(emptyConfig.getLeftmargin());
+		etop = Integer.parseInt(emptyConfig.getTopmargin());
 		protectMap.put("B", "B");
 		protectMap.put("BF", "C");
 		protectMap.put("CF", "D");
@@ -302,7 +329,7 @@ public class PrintTagAction {
 			Double len = StringLen(label);
 			Integer width = (int) (Integer.parseInt(rconfig.getWidth())
 					- len * Integer.parseInt(config.getFontwidth()));
-			PrintBlock(width, value, rtop, list.size());
+			PrintBlock(width, rtop, value);
 			rtop = NextRow(rtop, Integer.parseInt(config.getVpadding()));
 		}
 	}
@@ -327,7 +354,7 @@ public class PrintTagAction {
 			Double len = StringLen(label);
 			Integer width = (int) (Integer.parseInt(lconfig.getWidth())
 					- len * Integer.parseInt(config.getFontwidth()));
-			PrintBlock(width, value, ltop, list.size());
+			PrintBlock(width, ltop, value);
 			ltop = NextRow(ltop, Integer.parseInt(config.getVpadding()));
 		}
 	}
@@ -360,10 +387,26 @@ public class PrintTagAction {
 		prnBuff.append("^FD").append(arg).append("^FS\r\n");
 	}
 
-	private void PrintBlock(Integer width, String arg, Integer top, Integer lines) {
-		prnBuff.append("^FT,").append(top).append("^A1N,").append(config.getFontheight()).append(",")
-				.append(config.getFontwidth());
-		prnBuff.append("^FB").append(width).append(",2,").append(config.getVpadding()).append(",\r\n");
+	private void PrintBlock(Integer width, Integer top, String arg) {
+		PrintBlock(width, top, config.getFontheight(), config.getFontwidth(), config.getVpadding(), arg);
+	}
+
+	private void PrintBlock(Integer width, Integer top, String fheight, String fwidth, String vpadding, String arg) {
+		prnBuff.append("^FT,").append(top).append("^A1N,").append(fheight).append(",").append(fwidth);
+		prnBuff.append("^FB").append(width).append(",2,").append(vpadding).append(",\r\n");
+
+		if (StringUtils.contains(arg, '~')) {
+			prnBuff.append("^FH");
+			arg = arg.replace("~", "_7E");
+		}
+		prnBuff.append("^FD").append(arg.trim()).append("^FS\r\n");
+	}
+
+	private void PrintBlock(Integer width, Integer left, Integer top, String fheight, String fwidth, String vpadding,
+			String arg) {
+		prnBuff.append("^FT").append(left).append(",").append(top).append("^A1N,").append(fheight).append(",")
+				.append(fwidth);
+		prnBuff.append("^FB").append(width).append(",2,").append(vpadding).append(",\r\n");
 
 		if (StringUtils.contains(arg, '~')) {
 			prnBuff.append("^FH");

@@ -284,6 +284,9 @@ public class ChinaTagModel {
 		String CFDAStus = (String) row.get("CFDAStus");
 		String LabelTy = (String) row.get("LabelTy");
 
+		LabelTy = "T";
+		CFDAID = " ";
+
 		String sql = "";
 		List lresult = new ArrayList();
 
@@ -296,7 +299,7 @@ public class ChinaTagModel {
 				@Override
 				public void processRow(ResultSet rs) throws SQLException {
 					// TODO Auto-generated method stub
-					String desc = StringUtils.join(rs.getString("IMDSC1"), rs.getString("IMDSC2"));
+					String desc = StringUtils.join(rs.getString("IMDSC1").trim(), rs.getString("IMDSC2").trim());
 					if (StringUtils.compare(desc, " ") > 0) {
 						lresult.add("产品名称: " + desc);
 						lresult.add("型号: " + tag.getEntity().getLitm());
