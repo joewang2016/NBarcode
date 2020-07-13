@@ -187,4 +187,18 @@ public class BarcodeController {
 		}
 		return Const.SUCCESS;
 	}
+
+	@PostMapping(value = "reprintzj")
+	@ResponseBody
+	public String ReprintZJ(@RequestBody TagBean tag) {
+		tagAction.setTag(tag);
+		int p = Integer.parseInt(tag.getPages());
+		if (p > 0) {
+			for (int i = 0; i < p; i++) {
+				printAction.setTag(tag);
+				printAction.PrintTagAll(true);
+			}
+		}
+		return Const.SUCCESS;
+	}
 }

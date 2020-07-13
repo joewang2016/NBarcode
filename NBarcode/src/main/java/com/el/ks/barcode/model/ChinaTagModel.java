@@ -26,6 +26,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
+import com.el.ks.barcode.bean.F56C4311Bean;
 import com.el.ks.barcode.bean.OpenQuantityBean;
 import com.el.ks.barcode.bean.SNBean;
 import com.el.ks.barcode.bean.TagBean;
@@ -61,7 +62,7 @@ public class ChinaTagModel {
 
 	private String schema;
 
-	private String user = " ";
+	private String user = "LABEL";
 	@Setter
 	private TagBean tag;
 
@@ -280,8 +281,12 @@ public class ChinaTagModel {
 		}
 	}
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List GetTagDetail() {
+		return GetTagDetail(false);
+	}
+
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	public List GetTagDetail(Boolean reprint) {
 
 		List lresult = new ArrayList();
 		if (tag.getDate() == null) {
@@ -302,8 +307,11 @@ public class ChinaTagModel {
 			});
 			return lresult;
 		}
-
-		List lstatus = ExecStoreGetLicenseStatus();
+		List lstatus = null;
+		if (!reprint)
+			lstatus = ExecStoreGetLicenseStatus();
+		else
+			lstatus = ExecReprintTagStore();
 		Map row = (HashMap) lstatus.get(0);
 		String CFDAID = (String) row.get("CFDAID");
 		String CFDAStus = (String) row.get("CFDAStus");
@@ -667,7 +675,7 @@ public class ChinaTagModel {
 				+ "values (N'%s','%s','%s','%s','%s','%s','%d','%s','%d','%s','%s','%s','%d','%d','%s',%s) ";
 		sql = String.format(sql, schema, tag.getLicence()[0], tag.getLicence()[6], ' ', tag.getEntity().getLot1(),
 				tag.getEntity().getLitm(), tag.getLicence()[2], Integer.parseInt(tag.getPages()) * 100,
-				tag.getPrinter(), DateFormat.CJDEInt(tag.getDate()), " ", " ", " ",
+				tag.getPrinter(), DateFormat.CJDEInt(tag.getDate()), user, " ", " ",
 				DateFormat.CJDEInt(dateFormat.format(new Date())), DateFormat.CJDETime(), "5", "newid()");
 		jdbcTemplate.update(sql);
 	}
@@ -677,7 +685,7 @@ public class ChinaTagModel {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		sql = "update %s.F554108T set KSEFTJ=%d,KSDS50=N'%s',KSUSER='%s',KSPID='%s',KSUPMJ='%s' where "
 				+ "KSLOTN='%s' and KSLITM='%s'";
-		sql = String.format(sql, schema, DateFormat.CJDEInt(tag.getDate()), tag.getLicence()[0], "Label", " ",
+		sql = String.format(sql, schema, DateFormat.CJDEInt(tag.getDate()), tag.getLicence()[0], user, " ",
 				DateFormat.CJDEInt(dateFormat.format(new Date())), tag.getEntity().getLotn(),
 				tag.getEntity().getLitm());
 		log.info(sql);
@@ -704,5 +712,82 @@ public class ChinaTagModel {
 			resultList.add(bean);
 		}
 		return resultList;
+	}
+
+	public void insertReprint(TagBean bean) {
+		// TODO Auto-generated method stub
+		if (tag.getMessage().compareTo(" ") > 0) {
+			F56C4311Bean f56c4311 = new F56C4311Bean();
+			f56c4311.setDl011(tag.getMessage());
+			f56c4311.setLitm(tag.getLicence()[3]);
+			f56c4311.setLotn(tag.getLicence()[0]);
+			f56c4311.setUrcd(tag.getLicence()[6]);
+			f56c4311.setUrrf(tag.getPrinter());
+			f56c4311.setUsd1(DateFormat.CJDEInt(tag.getDate()));
+			f56c4311.setDl12(tag.getLicence()[2]);
+			f56c4311.setUrat(Integer.parseInt(tag.getPages()));
+
+			f56c4311.setPid("LABEL");
+			f56c4311.setUser(user);
+			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+			f56c4311.setUpmj(DateFormat.CJDEInt(dateFormat.format(new Date())));
+			f56c4311.setUpmt(DateFormat.CJDETime());
+
+			String sql = "insert into %s.F56B4311 (PLLOTN,PLURCD,PLDL11,PLLOT1,PLLITM,PLDL12,PLURAT,PLURRF,PLUSD1,PLUSER,PLPID,PLJOBN,PLUPMJ,PLUPMT,PLEV01,PLINIKEY) "
+					+ "values (N'%s','%s','%s','%s','%s','%s','%d','%s','%d','%s','%s','%s','%d','%d','%s',%s) ";
+			sql = String.format(sql, schema, f56c4311.getLotn(), f56c4311.getUrcd(), ' ', tag.getEntity().getLot1(),
+					tag.getEntity().getLitm(), f56c4311.getDl12(), f56c4311.getUrat() * 100, f56c4311.getUrrf(),
+					f56c4311.getUsd1(), f56c4311.getUser(), f56c4311.getPid(), f56c4311.getJobn(), f56c4311.getUpmj(),
+					f56c4311.getUpmt(), "5", "newid()");
+			log.info(sql);
+			jdbcTemplate.execute(sql);
+
+			sql = "update %s.F554108T set KSEFTJ=%d,KSDS50=N'%s',KSUSER='%s',KSPID='%s',KSUPMJ='%s' where "
+					+ "KSLOTN='%s' and KSLITM='%s'";
+			sql = String.format(sql, schema, f56c4311.getUsd1(), f56c4311.getLotn(), user, f56c4311.getPid(),
+					f56c4311.getUpmj(), tag.getEntity().getLotn(), f56c4311.getLitm());
+			log.info(sql);
+			jdbcTemplate.execute(sql);
+		}
+	}
+
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public List ExecReprintTagStore() {
+
+		List list = (List) jdbcTemplate.execute(new CallableStatementCreator() {
+
+			@Override
+			public CallableStatement createCallableStatement(Connection con) throws SQLException {
+				// TODO Auto-generated method stub
+				String sql = "execute %s.BarcodeLabelTrading ?,?,?,?";
+				sql = String.format(sql, schema);
+				log.info(sql);
+				CallableStatement call = con.prepareCall(sql);
+				call.setDate(1, new java.sql.Date(DateTool.parseDate(tag.getDate(), "yyyy-MM-dd").getTime()));
+				call.setString(2, tag.getEntity().getLitm());
+				call.setString(3, tag.getLicence()[0]);
+				call.setString(4, tag.getLicence()[2]);
+				return call;
+			}
+		}, new CallableStatementCallback() {
+
+			@Override
+			public Object doInCallableStatement(CallableStatement cs) throws SQLException, DataAccessException {
+				// TODO Auto-generated method stub
+				List resultsMap = new ArrayList<>();
+				cs.execute();
+				ResultSet rs = cs.executeQuery();
+				if (rs.next()) {
+					Map rowMap = new HashMap();
+					rowMap.put("CFDAID", rs.getString("RHLOTN"));
+					rowMap.put("CFDAStus", rs.getString("CFDAStus"));
+					rowMap.put("LabelTy", rs.getString("LabelTy"));
+					resultsMap.add(rowMap);
+				}
+				rs.close();
+				return resultsMap;
+			}
+		});
+		return list;
 	}
 }

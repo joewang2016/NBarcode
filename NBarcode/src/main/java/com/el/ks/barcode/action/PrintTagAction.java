@@ -81,13 +81,16 @@ public class PrintTagAction {
 	Map<String, String> protectMap = new HashMap<String, String>();
 
 	public void PrintTagAll() {
+		PrintTagAll(false);
+	}
+
+	public void PrintTagAll(Boolean reprint) {
 		init();
-		List list = model.GetTagDetail();
+		List list = model.GetTagDetail(reprint);
 		if (list.size() <= 0)
 			return;
 		prnBuff = new StringBuffer();
 		BeginPrint();
-		ChangeFont(emptyConfig.getFontheight(), emptyConfig.getFontwidth(), 0);
 		Boolean third = false;
 		for (Object ele : list) {
 			if (ele instanceof TagDetailBean) {
@@ -103,12 +106,14 @@ public class PrintTagAction {
 				PrintDimensionCode(dcConfig.getLeftmargin(), dcConfig.getTopmargin(), dcConfig.getFontheight(),
 						getKSDimensionCode());
 			} else if (ele instanceof TagDetailThirdBean) {
+				ChangeFont(emptyConfig.getFontheight(), emptyConfig.getFontwidth(), 0);
 				TagDetailThirdBean detail = (TagDetailThirdBean) ele;
 				GetTagDetail(detail);
 				PrintThirdTag();
 				third = true;
 				break;
 			} else if (ele instanceof String) {
+				ChangeFont(emptyConfig.getFontheight(), emptyConfig.getFontwidth(), 0);
 				String detail = (String) ele;
 				PrintEmptyTagRow(detail);
 				third = true;
@@ -133,11 +138,15 @@ public class PrintTagAction {
 		List<String> list = this.LineBreak(detail, Integer.parseInt(emptyConfig.getChars()));
 		if (list.size() == 1) {
 			PrintRow(eleft, etop, emptyConfig.getFontheight(), emptyConfig.getFontwidth(), detail);
-			etop = NextRow(etop, Integer.parseInt(emptyConfig.getVpadding()));
+			etop = NextRow(etop, Integer.parseInt(emptyConfig.getFontheight()),
+					Integer.parseInt(emptyConfig.getVpadding()));
 		} else {
-			etop = NextRow(etop, Integer.parseInt(emptyConfig.getVpadding()));
-			PrintBlock(Integer.parseInt(emptyConfig.getWidth()), eleft, etop, emptyConfig.getFontheight(),
+			etop = NextRow(etop, Integer.parseInt(emptyConfig.getFontheight()),
+					Integer.parseInt(emptyConfig.getVpadding()));
+			PrintBlock(Integer.parseInt(emptyConfig.getWidth()), etop, emptyConfig.getFontheight(),
 					emptyConfig.getFontwidth(), emptyConfig.getVpadding(), detail);
+			etop = NextRow(etop, Integer.parseInt(emptyConfig.getFontheight()),
+					Integer.parseInt(emptyConfig.getVpadding()));
 		}
 	}
 
@@ -476,6 +485,9 @@ public class PrintTagAction {
 				dc += "(10)" + tag.getEntity().getLot1();
 			else
 				dc += "(21)" + tag.getEntity().getLotn();
+		}
+		if (StringUtils.compare(tag.getDate(), " ") > 0) {
+			dc += "11" + StringUtils.remove(tag.getDate(), '-');
 		}
 		return dc;
 	}

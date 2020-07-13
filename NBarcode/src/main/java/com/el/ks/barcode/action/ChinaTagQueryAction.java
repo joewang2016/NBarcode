@@ -68,4 +68,8 @@ public class ChinaTagQueryAction {
 	public List<SNBean> SearchZJ(TagBean bean){
 		return chinaTagModel.SearchZJ(bean.getVr01(), bean.getDoco(), bean.getDl01());
 	}
+	
+	public void insertReprint(TagBean bean){
+		chinaTagModel.insertReprint(bean);
+	}
 }
