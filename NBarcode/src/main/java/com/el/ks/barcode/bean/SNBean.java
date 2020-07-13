@@ -8,6 +8,7 @@ public class SNBean {
 	private String litm = "";
 	private String lotn = "";
 	private String lot1 = "";
+	private String date = "";
 	private String tag = "";
 	
 	

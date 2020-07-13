@@ -487,7 +487,7 @@ public class PrintTagAction {
 				dc += "(21)" + tag.getEntity().getLotn();
 		}
 		if (StringUtils.compare(tag.getDate(), " ") > 0) {
-			dc += "11" + StringUtils.remove(tag.getDate(), '-');
+			dc += "(11)" + StringUtils.remove(tag.getDate(), '-');
 		}
 		return dc;
 	}
