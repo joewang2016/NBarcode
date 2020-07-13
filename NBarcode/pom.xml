@@ -10,6 +10,7 @@
 	<groupId>com.el.barcode</groupId>
 	<artifactId>elbarcode</artifactId>
 	<version>1.0.0</version>
+	<packaging>jar</packaging>
 	<name>NBarcode</name>
 	<description>karlstorz barcode project</description>
 
@@ -164,6 +165,12 @@
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 			<version>2.2.5.RELEASE</version>
 		</dependency>
+		<dependency>
+			<groupId>org.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
 
 	</dependencies>
 

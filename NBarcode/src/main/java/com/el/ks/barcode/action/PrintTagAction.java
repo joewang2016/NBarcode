@@ -24,10 +24,10 @@ import com.el.ks.barcode.bean.TagTemplateBean;
 import com.el.ks.barcode.config.PrinterConfig;
 import com.el.ks.barcode.config.TagConfig;
 import com.el.ks.barcode.config.TagDCConfig;
+import com.el.ks.barcode.config.TagEmptyConfig;
 import com.el.ks.barcode.config.TagLeftConfig;
 import com.el.ks.barcode.config.TagLogoConfig;
 import com.el.ks.barcode.config.TagRightConfig;
-import com.el.ks.barcode.config.TagEmptyConfig;
 import com.el.ks.barcode.model.ChinaTagModel;
 import com.el.ks.barcode.service.Const;
 import com.el.ks.barcode.service.TagDetail;
@@ -81,11 +81,14 @@ public class PrintTagAction {
 	Map<String, String> protectMap = new HashMap<String, String>();
 
 	public void PrintTagAll() {
+		init();
 		List list = model.GetTagDetail();
+		if (list.size() <= 0)
+			return;
 		prnBuff = new StringBuffer();
 		BeginPrint();
 		ChangeFont(emptyConfig.getFontheight(), emptyConfig.getFontwidth(), 0);
-		Boolean empty = false;
+		Boolean third = false;
 		for (Object ele : list) {
 			if (ele instanceof TagDetailBean) {
 				TagDetailBean detail = (TagDetailBean) ele;
@@ -103,15 +106,18 @@ public class PrintTagAction {
 				TagDetailThirdBean detail = (TagDetailThirdBean) ele;
 				GetTagDetail(detail);
 				PrintThirdTag();
+				third = true;
+				break;
 			} else if (ele instanceof String) {
 				String detail = (String) ele;
 				PrintEmptyTagRow(detail);
-				empty = true;
+				third = true;
+				break;
 			}
 		}
-		if (empty) {
+		if (third) {
 			PrintLogo();
-			PrintRightDimensionString(emptyConfig.getFontheight(), emptyConfig.getFontwidth(), emptyConfig.getWidth(),
+			PrintRightDimensionString(emptyConfig.getFontheight(), emptyConfig.getFontwidth(), dcConfig.getStrwidth(),
 					getKSDimensionCode());
 			PrintDimensionCode(dcConfig.getLeftmargin(), dcConfig.getTopmargin(), dcConfig.getFontheight(),
 					getKSDimensionCode());
@@ -138,6 +144,8 @@ public class PrintTagAction {
 	private void PrintThirdTag() {
 		// TODO Auto-generated method stub
 		for (TagTemplateBean ele : tleft) {
+			if (ele.getValue() == null)
+				continue;
 			if (ele.getIndex() == 0) {
 				String desc = ele.getValue();
 				desc = desc.replace("，", ",");
@@ -148,13 +156,40 @@ public class PrintTagAction {
 			if (ele.getIndex() == 2)
 				ele.setValue(tag.getDate());
 
-			PrintThirdRow();
+			PrintThirdRow(ele);
 		}
 	}
 
-	private void PrintThirdRow() {
+	private void PrintThirdRow(TagTemplateBean bean) {
 		// TODO Auto-generated method stub
+		String row = StringUtils.join(bean.getLabel(), bean.getValue());
+		if (bean.getIndex() > 0 && bean.getIndex() < 5) {
+			PrintRow(eleft, etop, emptyConfig.getFontheight(), emptyConfig.getFontwidth(), row);
+			etop = NextRow(etop, Integer.parseInt(emptyConfig.getFontheight()),
+					Integer.parseInt(emptyConfig.getVpadding()));
+		} else {
+			List<String> list = this.LineBreak(row, Integer.parseInt(emptyConfig.getChars()));
+			if (list.size() == 1) {
+				PrintRow(eleft, etop, emptyConfig.getFontheight(), emptyConfig.getFontwidth(), row);
+				etop = NextRow(etop, Integer.parseInt(emptyConfig.getFontheight()),
+						Integer.parseInt(emptyConfig.getVpadding()));
+			} else {
+				PrintRow(eleft, etop, emptyConfig.getFontheight(), emptyConfig.getFontwidth(), bean.getLabel());
 
+				etop = NextRow(etop, Integer.parseInt(emptyConfig.getFontheight()),
+						Integer.parseInt(emptyConfig.getVpadding()));
+
+				Double len = StringLen(bean.getLabel());
+				Integer width = (int) (Integer.parseInt(emptyConfig.getWidth())
+						- len * Integer.parseInt(emptyConfig.getFontwidth()));
+
+				PrintBlock(width, etop, emptyConfig.getFontheight(), emptyConfig.getFontwidth(),
+						emptyConfig.getVpadding(), bean.getValue());
+
+				etop = NextRow(etop, Integer.parseInt(emptyConfig.getFontheight()),
+						Integer.parseInt(emptyConfig.getVpadding()));
+			}
+		}
 	}
 
 	private void PrintOut() {
@@ -304,7 +339,13 @@ public class PrintTagAction {
 	}
 
 	private Integer NextRow(Integer top, Integer vpadding) {
-		top += Integer.parseInt(config.getFontheight()) + vpadding;
+		// top += Integer.parseInt(config.getFontheight()) + vpadding;
+		// return top;
+		return NextRow(top, Integer.parseInt(config.getFontheight()), vpadding);
+	}
+
+	private Integer NextRow(Integer top, Integer fontheight, Integer vpadding) {
+		top += fontheight + vpadding;
 		return top;
 	}
 

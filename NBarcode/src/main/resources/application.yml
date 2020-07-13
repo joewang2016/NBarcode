@@ -2,17 +2,17 @@ server:
   port: 8080
 spring:
   datasource:
-    #url: jdbc:sqlserver://10.88.1.141:1433;DatabaseName=JDE_PRODUCTION
-    #username: Barcode
-    #password: BarcodeOPT
-    url: jdbc:sqlserver://10.88.1.141:1433;DatabaseName=JDE_CRP
-    username: eldeveloper
-    password: el123
+    url: jdbc:sqlserver://10.88.1.141:1433;DatabaseName=JDE_PRODUCTION
+    username: Barcode
+    password: BarcodeOPT
+    #url: jdbc:sqlserver://10.88.1.141:1433;DatabaseName=JDE_CRP
+    #username: eldeveloper
+    #password: el123
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
-      #schema: PRODDTA
-      schema: CRPDTA
+      schema: PRODDTA
+      #schema: CRPDTA
       pool-name: barcode
       minimum-idle: 10
       idle-timeout: 500000

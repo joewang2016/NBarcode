@@ -2,6 +2,7 @@ package com.el.ks.barcode.model;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.math.BigDecimal;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -26,12 +27,16 @@ import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
 import com.el.ks.barcode.bean.OpenQuantityBean;
+import com.el.ks.barcode.bean.SNBean;
 import com.el.ks.barcode.bean.TagBean;
 import com.el.ks.barcode.bean.TagDetailBean;
 import com.el.ks.barcode.bean.TagDetailThirdBean;
 import com.el.ks.barcode.bean.TagScanResultBean;
+import com.el.ks.barcode.bean.ThirdSNBean;
 import com.el.ks.barcode.config.TagConfig;
 import com.el.ks.barcode.service.Const;
+import com.el.ks.barcode.service.DataType;
+import com.el.ks.barcode.service.Prefix;
 import com.el.ks.barcode.service.TagDetail;
 import com.el.ks.barcode.util.DateFormat;
 import com.el.ks.barcode.util.DateTool;
@@ -243,8 +248,8 @@ public class ChinaTagModel {
 		sql = String.format(sql, schema, tag.getEntity().getLitm());
 		List<Map<String, Object>> list = jdbcTemplate.queryForList(sql);
 		if (list.size() > 0)
-			return (String) list.get(0).get("IMSRCE");
-		return "";
+			return "7";// (String) list.get(0).get("IMSRCE");
+		return "7";
 	}
 
 	private synchronized void GetNextSerialNumber() {
@@ -278,17 +283,37 @@ public class ChinaTagModel {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List GetTagDetail() {
 
+		List lresult = new ArrayList();
+		if (tag.getDate() == null) {
+			String sql = "select * from %s.F550002 inner join %s.F550001 on RDLOTN=RHLOTN where RDLITM='%s' and RDSRP6 in ('T') order by RHEFFT desc";
+			sql = String.format(sql, schema, schema, tag.getEntity().getLitm());
+			log.info(sql);
+			jdbcTemplate.query(sql, new RowCallbackHandler() {
+
+				@Override
+				public void processRow(ResultSet rs) throws SQLException {
+					// TODO Auto-generated method stub
+					TagDetailThirdBean detail = new TagDetailThirdBean();
+					WrapTagDetail(rs, detail);
+					log.info(detail);
+					lresult.add(detail);
+				}
+
+			});
+			return lresult;
+		}
+
 		List lstatus = ExecStoreGetLicenseStatus();
 		Map row = (HashMap) lstatus.get(0);
 		String CFDAID = (String) row.get("CFDAID");
 		String CFDAStus = (String) row.get("CFDAStus");
 		String LabelTy = (String) row.get("LabelTy");
 
-		LabelTy = "T";
-		CFDAID = " ";
+		// LabelTy = "T";
+		// CFDAID = " ";
 
 		String sql = "";
-		List lresult = new ArrayList();
+		// List lresult = new ArrayList();
 
 		if ("T".equals(LabelTy) && CFDAID.compareTo(" ") <= 0) {
 			sql = "select IMDSC1,IMDSC2 from %s.F4101 where IMLITM='%s'";
@@ -306,7 +331,7 @@ public class ChinaTagModel {
 						lresult.add("生产日期: " + tag.getDate());
 						lresult.add("销售商名称: 卡尔史托斯内窥镜（上海）有限公司");
 						lresult.add("销售商联系方式: 800-819-9500/400-670-9500");
-						lresult.add("销售商住所: 中国（上海）自由贸易试验区龙东大道3000号5号楼701A室");
+						lresult.add("销售商住所: 中国（上海）自由贸易试验区张东路1761号7、8幢");
 					}
 				}
 			});
@@ -351,6 +376,45 @@ public class ChinaTagModel {
 		return lresult;
 	}
 
+	public Object WrapBean(ResultSet rs, Object obj) {
+		Class clazz = obj.getClass();
+		Method method = null;
+		String methodName = "";
+		String fieldName = "";
+		String prefix = "";
+		Field[] fields = clazz.getDeclaredFields();
+		try {
+			if (clazz.isAnnotationPresent(Prefix.class)) {
+				Prefix pre = (Prefix) clazz.getAnnotation(Prefix.class);
+				prefix = pre.pre();
+			}
+			for (Field field : fields) {
+				if (field.isAnnotationPresent(DataType.class)) {
+					DataType dt = field.getAnnotation(DataType.class);
+					String type = dt.type();
+					methodName = "set" + StringUtils.capitalize(field.getName());
+					fieldName = field.getName();
+					if (StringUtils.equalsIgnoreCase(type, "String")) {
+						method = clazz.getMethod(methodName, String.class);
+						method.setAccessible(true);
+						String value = rs.getString(StringUtils.join(prefix, fieldName));
+						method.invoke(obj, value);
+					} else if (StringUtils.equalsIgnoreCase(type, "Decimal")) {
+						method = clazz.getMethod(methodName, BigDecimal.class);
+						method.setAccessible(true);
+						BigDecimal value = rs.getBigDecimal(StringUtils.join(prefix, fieldName));
+						method.invoke(obj, value);
+					}
+				}
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return obj;
+	}
+
 	private void WrapTagDetail(ResultSet rs, Object bean) {
 		if (bean == null)
 			return;
@@ -381,12 +445,6 @@ public class ChinaTagModel {
 	}
 
 	public String CheckRequiredList() {
-		// if (message.equals(""))
-		// return "0";
-		// message = message.replace("^", "(");
-		// SNBean sne = new SNBean();
-		// sne = util.ParseTag(message);
-		// String litm = sne.getLitm();
 
 		String sql = "select 1 from %s.F554101A where MALITM='%s' and MAEV01='Y'";
 		sql = String.format(sql, schema, tag.getEntity().getLitm());
@@ -532,5 +590,119 @@ public class ChinaTagModel {
 		if (count != 1)
 			return false;
 		return true;
+	}
+
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public List QueryLicenceList() {
+		int iJulianDate = DateFormat.CJDEInt(tag.getDate());
+		@SuppressWarnings("unchecked")
+		List<TagScanResultBean> list = new ArrayList();
+		if (iJulianDate > 0) {
+			jdbcTemplate.execute(new CallableStatementCreator() {
+
+				@Override
+				public CallableStatement createCallableStatement(Connection con) throws SQLException {
+					// TODO Auto-generated method stub
+					String sql = "execute %s.BarcodeLabelTradingList ?,?";
+					sql = String.format(sql, schema);
+					log.info(sql);
+					CallableStatement cs = con.prepareCall(sql);
+					cs.setDate(1, new java.sql.Date(DateTool.parseDate(tag.getDate(), "yyyy-MM-dd").getTime()));
+					cs.setString(2, tag.getEntity().getLitm());
+					return cs;
+				}
+			}, new CallableStatementCallback() {
+
+				@Override
+				public Object doInCallableStatement(CallableStatement cs) throws SQLException, DataAccessException {
+					// TODO Auto-generated method stub
+					cs.execute();
+					ResultSet rs = cs.executeQuery();
+					while (rs.next()) {
+						TagScanResultBean bean = new TagScanResultBean();
+						WrapTagDetail(rs, bean);
+						list.add(bean);
+					}
+					rs.close();
+					return list;
+				}
+			});
+
+		} else {
+			String sql = "select * from %s.F550002 inner join %s.F550001 on RDLOTN=RHLOTN where RDLITM='%s' and RDSRP6 in ('T') order by RDAA1 desc,RHEFFT desc";
+			sql = String.format(sql, schema, schema, tag.getEntity().getLitm());
+			log.info(sql);
+			jdbcTemplate.query(sql, new RowCallbackHandler() {
+
+				@Override
+				public void processRow(ResultSet rs) throws SQLException {
+					// TODO Auto-generated method stub
+					TagScanResultBean bean = new TagScanResultBean();
+					WrapTagDetail(rs, bean);
+					list.add(bean);
+				}
+
+			});
+		}
+		if (list.size() < 1) {
+			TagScanResultBean bean = new TagScanResultBean();
+			bean.setRDADD4("");
+			bean.setRDAITM("");
+			bean.setRDLITM("");
+			bean.setRDSRP6("");
+			bean.setRHALPH("");
+			bean.setRHEFFT("");
+			bean.setRHLOTN("");
+			list.add(bean);
+		}
+		return list;
+	}
+
+	public void InsertReprint() {
+		if (tag.getLicence().length < 7)
+			return;
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+		String sql = "insert into %s.F56B4311 (PLLOTN,PLURCD,PLDL11,PLLOT1,PLLITM,PLDL12,PLURAT,PLURRF,PLUSD1,PLUSER,PLPID,PLJOBN,PLUPMJ,PLUPMT,PLEV01,PLINIKEY) "
+				+ "values (N'%s','%s','%s','%s','%s','%s','%d','%s','%d','%s','%s','%s','%d','%d','%s',%s) ";
+		sql = String.format(sql, schema, tag.getLicence()[0], tag.getLicence()[6], ' ', tag.getEntity().getLot1(),
+				tag.getEntity().getLitm(), tag.getLicence()[2], Integer.parseInt(tag.getPages()) * 100,
+				tag.getPrinter(), DateFormat.CJDEInt(tag.getDate()), " ", " ", " ",
+				DateFormat.CJDEInt(dateFormat.format(new Date())), DateFormat.CJDETime(), "5", "newid()");
+		jdbcTemplate.update(sql);
+	}
+
+	public void UpdateLotnExtension() {
+		String sql = "";
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		sql = "update %s.F554108T set KSEFTJ=%d,KSDS50=N'%s',KSUSER='%s',KSPID='%s',KSUPMJ='%s' where "
+				+ "KSLOTN='%s' and KSLITM='%s'";
+		sql = String.format(sql, schema, DateFormat.CJDEInt(tag.getDate()), tag.getLicence()[0], "Label", " ",
+				DateFormat.CJDEInt(dateFormat.format(new Date())), tag.getEntity().getLotn(),
+				tag.getEntity().getLitm());
+		log.info(sql);
+		jdbcTemplate.update(sql);
+	}
+
+	public List<SNBean> SearchZJ(String vr01, String doco, String dl01) {
+		String sql = "select ABLITM,ABLOTN,ABLOT1,ABUORG,ABUSD1 from %s.F56B4310 where ABEV01!=1 and ABVR01='%s'";
+		sql = String.format(sql, schema, vr01);
+		if (!doco.equals("*") && !doco.trim().equals(""))
+			sql += " and ABDOCO=" + doco;
+		if (!dl01.equals("*") && !dl01.trim().equals(""))
+			sql += " and ABDL01='" + dl01 + "'";
+		log.info(sql);
+		List<SNBean> resultList = new ArrayList<SNBean>();
+		List<Map<String, Object>> list = jdbcTemplate.queryForList(sql);
+		for (Map<String, Object> ele : list) {
+			ThirdSNBean bean = new ThirdSNBean();
+			bean.setLitm(((String) ele.get("ABLITM")).trim());
+			bean.setLotn(((String) ele.get("ABLOTN")).trim());
+			bean.setLot1(((String) ele.get("ABLOT1")).trim());
+			bean.setUorg(((Double) ele.get("ABUORG")).intValue() / 100);
+			bean.setDate(DateFormat.CJulian(((BigDecimal) ele.get("ABUSD1")).intValue()));
+			resultList.add(bean);
+		}
+		return resultList;
 	}
 }

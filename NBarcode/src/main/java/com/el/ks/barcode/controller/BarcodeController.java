@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -17,9 +18,11 @@ import com.alibaba.fastjson.JSONObject;
 import com.el.ks.barcode.action.ChinaTagQueryAction;
 import com.el.ks.barcode.action.PrintTagAction;
 import com.el.ks.barcode.bean.OpenQuantityBean;
+import com.el.ks.barcode.bean.SNBean;
 import com.el.ks.barcode.bean.TagBean;
 import com.el.ks.barcode.bean.TagDetailBean;
 import com.el.ks.barcode.bean.TagScanResultBean;
+import com.el.ks.barcode.bean.ThirdSNBean;
 import com.el.ks.barcode.service.Const;
 
 @Controller
@@ -44,6 +47,16 @@ public class BarcodeController {
 	@GetMapping("preview")
 	public String preview() {
 		return "preview";
+	}
+
+	@GetMapping("reprint")
+	public String reprint() {
+		return "welcome";
+	}
+
+	@GetMapping("printzj")
+	public String printzj() {
+		return "welcome3";
 	}
 
 	@RequestMapping("test")
@@ -138,5 +151,40 @@ public class BarcodeController {
 
 	private boolean validateItem() {
 		return tagAction.ValidateItem();
+	}
+
+	@RequestMapping("queryList")
+	@ResponseBody
+	public JSONObject QueryLicenceList(String date, String message) {
+		tag.setMessage(message);
+		tag.setDate(date);
+		tagAction.setTag(tag);
+		List<TagScanResultBean> resultList = tagAction.QueryLicenceList();
+		if (resultList != null) {
+			Map<String, Object> jsonMap = new HashMap<String, Object>();
+			jsonMap.put("total", resultList.size());
+			jsonMap.put("rows", resultList);
+			JSONObject jsonObj = (JSONObject) JSONObject.toJSON(jsonMap);
+			log.info(jsonObj);
+			return jsonObj;
+		}
+		return null;
+	}
+
+	@PostMapping(value = "searchZJ")
+	@ResponseBody
+	public String SearchZJ(@RequestBody TagBean tag) {
+		List<SNBean> list = tagAction.SearchZJ(tag);
+		for (SNBean ele : list) {
+			ThirdSNBean tele = (ThirdSNBean) ele;
+			tag.setEntity(tele);
+			tag.setDate(tele.getDate());
+			tagAction.setTag(tag);
+			printAction.setTag(tag);
+			for (int i = 0; i < tele.getUorg(); i++) {
+				printAction.PrintTagAll();
+			}
+		}
+		return Const.SUCCESS;
 	}
 }

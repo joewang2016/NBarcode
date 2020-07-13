@@ -1,0 +1,18 @@
+2020-06-09 10:02:10 上午 [Thread: qtp151767867-24][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:66) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='CRPDTA' and TABLE_NAME='F0101' 
+2020-06-09 10:42:02 上午 [Thread: qtp494072747-82][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:66) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='PRODDTA' and TABLE_NAME='F0101' 
+2020-06-09 10:42:21 上午 [Thread: qtp494072747-82][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:149) ]
+INFO:select EAAN8,EAIDLN,EARCK7,EAEMAL from PRODDTA.F01151
+2020-06-09 10:49:39 上午 [Thread: qtp1972586063-179][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:66) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='PRODDTA' and TABLE_NAME='F0101' 
+2020-06-09 10:49:56 上午 [Thread: qtp1972586063-179][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:149) ]
+INFO:select EAAN8,EAIDLN,EARCK7,EAEMAL from PRODDTA.F01151
+2020-06-09 12:02:49 下午 [Thread: qtp1689894391-24][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:67) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='PRODDTA' and TABLE_NAME='F0101' 
+2020-06-09 12:08:53 下午 [Thread: qtp709085312-21][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:67) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='PRODDTA' and TABLE_NAME='F0101' 
+2020-06-09 17:21:07 下午 [Thread: qtp1367289484-24][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:67) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='PRODDTA' and TABLE_NAME='F0101' 
+2020-06-09 17:23:55 下午 [Thread: qtp1367289484-24][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:146) ]
+INFO:select * from PRODDTA.F01151

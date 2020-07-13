@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Print Tag</title>
+</head>
+<link rel="stylesheet" type="text/css" href="themes/black/easyui.css">
+<link rel="stylesheet" type="text/css" href="themes/icon.css">
+<link rel="stylesheet" type="text/css" href="demo/demo.css">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.easyui.min.js"></script>
+<script type="text/javascript">
+	function getQueryString(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null)
+			return unescape(r[2]);
+		return null;
+	}
+
+	$(function() {
+		$('#message').focus();
+		var content = getQueryString("date");
+		$("#date").val(content);
+		var printer = getQueryString("printer");
+		$("#printer").val(printer);
+		var status = "";
+
+		$("#message").blur(
+				function() {
+					var msg = $("#message").val();
+					msg = msg.replace("^", "(");
+					if (msg > ' ' && msg.indexOf("10") == -1
+							&& msg.indexOf("21") == -1) {
+						alert("二维码错误, 请检查");
+						return false;
+					}
+
+					var date = $("#date").val();
+					if (msg == null || msg == undefined || msg == '')
+						return false;
+					if (date == null || date == undefined || date == '')
+						return false;
+
+					var url = "queryList?date=" + date + "&message=" + msg;
+					$('#queryList').datagrid({
+						url : url
+					});
+					return true;
+				});
+
+		$("#date").blur(function() {
+			var msg = $("#message").val();
+			msg = msg.replace("^", "(");
+			var date = $("#date").val();
+
+			var bagin_r = date.match(/^(\d{4})(-)(\d{2})(-)(\d{2})$/);
+			if (bagin_r == null) {
+				alert("请输入正确的开始时间格式,如:2017-01-01");
+				return false;
+			}
+
+			if (msg == null || msg == undefined || msg == '') {
+
+				return false;
+
+			}
+
+			var url = "queryList?date=" + date + "&message=" + msg;
+			$('#queryList').datagrid({
+				url : url
+			});
+			return true;
+		});
+
+		$("#message").keypress(function(e) {
+			if (e.keyCode == 13)
+				return false;
+		});
+
+		status = $.ajax({
+			url : "checkstatus!GetCheckStatus",
+			async : false
+		});
+		if (status.responseText == "\"true\"") {
+			$("#check1")
+					.html(
+							"<label>送检标志：</label><input type=\'checkbox\' value=\'1\' name=\'tag\' id=\'tag\'>送检<br />");
+		}
+
+		$("#submit").click(function(){
+			var ids = [];
+			var rows = $('#queryList').datagrid('getSelections');
+			for(var i=0; i<rows.length; i++){
+				ids.push(rows[i].rHLOTN);/////
+				ids.push(rows[i].rHALPH);
+				ids.push(rows[i].rDAITM);
+				ids.push(rows[i].rDLITM);
+				ids.push(rows[i].rDADD4);
+				ids.push(rows[i].rHEFFT);
+				ids.push(rows[i].rDSRP6);
+			}
+			
+			var data = {
+					dl01 : $("#dl01").val(),
+					vr01 : $("#vr01").val(),
+					message : $("#message").val().replace(/\^/g, "("),
+					date : $("#date").val(),
+					pages : $("#pages").val(),
+					countnb : $("#countnb").val(),
+					printer : $("printer").val(),
+					licence : ids
+				};
+			$.ajax({
+                type: "POST",
+                dataType: "json",
+                url: 'printzj',
+                contentType: "application/json",
+                data:JSON.stringify(data),
+                success: function (result) {
+                    
+                }
+            });
+			return false;
+		});
+		
+		
+
+	});
+</script>
+<body>
+
+	<form action="printzj" method="post" name="form1" id="form1">
+
+		<table style="width: 100%;">
+			<tr>
+				<td>Code:</td>
+				<td><input name="message" type="text" id="message"></td>
+				<td>Pages:</td>
+				<td><input name="pages" type="text" id="pages" value="1"
+					size='10'></td>
+				<td>生产日期:</td>
+				<td><input id="date" name="date" type="text"></td>
+				<td>打印机:</td>
+				<td><input name="printer" id="printer" type="text"></td>
+				<td><input name="submit" type="button" value="Print"
+					id="submit"></td>
+			</tr>
+
+		</table>
+		<div data-options="region:'center',split:true"
+			style="height: 150px; border: 0" id="licence">
+			<table id="queryList" title="注册证" class="easyui-datagrid"
+				style="width: 100%; height: 150px" fitColumns="true"
+				singleSelect="true">
+				<thead>
+					<tr>
+						<th field="rHLOTN" width="100">注册证号</th>
+						<th field="rHALPH" width="60">注册证名称</th>
+						<th field="rDAITM" width="40">规格型号</th>
+						<th field="rDLITM" width="40">产品编号</th>
+						<th field="rDADD4" width="80">说明书编号</th>
+						<th field="rHEFFT" width="35">截止日期</th>
+						<th field="rDSRP6" width="60">注册证状态</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</form>
+</body>
+</html>

@@ -19,5 +19,7 @@ public class TagBean {
 	private String message;
 	private SNBean entity;
 	private String license;
+	private String licence[];
+	private String doco;
 
 }

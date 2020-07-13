@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Print All Tag</title>
+</head>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("#submit").click(function(){
+		var data = {
+				dl01 : $("#dl01").val(),
+				vr01 : $("#vr01").val(),
+				doco : $('#doco').val(),
+				printer : $("printer").val()
+			};
+		$.ajax({
+            type: "POST",
+            dataType: "json",
+            url: 'searchZJ',
+            contentType: "application/json",
+            data:JSON.stringify(data),
+            success: function (result) {
+                
+            }
+        });
+		return false;
+	});
+});
+</script>
+
+<body>
+	<form action="searchZJ" method="post" name="form1" id="form1">
+		<label>采购单号</label><input name="vr01" type="text" id="vr01"><br>
+		<label>定单号　</label><input name="doco" type="text" id="doco" value="*"><br>
+		<label>合同号　</label><input name="dl01" type="text" id="dl01" value="*"><br>
+		<input name="submit" type="submit" value="Print All" id="submit">
+		<input name="printer" type="hidden" value="ZJ">
+	</form>
+</body>
+</html>

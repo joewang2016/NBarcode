@@ -1,0 +1,130 @@
+2020-06-03 13:07:13 下午 [Thread: qtp575411549-24][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.Backup(BackupController.java:65) ]
+INFO:select column_name from information_schema.columns where TABLE_SCHEMA='CRPDTA' and TABLE_NAME='F0101' 
+2020-06-03 13:08:59 下午 [Thread: qtp768037517-48][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:207) ]
+INFO:select * from CRPDTA.F560420 where phukid=5294
+2020-06-03 13:09:54 下午 [Thread: qtp1357267837-76][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:207) ]
+INFO:select * from CRPDTA.F560420 where phukid=5294
+2020-06-03 13:10:10 下午 [Thread: qtp9944232-101][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:207) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:15:02 下午 [Thread: qtp1249106633-282][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:15:27 下午 [Thread: qtp1562881619-307][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:16:24 下午 [Thread: qtp489084272-356][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:17:27 下午 [Thread: qtp357150087-404][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:18:01 下午 [Thread: qtp484604177-429][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:18:20 下午 [Thread: qtp1340874014-476][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:18:46 下午 [Thread: qtp2047723607-502][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:19:39 下午 [Thread: qtp617229707-548][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:19:58 下午 [Thread: qtp2056602291-574][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:20:24 下午 [Thread: qtp1762442224-622][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:22:46 下午 [Thread: qtp1610894389-649][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:23:13 下午 [Thread: qtp358113565-675][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:23:34 下午 [Thread: qtp1084791392-701][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:23:59 下午 [Thread: qtp1173987212-726][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:24:46 下午 [Thread: qtp1519243261-752][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:25:02 下午 [Thread: qtp1666421741-779][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 13:25:36 下午 [Thread: qtp1907173025-805][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from PRODDTA.F560420 where phukid=5294
+2020-06-03 15:18:41 下午 [Thread: qtp1427037727-987][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:18:41 下午 [Thread: qtp1427037727-987][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC='娴嬭瘯鏁版嵁aaa娴嬭瘯鏁版嵁' where PHUKID=32
+2020-06-03 15:19:26 下午 [Thread: qtp729644603-1014][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:19:26 下午 [Thread: qtp729644603-1014][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC='测试数据aaa测试数据' where PHUKID=32
+2020-06-03 15:19:56 下午 [Thread: qtp729644603-1009][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:19:56 下午 [Thread: qtp729644603-1009][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC='测试数据aaa测试数据' where PHUKID=32
+2020-06-03 15:20:15 下午 [Thread: qtp1917388929-1041][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:20:15 下午 [Thread: qtp1917388929-1041][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'测试数据aaa测试数据' where PHUKID=32
+2020-06-03 15:20:31 下午 [Thread: qtp751660725-1067][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:20:31 下午 [Thread: qtp751660725-1067][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'娴嬭瘯鏁版嵁aaa娴嬭瘯鏁版嵁' where PHUKID=32
+2020-06-03 15:23:18 下午 [Thread: qtp518834112-1116][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:23:18 下午 [Thread: qtp518834112-1116][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'测试数据aaa测试数据' where PHUKID=32
+2020-06-03 15:23:33 下午 [Thread: qtp1219419474-1141][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:23:33 下午 [Thread: qtp1219419474-1141][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'娴嬭瘯鏁版嵁aaa娴嬭瘯鏁版嵁' where PHUKID=32
+2020-06-03 15:24:21 下午 [Thread: qtp1330102095-1166][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:24:21 下午 [Thread: qtp1330102095-1166][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'æµè¯æ°æ®aaaæµè¯æ°æ®' where PHUKID=32
+2020-06-03 15:25:09 下午 [Thread: qtp442339716-1215][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:25:09 下午 [Thread: qtp442339716-1215][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'娴嬭瘯鏁版嵁aaa娴嬭瘯鏁版嵁' where PHUKID=32
+2020-06-03 15:25:54 下午 [Thread: qtp1017136700-1285][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:25:54 下午 [Thread: qtp1017136700-1285][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'测试数据aaa测试数据' where PHUKID=32
+2020-06-03 15:26:25 下午 [Thread: qtp1043615820-1312][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:26:25 下午 [Thread: qtp1043615820-1312][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC='测试数据aaa测试数据' where PHUKID=32
+2020-06-03 15:27:23 下午 [Thread: qtp2137410272-1337][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:27:23 下午 [Thread: qtp2137410272-1337][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC='娴嬭瘯鏁版嵁aaa娴嬭瘯鏁版嵁' where PHUKID=32
+2020-06-03 15:27:46 下午 [Thread: qtp1515195235-1363][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 15:27:46 下午 [Thread: qtp1515195235-1363][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:233) ]
+INFO:update CRPDTA.F560420 set PHATOREC='测试数据aaa测试数据' where PHUKID=32
+2020-06-03 18:31:52 下午 [Thread: qtp2131575291-1607][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 18:31:52 下午 [Thread: qtp2131575291-1607][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:234) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'????aaa????' where PHUKID=32
+2020-06-03 18:32:46 下午 [Thread: qtp137249198-1634][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 18:32:46 下午 [Thread: qtp137249198-1634][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:234) ]
+INFO:update CRPDTA.F560420 set PHATOREC='????aaa????' where PHUKID=32
+2020-06-03 18:33:41 下午 [Thread: qtp385250696-1661][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 18:33:41 下午 [Thread: qtp385250696-1661][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:234) ]
+INFO:update CRPDTA.F560420 set PHATOREC='????aaa????' where PHUKID=32
+2020-06-03 18:35:44 下午 [Thread: qtp480040641-1710][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 18:35:44 下午 [Thread: qtp480040641-1710][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:234) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'????aaa????' where PHUKID=32
+2020-06-03 18:37:28 下午 [Thread: qtp143059816-1780][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 18:37:28 下午 [Thread: qtp143059816-1780][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:234) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'娴嬭瘯鏁版嵁aaa' where PHUKID=32
+2020-06-03 18:37:56 下午 [Thread: qtp2146710452-1806][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 18:37:56 下午 [Thread: qtp2146710452-1806][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:234) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'娴嬭瘯鏁版嵁aaa' where PHUKID=32
+2020-06-03 18:38:16 下午 [Thread: qtp2062949083-1832][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 18:38:16 下午 [Thread: qtp2062949083-1832][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:234) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'��������aaa' where PHUKID=32
+2020-06-03 18:39:05 下午 [Thread: qtp2087050763-1905][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 18:39:05 下午 [Thread: qtp2087050763-1905][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:234) ]
+INFO:update CRPDTA.F560420 set PHATOREC=N'测试数据aaa' where PHUKID=32
+2020-06-03 18:39:17 下午 [Thread: qtp993999440-1930][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:208) ]
+INFO:select * from CRPDTA.F560420 where phukid=32
+2020-06-03 18:39:17 下午 [Thread: qtp993999440-1930][ Class:com.el.ks.barcode.controller.BackupController >> Method: com.el.ks.barcode.controller.BackupController.readEncode(BackupController.java:234) ]
+INFO:update CRPDTA.F560420 set PHATOREC='测试数据aaa' where PHUKID=32

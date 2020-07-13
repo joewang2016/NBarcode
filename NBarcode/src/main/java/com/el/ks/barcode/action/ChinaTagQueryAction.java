@@ -60,4 +60,12 @@ public class ChinaTagQueryAction {
 	public boolean ValidateItem() {
 		return chinaTagModel.validItem();
 	}
+
+	public List<TagScanResultBean> QueryLicenceList() {
+		return chinaTagModel.QueryLicenceList();
+	}
+	
+	public List<SNBean> SearchZJ(TagBean bean){
+		return chinaTagModel.SearchZJ(bean.getVr01(), bean.getDoco(), bean.getDl01());
+	}
 }

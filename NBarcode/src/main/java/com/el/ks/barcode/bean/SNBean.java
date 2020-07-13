@@ -10,6 +10,7 @@ public class SNBean {
 	private String lot1 = "";
 	private String tag = "";
 	
+	
 	public SNBean(String sn) {
 		this.sn = sn;
 	}
