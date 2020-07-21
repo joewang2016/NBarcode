@@ -1,0 +1,516 @@
+2020-07-13 10:47:45 上午 [Thread: qtp1948234807-55][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 10:47:45 上午 [Thread: qtp1948234807-55][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 10:47:46 上午 [Thread: qtp1948234807-55][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$10.createCallableStatement(ChinaTagModel.java:608) ]
+INFO:execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-13 10:47:47 上午 [Thread: qtp1948234807-55][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.QueryLicenceList(BarcodeController.java:168) ]
+INFO:{"rows":[{"rDADD4":"A83-D1","rHLOTN":"国械注进20162222664","rDLITM":"11292ADU1","rHALPH":"纤维胆道镜","rDAITM":"11292ADU1","rDSRP6":"Y","rHEFFT":"121235"}],"total":1}
+2020-07-13 10:49:14 上午 [Thread: qtp1399968128-23][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 10:49:14 上午 [Thread: qtp1399968128-23][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 10:49:15 上午 [Thread: qtp1399968128-23][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$10.createCallableStatement(ChinaTagModel.java:608) ]
+INFO:execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-13 10:49:16 上午 [Thread: qtp1399968128-23][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.QueryLicenceList(BarcodeController.java:168) ]
+INFO:{"rows":[{"rDADD4":"A83-D1","rHLOTN":"国械注进20162222664","rDLITM":"11292ADU1","rHALPH":"纤维胆道镜","rDAITM":"11292ADU1","rDSRP6":"Y","rHEFFT":"121235"}],"total":1}
+2020-07-13 13:48:05 下午 [Thread: qtp2006901606-22][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 13:48:05 下午 [Thread: qtp2006901606-22][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 13:48:06 下午 [Thread: qtp2006901606-22][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$10.createCallableStatement(ChinaTagModel.java:616) ]
+INFO:execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-13 13:48:06 下午 [Thread: qtp2006901606-22][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.QueryLicenceList(BarcodeController.java:168) ]
+INFO:{"rows":[{"rDADD4":"A83-D1","rHLOTN":"国械注进20162222664","rDLITM":"11292ADU1","rHALPH":"纤维胆道镜","rDAITM":"11292ADU1","rDSRP6":"Y","rHEFFT":"121235"}],"total":1}
+2020-07-13 13:48:09 下午 [Thread: qtp2006901606-24][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 13:48:09 下午 [Thread: qtp2006901606-24][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 13:48:09 下午 [Thread: qtp2006901606-24][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:138) ]
+INFO:execute PRODDTA.BarcodeLabel ?,?,?,?
+2020-07-13 13:49:20 下午 [Thread: qtp2018408472-26][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 13:49:20 下午 [Thread: qtp2018408472-26][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 13:50:18 下午 [Thread: qtp39048788-27][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 13:50:18 下午 [Thread: qtp39048788-27][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 13:50:25 下午 [Thread: qtp39048788-27][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$10.createCallableStatement(ChinaTagModel.java:616) ]
+INFO:execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-13 13:50:25 下午 [Thread: qtp39048788-27][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.QueryLicenceList(BarcodeController.java:168) ]
+INFO:{"rows":[{"rDADD4":"A83-D1","rHLOTN":"国械注进20162222664","rDLITM":"11292ADU1","rHALPH":"纤维胆道镜","rDAITM":"11292ADU1","rDSRP6":"Y","rHEFFT":"121235"}],"total":1}
+2020-07-13 13:50:30 下午 [Thread: qtp39048788-38][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 13:50:30 下午 [Thread: qtp39048788-38][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 13:50:36 下午 [Thread: qtp39048788-38][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$2.createCallableStatement(ChinaTagModel.java:138) ]
+INFO:execute PRODDTA.BarcodeLabel ?,?,?,?
+2020-07-13 13:53:38 下午 [Thread: qtp843910778-26][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 13:53:38 下午 [Thread: qtp843910778-26][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 13:53:50 下午 [Thread: qtp843910778-26][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$10.createCallableStatement(ChinaTagModel.java:616) ]
+INFO:execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-13 13:53:51 下午 [Thread: qtp843910778-26][ Class:com.el.ks.barcode.controller.BarcodeController >> Method: com.el.ks.barcode.controller.BarcodeController.QueryLicenceList(BarcodeController.java:168) ]
+INFO:{"rows":[{"rDADD4":"A83-D1","rHLOTN":"国械注进20162222664","rDLITM":"11292ADU1","rHALPH":"纤维胆道镜","rDAITM":"11292ADU1","rDSRP6":"Y","rHEFFT":"121235"}],"total":1}
+2020-07-13 13:53:54 下午 [Thread: qtp843910778-24][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 13:53:54 下午 [Thread: qtp843910778-24][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 13:54:16 下午 [Thread: qtp843910778-46][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 13:54:16 下午 [Thread: qtp843910778-46][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 13:55:18 下午 [Thread: qtp843910778-27][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 13:55:18 下午 [Thread: qtp843910778-27][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 13:56:46 下午 [Thread: qtp843910778-38][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 13:56:46 下午 [Thread: qtp843910778-38][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 14:00:44 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 14:00:44 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 14:01:15 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetTagDetail(ChinaTagModel.java:356) ]
+INFO:select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
+2020-07-13 14:01:15 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$7.processRow(ChinaTagModel.java:366) ]
+INFO:TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
+2020-07-13 14:01:15 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintTagAll(PrintTagAction.java:130) ]
+INFO:^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,36,32,E:FONTR.TTF
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
+^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
+^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
+^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
+^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
+^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
+^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDC^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
+^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDK(240)11292ADU1(21)2255204^FS
+^FT825,642
+^BXN,8,200
+^FD(240)11292ADU1(21)2255204^KS
+^MMC
+^XZ
+
+2020-07-13 14:01:15 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintOut(PrintTagAction.java:207) ]
+INFO:print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp8473278896837453898.txt
+2020-07-13 14:01:22 下午 [Thread: qtp1862192282-59][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 14:01:22 下午 [Thread: qtp1862192282-59][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 14:02:38 下午 [Thread: qtp1862192282-59][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetTagDetail(ChinaTagModel.java:356) ]
+INFO:select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
+2020-07-13 14:02:38 下午 [Thread: qtp1862192282-59][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$7.processRow(ChinaTagModel.java:366) ]
+INFO:TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
+2020-07-13 14:02:38 下午 [Thread: qtp1862192282-59][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintTagAll(PrintTagAction.java:130) ]
+INFO:^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,36,32,E:FONTR.TTF
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
+^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
+^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
+^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
+^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
+^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
+^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDC^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
+^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDK(240)11292ADU1(21)2255204^FS
+^FT825,642
+^BXN,8,200
+^FD(240)11292ADU1(21)2255204^KS
+^MMC
+^XZ
+
+2020-07-13 14:02:38 下午 [Thread: qtp1862192282-59][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintOut(PrintTagAction.java:207) ]
+INFO:print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp6464444885194050247.txt
+2020-07-13 14:02:42 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 14:02:42 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 14:07:47 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetTagDetail(ChinaTagModel.java:356) ]
+INFO:select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
+2020-07-13 14:07:47 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$7.processRow(ChinaTagModel.java:366) ]
+INFO:TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
+2020-07-13 14:07:47 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintTagAll(PrintTagAction.java:130) ]
+INFO:^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,36,32,E:FONTR.TTF
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
+^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
+^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
+^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
+^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
+^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
+^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDC^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
+^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDK(240)11292ADU1(21)2255204^FS
+^FT825,642
+^BXN,8,200
+^FD(240)11292ADU1(21)2255204^KS
+^MMC
+^XZ
+
+2020-07-13 14:07:47 下午 [Thread: qtp1862192282-63][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintOut(PrintTagAction.java:207) ]
+INFO:print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp549798688022142707.txt
+2020-07-13 14:10:52 下午 [Thread: qtp462528433-52][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 14:10:52 下午 [Thread: qtp462528433-52][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 14:11:05 下午 [Thread: qtp462528433-52][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$13.createCallableStatement(ChinaTagModel.java:764) ]
+INFO:execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-13 14:12:58 下午 [Thread: qtp462528433-52][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetTagDetail(ChinaTagModel.java:356) ]
+INFO:select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
+2020-07-13 14:12:58 下午 [Thread: qtp462528433-52][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$7.processRow(ChinaTagModel.java:366) ]
+INFO:TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
+2020-07-13 14:12:58 下午 [Thread: qtp462528433-52][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintTagAll(PrintTagAction.java:130) ]
+INFO:^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,36,32,E:FONTR.TTF
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
+^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
+^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
+^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
+^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
+^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
+^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDC^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
+^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDK(240)11292ADU1(21)2255204^FS
+^FT825,642
+^BXN,8,200
+^FD(240)11292ADU1(21)2255204^KS
+^MMC
+^XZ
+
+2020-07-13 14:12:58 下午 [Thread: qtp462528433-52][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintOut(PrintTagAction.java:207) ]
+INFO:print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp3018078790741727781.txt
+2020-07-13 14:13:26 下午 [Thread: qtp462528433-53][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 14:13:26 下午 [Thread: qtp462528433-53][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 14:13:42 下午 [Thread: qtp462528433-53][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$13.createCallableStatement(ChinaTagModel.java:764) ]
+INFO:execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-13 14:14:15 下午 [Thread: qtp462528433-53][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetTagDetail(ChinaTagModel.java:356) ]
+INFO:select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
+2020-07-13 14:14:59 下午 [Thread: qtp462528433-53][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$7.processRow(ChinaTagModel.java:366) ]
+INFO:TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
+2020-07-13 14:16:44 下午 [Thread: qtp462528433-53][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintTagAll(PrintTagAction.java:130) ]
+INFO:^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,36,32,E:FONTR.TTF
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
+^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
+^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
+^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
+^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
+^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
+^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDC^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
+^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDK(240)11292ADU1(21)2255204^FS
+^FT825,642
+^BXN,8,200
+^FD(240)11292ADU1(21)2255204^KS
+^MMC
+^XZ
+
+2020-07-13 14:16:48 下午 [Thread: qtp462528433-53][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintOut(PrintTagAction.java:207) ]
+INFO:print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp2194280999492264655.txt
+2020-07-13 14:17:58 下午 [Thread: qtp612755199-104][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 14:17:58 下午 [Thread: qtp612755199-104][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 14:17:58 下午 [Thread: qtp612755199-104][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$13.createCallableStatement(ChinaTagModel.java:764) ]
+INFO:execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-13 14:18:03 下午 [Thread: qtp612755199-104][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetTagDetail(ChinaTagModel.java:356) ]
+INFO:select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
+2020-07-13 14:18:08 下午 [Thread: qtp612755199-104][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$7.processRow(ChinaTagModel.java:366) ]
+INFO:TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
+2020-07-13 14:18:12 下午 [Thread: qtp612755199-104][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintTagAll(PrintTagAction.java:131) ]
+INFO:^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
+^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
+^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
+^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
+^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
+^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
+^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDC^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
+^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDK(240)11292ADU1(21)2255204^FS
+^FT825,642
+^BXN,8,200
+^FD(240)11292ADU1(21)2255204^KS
+^MMC
+^XZ
+
+2020-07-13 14:18:12 下午 [Thread: qtp612755199-104][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintOut(PrintTagAction.java:208) ]
+INFO:print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp3613472428207955381.txt
+2020-07-13 14:22:09 下午 [Thread: qtp937706077-202][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:127) ]
+INFO:144855122655124011292ADU1(212255204
+2020-07-13 14:22:09 下午 [Thread: qtp937706077-202][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:1448551226551(240)11292ADU1(212255204
+2020-07-13 14:22:09 下午 [Thread: qtp937706077-202][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$13.createCallableStatement(ChinaTagModel.java:764) ]
+INFO:execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-13 14:22:09 下午 [Thread: qtp937706077-202][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel.GetTagDetail(ChinaTagModel.java:356) ]
+INFO:select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
+2020-07-13 14:22:09 下午 [Thread: qtp937706077-202][ Class:com.el.ks.barcode.model.ChinaTagModel >> Method: com.el.ks.barcode.model.ChinaTagModel$7.processRow(ChinaTagModel.java:366) ]
+INFO:TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
+2020-07-13 14:22:09 下午 [Thread: qtp937706077-202][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintTagAll(PrintTagAction.java:131) ]
+INFO:^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
+^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
+^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
+^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
+^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
+^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
+^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDC^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
+^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDK(240)11292ADU1(21)22552041120190925^FS
+^FT825,642
+^BXN,8,200
+^FD(240)11292ADU1(21)22552041120190925^KS
+^MMC
+^XZ
+
+2020-07-13 14:22:09 下午 [Thread: qtp937706077-202][ Class:com.el.ks.barcode.action.PrintTagAction >> Method: com.el.ks.barcode.action.PrintTagAction.PrintOut(PrintTagAction.java:208) ]
+INFO:print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp5828865578042449944.txt
+2020-07-13 14:46:17 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:135) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:46:17 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:47:26 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:135) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:47:32 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:48:14 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:135) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:48:14 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:48:23 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:135) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:48:24 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:49:04 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:135) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:49:04 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:49:22 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:135) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:49:22 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:51:36 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:135) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:51:36 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:55:36 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:135) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:55:36 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:58:21 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:135) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 14:58:21 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 15:01:10 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:151) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 15:01:10 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 15:02:20 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:155) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 15:02:20 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 15:03:29 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:149) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 15:03:29 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 15:04:32 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:149) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 15:04:32 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 15:04:56 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:149) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 15:04:56 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 17:25:52 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.clean(SNParaseUtil.java:149) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925
+2020-07-13 17:25:52 下午 [Thread: main][ Class:com.el.ks.barcode.util.SNParaseUtil >> Method: com.el.ks.barcode.util.SNParaseUtil.ParseTag(SNParaseUtil.java:35) ]
+INFO:(240)11292ADU1(21)2255204(11)20190925

@@ -1,402 +1,1260 @@
-2020-07-13 10:47:45,431 [qtp1948234807-55] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 10:47:45,442 [qtp1948234807-55] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 10:47:46,915 [qtp1948234807-55] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
-2020-07-13 10:47:47,305 [qtp1948234807-55] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"A83-D1","rHLOTN":"国械注进20162222664","rDLITM":"11292ADU1","rHALPH":"纤维胆道镜","rDAITM":"11292ADU1","rDSRP6":"Y","rHEFFT":"121235"}],"total":1}
-2020-07-13 10:49:14,698 [qtp1399968128-23] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 10:49:14,704 [qtp1399968128-23] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 10:49:15,982 [qtp1399968128-23] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
-2020-07-13 10:49:16,373 [qtp1399968128-23] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"A83-D1","rHLOTN":"国械注进20162222664","rDLITM":"11292ADU1","rHALPH":"纤维胆道镜","rDAITM":"11292ADU1","rDSRP6":"Y","rHEFFT":"121235"}],"total":1}
-2020-07-13 13:48:05,020 [qtp2006901606-22] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 13:48:05,025 [qtp2006901606-22] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 13:48:06,374 [qtp2006901606-22] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
-2020-07-13 13:48:06,692 [qtp2006901606-22] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"A83-D1","rHLOTN":"国械注进20162222664","rDLITM":"11292ADU1","rHALPH":"纤维胆道镜","rDAITM":"11292ADU1","rDSRP6":"Y","rHEFFT":"121235"}],"total":1}
-2020-07-13 13:48:09,639 [qtp2006901606-24] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 13:48:09,641 [qtp2006901606-24] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 13:48:09,680 [qtp2006901606-24] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabel ?,?,?,?
-2020-07-13 13:49:20,610 [qtp2018408472-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 13:49:20,612 [qtp2018408472-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 13:50:18,631 [qtp39048788-27] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 13:50:18,635 [qtp39048788-27] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 13:50:25,605 [qtp39048788-27] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
-2020-07-13 13:50:25,809 [qtp39048788-27] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"A83-D1","rHLOTN":"国械注进20162222664","rDLITM":"11292ADU1","rHALPH":"纤维胆道镜","rDAITM":"11292ADU1","rDSRP6":"Y","rHEFFT":"121235"}],"total":1}
-2020-07-13 13:50:30,066 [qtp39048788-38] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 13:50:30,067 [qtp39048788-38] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 13:50:36,570 [qtp39048788-38] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabel ?,?,?,?
-2020-07-13 13:53:38,345 [qtp843910778-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 13:53:38,348 [qtp843910778-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 13:53:50,807 [qtp843910778-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
-2020-07-13 13:53:51,172 [qtp843910778-26] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"A83-D1","rHLOTN":"国械注进20162222664","rDLITM":"11292ADU1","rHALPH":"纤维胆道镜","rDAITM":"11292ADU1","rDSRP6":"Y","rHEFFT":"121235"}],"total":1}
-2020-07-13 13:53:54,478 [qtp843910778-24] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 13:53:54,479 [qtp843910778-24] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 13:54:16,954 [qtp843910778-46] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 13:54:16,954 [qtp843910778-46] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 13:55:18,092 [qtp843910778-27] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 13:55:18,093 [qtp843910778-27] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 13:56:46,228 [qtp843910778-38] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 13:56:46,230 [qtp843910778-38] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 14:00:44,457 [qtp1862192282-63] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 14:00:44,462 [qtp1862192282-63] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 14:01:15,610 [qtp1862192282-63] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
-2020-07-13 14:01:15,670 [qtp1862192282-63] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
-2020-07-13 14:01:15,676 [qtp1862192282-63] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+2020-07-21 19:23:48,181 [qtp1382121232-25] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:23:48,189 [qtp1382121232-25] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:23:49,355 [qtp1382121232-25] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 19:23:49,666 [qtp1382121232-25] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"粤械注准20152661195","rDLITM":"","rHALPH":"一次性使用非血管腔道导丝","rDAITM":"","rDSRP6":"Y","rHEFFT":"120299"},{"rDADD4":"","rHLOTN":"国械注进20163544521","rDLITM":"","rHALPH":"手术导航系统","rDAITM":"","rDSRP6":"Y","rHEFFT":"121304"}],"total":2}
+2020-07-21 19:25:30,206 [qtp1382121232-35] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 19:25:30,271 [qtp1382121232-35] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"粤械注准20152661195","rDLITM":"","rHALPH":"一次性使用非血管腔道导丝","rDAITM":"","rDSRP6":"Y","rHEFFT":"120299"},{"rDADD4":"","rHLOTN":"国械注进20163544521","rDLITM":"","rHALPH":"手术导航系统","rDAITM":"","rDSRP6":"Y","rHEFFT":"121304"}],"total":2}
+2020-07-21 19:25:47,033 [qtp1382121232-36] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 19:25:47,217 [qtp1382121232-36] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"粤械注准20152661195","rDLITM":"","rHALPH":"一次性使用非血管腔道导丝","rDAITM":"","rDSRP6":"Y","rHEFFT":"120299"},{"rDADD4":"","rHLOTN":"国械注进20163544521","rDLITM":"","rHALPH":"手术导航系统","rDAITM":"","rDSRP6":"Y","rHEFFT":"121304"}],"total":2}
+2020-07-21 19:28:15,335 [qtp1382121232-21] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 19:28:15,511 [qtp1382121232-21] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"粤械注准20152661195","rDLITM":"","rHALPH":"一次性使用非血管腔道导丝","rDAITM":"","rDSRP6":"Y","rHEFFT":"120299"},{"rDADD4":"","rHLOTN":"国械注进20163544521","rDLITM":"","rHALPH":"手术导航系统","rDAITM":"","rDSRP6":"Y","rHEFFT":"121304"}],"total":2}
+2020-07-21 19:32:25,671 [qtp747141291-25] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:32:25,677 [qtp747141291-25] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:33:08,576 [qtp747141291-25] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 19:33:20,871 [qtp747141291-25] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"粤械注准20152661195","rDLITM":"","rHALPH":"一次性使用非血管腔道导丝","rDAITM":"","rDSRP6":"Y","rHEFFT":"120299"},{"rDADD4":"","rHLOTN":"国械注进20163544521","rDLITM":"","rHALPH":"手术导航系统","rDAITM":"","rDSRP6":"Y","rHEFFT":"121304"}],"total":2}
+2020-07-21 19:35:46,653 [qtp747141291-28] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 19:36:05,861 [qtp747141291-28] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"粤械注准20152661195","rDLITM":"","rHALPH":"一次性使用非血管腔道导丝","rDAITM":"","rDSRP6":"Y","rHEFFT":"120299"},{"rDADD4":"","rHLOTN":"国械注进20163544521","rDLITM":"","rHALPH":"手术导航系统","rDAITM":"","rDSRP6":"Y","rHEFFT":"121304"}],"total":2}
+2020-07-21 19:37:50,166 [qtp2059697832-61] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:37:50,168 [qtp2059697832-61] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:38:13,688 [qtp2059697832-61] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 19:38:17,577 [qtp2059697832-61] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"","rDLITM":"","rHALPH":"","rDAITM":"","rDSRP6":"","rHEFFT":""}],"total":1}
+2020-07-21 19:40:16,483 [qtp442019895-114] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:40:16,487 [qtp442019895-114] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:40:35,411 [qtp442019895-116] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:40:35,412 [qtp442019895-116] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:42:19,001 [qtp1607939956-165] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:42:19,003 [qtp1607939956-165] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN000119700101
+2020-07-21 19:42:19,155 [qtp1607939956-165] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 19:42:23,426 [qtp1607939956-165] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"","rDLITM":"","rHALPH":"","rDAITM":"","rDSRP6":"","rHEFFT":""}],"total":1}
+2020-07-21 19:43:38,205 [qtp708224317-196] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:43:38,208 [qtp708224317-196] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 19:43:38,389 [qtp708224317-196] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 19:43:42,162 [qtp708224317-196] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"国械注进20203010343","rDLITM":"UH400","rHALPH":"高频手术设备","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"125188"},{"rDADD4":"","rHLOTN":"暂时无证的医疗器械","rDLITM":"UH400","rHALPH":"暂时无证的医疗器械","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"140366"}],"total":2}
+2020-07-21 19:43:48,274 [qtp708224317-198] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:43:48,274 [qtp708224317-198] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 19:43:48,404 [qtp708224317-198] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 19:43:48,430 [qtp708224317-198] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 19:43:48,573 [qtp708224317-198] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810 Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF防除颤, rddsc3=I, rdlitm=UH400)
+2020-07-21 19:43:48,580 [qtp708224317-198] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
 ^CW1,E:FONTR.TTF
 ^SEE:GB18030.DAT^CI28,21,36
 ^LH10,10
-^A@N,36,32,E:FONTR.TTF
 ^A@N,25,24,E:FONTR.TTF
-^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
-^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
-^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
-^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
-^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
-^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
 ^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
 ^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
 ^FT,289^A1N,25,24^FB456,2,12,
 ^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
 ^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
-^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
-^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
-^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
-^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
-^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT20,363^A1N,25,24^FD生产地址: ^FS
+^FT,400^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810 Gomaringen GERMANY^FS
+^FT20,437^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,474^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,511^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,548^A1N,25,24^FD其他内容详见说明书^FS
 ^FT^A@N,31,30,E:FONTR.TTF
 ^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
 ^FDA^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
-^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
-^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,180^A1N,25,24^FD电源连接条件: 220VAC-240VAC，50/60Hz^FS
+^FT745,217^A1N,25,24^FD输入功率: 5A^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX0^FS
 ^FT745,291^A1N,25,24^FD防电击程度: ^FS
 ^A@N,50,30,E:KARLSTOR.TTF
-^FT^A1N,25,24^FDC^FS
+^FT^A1N,25,24^FDnull^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
-^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT745,328^A1N,25,24^FD防电击类型: I^FS
+^FT745,365^A1N,25,24^FD订货号: UH400^FS
 ^FT20,680^A1N,25,24^FB1140,1,,R
-^FDK(240)11292ADU1(21)2255204^FS
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
 ^FT825,642
 ^BXN,8,200
-^FD(240)11292ADU1(21)2255204^KS
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
 ^MMC
 ^XZ
 
-2020-07-13 14:01:15,692 [qtp1862192282-63] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp8473278896837453898.txt
-2020-07-13 14:01:22,095 [qtp1862192282-59] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 14:01:22,096 [qtp1862192282-59] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 14:02:38,906 [qtp1862192282-59] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
-2020-07-13 14:02:38,940 [qtp1862192282-59] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
-2020-07-13 14:02:38,942 [qtp1862192282-59] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+2020-07-21 19:43:48,592 [qtp708224317-198] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp7364276690260719680.txt
+2020-07-21 19:43:50,324 [qtp708224317-196] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:43:50,326 [qtp708224317-196] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 19:43:50,346 [qtp708224317-196] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 19:43:50,371 [qtp708224317-196] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 19:43:50,402 [qtp708224317-196] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810 Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF防除颤, rddsc3=I, rdlitm=UH400)
+2020-07-21 19:43:50,404 [qtp708224317-196] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
 ^CW1,E:FONTR.TTF
 ^SEE:GB18030.DAT^CI28,21,36
 ^LH10,10
-^A@N,36,32,E:FONTR.TTF
 ^A@N,25,24,E:FONTR.TTF
-^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
-^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
-^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
-^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
-^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
-^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
 ^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
 ^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
 ^FT,289^A1N,25,24^FB456,2,12,
 ^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
 ^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
-^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
-^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
-^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
-^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
-^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT20,363^A1N,25,24^FD生产地址: ^FS
+^FT,400^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810 Gomaringen GERMANY^FS
+^FT20,437^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,474^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,511^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,548^A1N,25,24^FD其他内容详见说明书^FS
 ^FT^A@N,31,30,E:FONTR.TTF
 ^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
 ^FDA^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
-^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
-^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,180^A1N,25,24^FD电源连接条件: 220VAC-240VAC，50/60Hz^FS
+^FT745,217^A1N,25,24^FD输入功率: 5A^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX0^FS
 ^FT745,291^A1N,25,24^FD防电击程度: ^FS
 ^A@N,50,30,E:KARLSTOR.TTF
-^FT^A1N,25,24^FDC^FS
+^FT^A1N,25,24^FDnull^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
-^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT745,328^A1N,25,24^FD防电击类型: I^FS
+^FT745,365^A1N,25,24^FD订货号: UH400^FS
 ^FT20,680^A1N,25,24^FB1140,1,,R
-^FDK(240)11292ADU1(21)2255204^FS
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
 ^FT825,642
 ^BXN,8,200
-^FD(240)11292ADU1(21)2255204^KS
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
 ^MMC
 ^XZ
 
-2020-07-13 14:02:38,942 [qtp1862192282-59] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp6464444885194050247.txt
-2020-07-13 14:02:42,984 [qtp1862192282-63] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 14:02:42,985 [qtp1862192282-63] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 14:07:47,518 [qtp1862192282-63] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
-2020-07-13 14:07:47,545 [qtp1862192282-63] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
-2020-07-13 14:07:47,547 [qtp1862192282-63] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+2020-07-21 19:43:50,405 [qtp708224317-196] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp2877053743284743965.txt
+2020-07-21 19:43:51,444 [qtp708224317-198] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 19:43:51,445 [qtp708224317-198] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 19:43:51,464 [qtp708224317-198] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 19:43:51,490 [qtp708224317-198] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 19:43:51,521 [qtp708224317-198] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810 Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF防除颤, rddsc3=I, rdlitm=UH400)
+2020-07-21 19:43:51,522 [qtp708224317-198] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
 ^CW1,E:FONTR.TTF
 ^SEE:GB18030.DAT^CI28,21,36
 ^LH10,10
-^A@N,36,32,E:FONTR.TTF
 ^A@N,25,24,E:FONTR.TTF
-^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
-^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
-^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
-^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
-^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
-^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
 ^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
 ^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
 ^FT,289^A1N,25,24^FB456,2,12,
 ^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
 ^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
-^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
-^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
-^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
-^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
-^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT20,363^A1N,25,24^FD生产地址: ^FS
+^FT,400^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810 Gomaringen GERMANY^FS
+^FT20,437^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,474^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,511^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,548^A1N,25,24^FD其他内容详见说明书^FS
 ^FT^A@N,31,30,E:FONTR.TTF
 ^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
 ^FDA^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
-^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
-^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,180^A1N,25,24^FD电源连接条件: 220VAC-240VAC，50/60Hz^FS
+^FT745,217^A1N,25,24^FD输入功率: 5A^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX0^FS
 ^FT745,291^A1N,25,24^FD防电击程度: ^FS
 ^A@N,50,30,E:KARLSTOR.TTF
-^FT^A1N,25,24^FDC^FS
+^FT^A1N,25,24^FDnull^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
-^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT745,328^A1N,25,24^FD防电击类型: I^FS
+^FT745,365^A1N,25,24^FD订货号: UH400^FS
 ^FT20,680^A1N,25,24^FB1140,1,,R
-^FDK(240)11292ADU1(21)2255204^FS
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
 ^FT825,642
 ^BXN,8,200
-^FD(240)11292ADU1(21)2255204^KS
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
 ^MMC
 ^XZ
 
-2020-07-13 14:07:47,549 [qtp1862192282-63] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp549798688022142707.txt
-2020-07-13 14:10:52,011 [qtp462528433-52] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 14:10:52,017 [qtp462528433-52] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 14:11:05,832 [qtp462528433-52] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
-2020-07-13 14:12:58,235 [qtp462528433-52] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
-2020-07-13 14:12:58,294 [qtp462528433-52] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
-2020-07-13 14:12:58,298 [qtp462528433-52] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+2020-07-21 19:43:51,524 [qtp708224317-198] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp3843718680726130887.txt
+2020-07-21 20:03:29,482 [qtp1307838175-25] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:03:29,487 [qtp1307838175-25] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:03:30,664 [qtp1307838175-25] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 20:03:35,013 [qtp1307838175-25] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"国械注进20203010343","rDLITM":"UH400","rHALPH":"高频手术设备","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"125188"},{"rDADD4":"","rHLOTN":"暂时无证的医疗器械","rDLITM":"UH400","rHALPH":"暂时无证的医疗器械","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"140366"}],"total":2}
+2020-07-21 20:03:44,745 [qtp1307838175-28] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:03:44,746 [qtp1307838175-28] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:03:44,774 [qtp1307838175-28] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 20:03:44,799 [qtp1307838175-28] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 20:03:44,840 [qtp1307838175-28] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810 Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF防除颤, rddsc3=I, rdlitm=UH400)
+2020-07-21 20:06:39,076 [qtp1307838175-28] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
 ^CW1,E:FONTR.TTF
 ^SEE:GB18030.DAT^CI28,21,36
 ^LH10,10
-^A@N,36,32,E:FONTR.TTF
 ^A@N,25,24,E:FONTR.TTF
-^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
-^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
-^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
-^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
-^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
-^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-22^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
 ^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
 ^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
 ^FT,289^A1N,25,24^FB456,2,12,
 ^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
 ^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
-^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
-^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
-^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
-^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
-^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT20,363^A1N,25,24^FD生产地址: ^FS
+^FT,400^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810 Gomaringen GERMANY^FS
+^FT20,437^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,474^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,511^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,548^A1N,25,24^FD其他内容详见说明书^FS
 ^FT^A@N,31,30,E:FONTR.TTF
 ^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
 ^FDA^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
-^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
-^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,180^A1N,25,24^FD电源连接条件: 220VAC-240VAC，50/60Hz^FS
+^FT745,217^A1N,25,24^FD输入功率: 5A^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX0^FS
 ^FT745,291^A1N,25,24^FD防电击程度: ^FS
 ^A@N,50,30,E:KARLSTOR.TTF
-^FT^A1N,25,24^FDC^FS
+^FT^A1N,25,24^FDnull^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
-^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT745,328^A1N,25,24^FD防电击类型: I^FS
+^FT745,365^A1N,25,24^FD订货号: UH400^FS
 ^FT20,680^A1N,25,24^FB1140,1,,R
-^FDK(240)11292ADU1(21)2255204^FS
+^FDU(240)UH400(21)TEST012SN0001(11)20200722^FS
 ^FT825,642
 ^BXN,8,200
-^FD(240)11292ADU1(21)2255204^KS
+^FD(240)UH400(21)TEST012SN0001(11)20200722^KS
 ^MMC
 ^XZ
 
-2020-07-13 14:12:58,306 [qtp462528433-52] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp3018078790741727781.txt
-2020-07-13 14:13:26,705 [qtp462528433-53] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 14:13:26,706 [qtp462528433-53] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 14:13:42,465 [qtp462528433-53] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
-2020-07-13 14:14:15,778 [qtp462528433-53] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
-2020-07-13 14:14:59,422 [qtp462528433-53] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
-2020-07-13 14:16:44,608 [qtp462528433-53] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+2020-07-21 20:06:39,087 [qtp1307838175-28] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp6264783782995715217.txt
+2020-07-21 20:42:56,406 [qtp1383366933-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:42:56,414 [qtp1383366933-26] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:42:57,166 [qtp1383366933-26] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 20:43:02,115 [qtp1383366933-26] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"国械注进20203010343","rDLITM":"UH400","rHALPH":"高频手术设备","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"125188"},{"rDADD4":"","rHLOTN":"暂时无证的医疗器械","rDLITM":"UH400","rHALPH":"暂时无证的医疗器械","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"140366"}],"total":2}
+2020-07-21 20:43:10,784 [qtp1383366933-28] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:43:10,785 [qtp1383366933-28] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:43:10,859 [qtp1383366933-28] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 20:43:10,887 [qtp1383366933-28] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 20:43:11,032 [qtp1383366933-28] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 20:43:15,807 [qtp1383366933-28] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
 ^CW1,E:FONTR.TTF
 ^SEE:GB18030.DAT^CI28,21,36
 ^LH10,10
-^A@N,36,32,E:FONTR.TTF
 ^A@N,25,24,E:FONTR.TTF
-^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
-^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
-^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
-^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
-^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
-^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
 ^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
 ^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
 ^FT,289^A1N,25,24^FB456,2,12,
 ^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
 ^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
-^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
-^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
-^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
-^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
-^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT20,363^A1N,25,24^FD生产地址: ^FS
+^FT,400^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,437^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,474^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,511^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,548^A1N,25,24^FD其他内容详见说明书^FS
 ^FT^A@N,31,30,E:FONTR.TTF
 ^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
 ^FDA^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
-^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
-^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,180^A1N,25,24^FD电源连接条件: 220VAC-240VAC，50/60Hz^FS
+^FT745,217^A1N,25,24^FD输入功率: 5A^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX0^FS
 ^FT745,291^A1N,25,24^FD防电击程度: ^FS
 ^A@N,50,30,E:KARLSTOR.TTF
-^FT^A1N,25,24^FDC^FS
+^FT^A1N,25,24^FDD^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
-^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT745,328^A1N,25,24^FD防电击类型: I^FS
+^FT745,365^A1N,25,24^FD订货号: UH400^FS
 ^FT20,680^A1N,25,24^FB1140,1,,R
-^FDK(240)11292ADU1(21)2255204^FS
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
 ^FT825,642
 ^BXN,8,200
-^FD(240)11292ADU1(21)2255204^KS
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
 ^MMC
 ^XZ
 
-2020-07-13 14:16:48,531 [qtp462528433-53] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp2194280999492264655.txt
-2020-07-13 14:17:58,010 [qtp612755199-104] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 14:17:58,011 [qtp612755199-104] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 14:17:58,338 [qtp612755199-104] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
-2020-07-13 14:18:03,742 [qtp612755199-104] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
-2020-07-13 14:18:08,220 [qtp612755199-104] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
-2020-07-13 14:18:12,730 [qtp612755199-104] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+2020-07-21 20:43:15,813 [qtp1383366933-28] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp5695796583974529645.txt
+2020-07-21 20:50:24,591 [qtp1830383385-60] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:50:24,592 [qtp1830383385-60] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:50:24,922 [qtp1830383385-60] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 20:50:25,066 [qtp1830383385-60] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 20:50:25,096 [qtp1830383385-60] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 20:50:25,099 [qtp1830383385-60] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
 ^CW1,E:FONTR.TTF
 ^SEE:GB18030.DAT^CI28,21,36
 ^LH10,10
 ^A@N,25,24,E:FONTR.TTF
-^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
-^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
-^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
-^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
-^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
-^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
 ^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
 ^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
 ^FT,289^A1N,25,24^FB456,2,12,
 ^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
 ^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
-^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
-^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
-^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
-^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
-^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT20,363^A1N,25,24^FD生产地址: ^FS
+^FT,400^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,437^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,474^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,511^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,548^A1N,25,24^FD其他内容详见说明书^FS
 ^FT^A@N,31,30,E:FONTR.TTF
 ^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
 ^FDA^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
-^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
-^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,180^A1N,25,24^FD电源连接条件: 220VAC-240VAC，50/60Hz^FS
+^FT745,217^A1N,25,24^FD输入功率: 5A^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX0^FS
 ^FT745,291^A1N,25,24^FD防电击程度: ^FS
 ^A@N,50,30,E:KARLSTOR.TTF
-^FT^A1N,25,24^FDC^FS
+^FT^A1N,25,24^FDD^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
-^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT745,328^A1N,25,24^FD防电击类型: I^FS
+^FT745,365^A1N,25,24^FD订货号: UH400^FS
 ^FT20,680^A1N,25,24^FB1140,1,,R
-^FDK(240)11292ADU1(21)2255204^FS
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
 ^FT825,642
 ^BXN,8,200
-^FD(240)11292ADU1(21)2255204^KS
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
 ^MMC
 ^XZ
 
-2020-07-13 14:18:12,733 [qtp612755199-104] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp3613472428207955381.txt
-2020-07-13 14:22:09,409 [qtp937706077-202] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 144855122655124011292ADU1(212255204
-2020-07-13 14:22:09,411 [qtp937706077-202] INFO  [com.el.ks.barcode.util.SNParaseUtil] - 1448551226551(240)11292ADU1(212255204
-2020-07-13 14:22:09,694 [qtp937706077-202] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
-2020-07-13 14:22:09,722 [qtp937706077-202] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='11292ADU1' and RDLOTN=N'国械注进20162222664' and RDSRP6='Y'
-2020-07-13 14:22:09,788 [qtp937706077-202] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=纤维胆道镜, rdaitm=11292ADU1, rdagen=纤维胆道镜, rhlotn=国械注进20162222664, date=, rdcmddsc01=360次, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Mittelstr.8, 78532 Tuttlingen, GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=KHC, content=, rdadd6=不适用, rddsc1=不适用, rdcmddsc=IPX7, rddsc2=BF, rddsc3=不适用, rdlitm=11292ADU1)
-2020-07-13 14:22:09,790 [qtp937706077-202] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+2020-07-21 20:50:25,100 [qtp1830383385-60] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp4703924155809458400.txt
+2020-07-21 20:51:25,311 [qtp662453367-112] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:51:25,313 [qtp662453367-112] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:51:25,432 [qtp662453367-112] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 20:51:25,469 [qtp662453367-112] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 20:51:25,497 [qtp662453367-112] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 20:51:25,500 [qtp662453367-112] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
 ^CW1,E:FONTR.TTF
 ^SEE:GB18030.DAT^CI28,21,36
 ^LH10,10
 ^A@N,25,24,E:FONTR.TTF
-^FT20,30^A1N,25,24^FD产品名称: 纤维胆道镜^FS
-^FT20,67^A1N,25,24^FD规格型号: 11292ADU1^FS
-^FT20,104^A1N,25,24^FD产品描述: 纤维胆道镜^FS
-^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20162222664^FS
-^FT20,178^A1N,25,24^FD生产日期: 2019-09-25^FS
-^FT^A1N,25,24^FD    使用期限: 360次^FS
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
 ^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
 ^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
 ^FT,289^A1N,25,24^FB456,2,12,
 ^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
 ^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
-^FT20,363^A1N,25,24^FD生产地址: Mittelstr.8, 78532 Tuttlingen, GERMANY^FS
-^FT20,400^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
-^FT20,437^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
-^FT20,474^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
-^FT20,511^A1N,25,24^FD其他内容详见说明书^FS
+^FT20,363^A1N,25,24^FD生产地址: ^FS
+^FT,400^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,437^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,474^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,511^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,548^A1N,25,24^FD其他内容详见说明书^FS
 ^FT^A@N,31,30,E:FONTR.TTF
 ^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
 ^FDA^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,180^A1N,25,24^FD电源连接条件: 不适用^FS
-^FT745,217^A1N,25,24^FD输入功率: 不适用^FS
-^FT745,254^A1N,25,24^FD防护等级: IPX7^FS
+^FT745,180^A1N,25,24^FD电源连接条件: 220VAC-240VAC，50/60Hz^FS
+^FT745,217^A1N,25,24^FD输入功率: 5A^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX0^FS
 ^FT745,291^A1N,25,24^FD防电击程度: ^FS
 ^A@N,50,30,E:KARLSTOR.TTF
-^FT^A1N,25,24^FDC^FS
+^FT^A1N,25,24^FDD^FS
 ^A@N,25,24,E:FONTR.TTF
-^FT745,328^A1N,25,24^FD防电击类型: 不适用^FS
-^FT745,365^A1N,25,24^FD订货号: 11292ADU1^FS
+^FT745,328^A1N,25,24^FD防电击类型: I^FS
+^FT745,365^A1N,25,24^FD订货号: UH400^FS
 ^FT20,680^A1N,25,24^FB1140,1,,R
-^FDK(240)11292ADU1(21)22552041120190925^FS
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
 ^FT825,642
 ^BXN,8,200
-^FD(240)11292ADU1(21)22552041120190925^KS
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
 ^MMC
 ^XZ
 
-2020-07-13 14:22:09,792 [qtp937706077-202] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp5828865578042449944.txt
-2020-07-13 14:46:17,903 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:46:17,910 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:47:26,372 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:47:32,577 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:48:14,339 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:48:14,345 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:48:23,349 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:48:24,237 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:49:04,761 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:49:04,767 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:49:22,857 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:49:22,866 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:51:36,231 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:51:36,236 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:55:36,136 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:55:36,145 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:58:21,234 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 14:58:21,243 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 15:01:10,943 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 15:01:10,949 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 15:02:20,774 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 15:02:20,777 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 15:03:29,834 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 15:03:29,841 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 15:04:32,842 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 15:04:32,848 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 15:04:56,680 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
-2020-07-13 15:04:56,685 [main] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)11292ADU1(21)2255204(11)20190925
+2020-07-21 20:51:25,502 [qtp662453367-112] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp7844899817907618722.txt
+2020-07-21 20:51:35,744 [qtp662453367-111] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:51:35,745 [qtp662453367-111] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:51:35,770 [qtp662453367-111] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 20:51:35,840 [qtp662453367-111] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"国械注进20203010343","rDLITM":"UH400","rHALPH":"高频手术设备","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"125188"},{"rDADD4":"","rHLOTN":"暂时无证的医疗器械","rDLITM":"UH400","rHALPH":"暂时无证的医疗器械","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"140366"}],"total":2}
+2020-07-21 20:51:41,669 [qtp662453367-110] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:51:41,670 [qtp662453367-110] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:51:41,691 [qtp662453367-110] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 20:51:41,717 [qtp662453367-110] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 20:51:41,745 [qtp662453367-110] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 20:51:41,747 [qtp662453367-110] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: ^FS
+^FT,400^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,437^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,474^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,511^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,548^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 220VAC-240VAC，50/60Hz^FS
+^FT745,217^A1N,25,24^FD输入功率: 5A^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: I^FS
+^FT745,365^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 20:51:41,750 [qtp662453367-110] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp7053454393403939695.txt
+2020-07-21 20:54:22,547 [qtp188073001-165] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:54:22,547 [qtp188073001-165] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:54:22,656 [qtp188073001-165] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 20:54:22,725 [qtp188073001-165] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"国械注进20203010343","rDLITM":"UH400","rHALPH":"高频手术设备","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"125188"},{"rDADD4":"","rHLOTN":"暂时无证的医疗器械","rDLITM":"UH400","rHALPH":"暂时无证的医疗器械","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"140366"}],"total":2}
+2020-07-21 20:54:25,988 [qtp188073001-167] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:54:25,988 [qtp188073001-167] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:54:26,050 [qtp188073001-167] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 20:54:26,075 [qtp188073001-167] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 20:54:26,219 [qtp188073001-167] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 20:54:26,224 [qtp188073001-167] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: ^FS
+^FT,400^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,437^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,474^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,511^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,548^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 220VAC-240VAC，50/60Hz^FS
+^FT745,217^A1N,25,24^FD输入功率: 5A^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: I^FS
+^FT745,365^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 20:54:26,226 [qtp188073001-167] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp1488868596668466102.txt
+2020-07-21 20:55:10,538 [qtp1190020209-195] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:55:10,539 [qtp1190020209-195] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:55:10,705 [qtp1190020209-195] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 20:55:10,821 [qtp1190020209-195] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"国械注进20203010343","rDLITM":"UH400","rHALPH":"高频手术设备","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"125188"},{"rDADD4":"","rHLOTN":"暂时无证的医疗器械","rDLITM":"UH400","rHALPH":"暂时无证的医疗器械","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"140366"}],"total":2}
+2020-07-21 20:55:12,948 [qtp1190020209-197] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:55:12,948 [qtp1190020209-197] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:55:12,972 [qtp1190020209-197] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 20:55:12,998 [qtp1190020209-197] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 20:55:13,028 [qtp1190020209-197] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 20:55:13,030 [qtp1190020209-197] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: ^FS
+^FT,400^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,437^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,474^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,511^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,548^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 220VAC-240VAC，50/60Hz^FS
+^FT745,217^A1N,25,24^FD输入功率: 5A^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: I^FS
+^FT745,365^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 20:55:13,032 [qtp1190020209-197] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp837458440100901001.txt
+2020-07-21 20:55:34,517 [qtp1190020209-195] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:55:34,519 [qtp1190020209-195] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:55:34,537 [qtp1190020209-195] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 20:55:34,562 [qtp1190020209-195] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 20:55:34,590 [qtp1190020209-195] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 20:57:29,953 [qtp1190020209-195] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: KARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,252^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,289^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,326^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,363^A1N,25,24^FD生产地址: ^FS
+^FT,400^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,437^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,474^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,511^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,548^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: 220VAC-240VAC，50/60Hz^FS
+^FT745,217^A1N,25,24^FD输入功率: 5A^FS
+^FT745,254^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,291^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,328^A1N,25,24^FD防电击类型: I^FS
+^FT745,365^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 20:57:29,954 [qtp1190020209-195] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp805257826304505504.txt
+2020-07-21 20:57:36,996 [qtp761292848-226] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:57:37,003 [qtp761292848-226] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:57:37,432 [qtp761292848-226] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 20:57:37,459 [qtp761292848-226] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 20:57:37,508 [qtp761292848-226] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 20:57:37,511 [qtp761292848-226] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,252^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,289^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,326^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,363^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,400^A1N,25,24^FD生产地址: ^FS
+^FT,437^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,474^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,511^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,548^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,585^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: ^FS
+^FT,217^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,254^A1N,25,24^FD输入功率: 5A^FS
+^FT745,291^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,328^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,365^A1N,25,24^FD防电击类型: I^FS
+^FT745,402^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 20:57:37,513 [qtp761292848-226] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp4695583153074879698.txt
+2020-07-21 20:58:31,048 [qtp761292848-221] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:58:31,049 [qtp761292848-221] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:58:31,086 [qtp761292848-221] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 20:58:31,110 [qtp761292848-221] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 20:58:31,137 [qtp761292848-221] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 20:59:19,420 [qtp761292848-227] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 20:59:19,420 [qtp761292848-227] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 20:59:19,455 [qtp761292848-227] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 20:59:19,515 [qtp761292848-227] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 20:59:19,542 [qtp761292848-227] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 21:00:51,789 [qtp761292848-227] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,252^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,289^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,326^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,363^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,400^A1N,25,24^FD生产地址: ^FS
+^FT,437^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,474^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,511^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,548^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,585^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: ^FS
+^FT,217^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,254^A1N,25,24^FD输入功率: 5A^FS
+^FT745,291^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,328^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,365^A1N,25,24^FD防电击类型: I^FS
+^FT745,402^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 21:00:51,790 [qtp761292848-227] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp4264516534033117922.txt
+2020-07-21 21:00:53,927 [qtp761292848-221] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,252^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,289^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,326^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,363^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,400^A1N,25,24^FD生产地址: ^FS
+^FT,437^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,474^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,511^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,548^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,585^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: ^FS
+^FT,217^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,254^A1N,25,24^FD输入功率: 5A^FS
+^FT745,291^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,328^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,365^A1N,25,24^FD防电击类型: I^FS
+^FT745,402^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+^FT20,622^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,659^A1N,25,24^FD规格型号: UH400^FS
+^FT20,696^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,733^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,770^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,807^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,844^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,881^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,918^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,955^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,992^A1N,25,24^FD生产地址: ^FS
+^FT,1029^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,1066^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,1103^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,1140^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,1177^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,439^A1N,25,24^FD电源连接条件: ^FS
+^FT,476^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,513^A1N,25,24^FD输入功率: 5A^FS
+^FT745,550^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,587^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,624^A1N,25,24^FD防电击类型: I^FS
+^FT745,661^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 21:00:53,929 [qtp761292848-221] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp6759660626882108498.txt
+2020-07-21 21:01:10,175 [qtp761292848-224] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 21:01:10,176 [qtp761292848-224] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 21:01:10,245 [qtp761292848-224] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 21:01:10,269 [qtp761292848-224] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 21:01:10,408 [qtp761292848-224] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 21:01:29,291 [qtp761292848-225] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 21:01:29,292 [qtp761292848-225] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 21:01:29,424 [qtp761292848-225] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 21:01:29,449 [qtp761292848-225] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 21:01:29,582 [qtp761292848-225] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 21:02:51,547 [qtp761292848-225] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,252^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,289^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,326^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,363^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,400^A1N,25,24^FD生产地址: ^FS
+^FT,437^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,474^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,511^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,548^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,585^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: ^FS
+^FT,217^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,254^A1N,25,24^FD输入功率: 5A^FS
+^FT745,291^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,328^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,365^A1N,25,24^FD防电击类型: I^FS
+^FT745,402^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 21:02:51,549 [qtp761292848-225] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp6001488640320430223.txt
+2020-07-21 21:02:54,260 [qtp761292848-224] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,252^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,289^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,326^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,363^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,400^A1N,25,24^FD生产地址: ^FS
+^FT,437^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,474^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,511^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,548^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,585^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: ^FS
+^FT,217^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,254^A1N,25,24^FD输入功率: 5A^FS
+^FT745,291^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,328^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,365^A1N,25,24^FD防电击类型: I^FS
+^FT745,402^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+^FT745,439^A1N,25,24^FD电源连接条件: ^FS
+^FT,476^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,513^A1N,25,24^FD输入功率: 5A^FS
+^FT745,550^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,587^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,624^A1N,25,24^FD防电击类型: I^FS
+^FT745,661^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 21:02:54,262 [qtp761292848-224] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp821895092253773407.txt
+2020-07-21 21:03:01,083 [qtp761292848-222] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 21:03:01,085 [qtp761292848-222] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 21:03:01,108 [qtp761292848-222] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 21:03:01,133 [qtp761292848-222] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 21:03:01,196 [qtp761292848-222] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 21:05:58,476 [qtp761292848-222] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,252^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,289^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,326^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,363^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,400^A1N,25,24^FD生产地址: ^FS
+^FT,437^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,474^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,511^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,548^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,585^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: ^FS
+^FT,217^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,254^A1N,25,24^FD输入功率: 5A^FS
+^FT745,291^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,328^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,365^A1N,25,24^FD防电击类型: I^FS
+^FT745,402^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 21:05:58,477 [qtp761292848-222] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp4595989468412276942.txt
+2020-07-21 21:06:29,617 [qtp627429971-257] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 21:06:29,619 [qtp627429971-257] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 21:06:29,763 [qtp627429971-257] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTradingList ?,?
+2020-07-21 21:06:29,832 [qtp627429971-257] INFO  [com.el.ks.barcode.controller.BarcodeController] - {"rows":[{"rDADD4":"","rHLOTN":"国械注进20203010343","rDLITM":"UH400","rHALPH":"高频手术设备","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"125188"},{"rDADD4":"","rHLOTN":"暂时无证的医疗器械","rDLITM":"UH400","rHALPH":"暂时无证的医疗器械","rDAITM":"UH400","rDSRP6":"Y","rHEFFT":"140366"}],"total":2}
+2020-07-21 21:06:31,299 [qtp627429971-259] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 21:06:31,300 [qtp627429971-259] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 21:06:31,338 [qtp627429971-259] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 21:06:31,363 [qtp627429971-259] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 21:06:31,393 [qtp627429971-259] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 21:06:31,396 [qtp627429971-259] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,252^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,289^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,326^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,363^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,400^A1N,25,24^FD生产地址: ^FS
+^FT,437^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,474^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,511^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,548^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,585^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: ^FS
+^FT,217^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,254^A1N,25,24^FD输入功率: 5A^FS
+^FT745,291^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,328^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,365^A1N,25,24^FD防电击类型: I^FS
+^FT745,402^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 21:06:31,398 [qtp627429971-259] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp7118832027530851116.txt
+2020-07-21 21:07:56,456 [qtp627429971-256] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 21:07:56,457 [qtp627429971-256] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 21:07:56,574 [qtp627429971-256] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 21:07:56,683 [qtp627429971-256] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 21:07:56,829 [qtp627429971-256] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 21:07:56,830 [qtp627429971-256] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,252^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,289^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,326^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,363^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,400^A1N,25,24^FD生产地址: ^FS
+^FT,437^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,474^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,511^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,548^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,585^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: ^FS
+^FT,217^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,254^A1N,25,24^FD输入功率: 5A^FS
+^FT745,291^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,328^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,365^A1N,25,24^FD防电击类型: I^FS
+^FT745,402^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 21:07:56,831 [qtp627429971-256] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp3758455401163239046.txt
+2020-07-21 21:08:10,217 [qtp627429971-257] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 21:08:10,218 [qtp627429971-257] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 21:08:10,233 [qtp627429971-257] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 21:08:10,259 [qtp627429971-257] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 21:08:10,287 [qtp627429971-257] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 21:08:10,289 [qtp627429971-257] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,252^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,289^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,326^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,363^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,400^A1N,25,24^FD生产地址: ^FS
+^FT,437^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,474^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,511^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,548^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,585^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: ^FS
+^FT,217^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,254^A1N,25,24^FD输入功率: 5A^FS
+^FT745,291^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,328^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,365^A1N,25,24^FD防电击类型: I^FS
+^FT745,402^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 21:08:10,291 [qtp627429971-257] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp7942612648572426386.txt
+2020-07-21 21:08:23,930 [qtp627429971-258] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 21:08:23,931 [qtp627429971-258] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 21:08:24,065 [qtp627429971-258] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 21:08:24,089 [qtp627429971-258] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 21:08:24,179 [qtp627429971-258] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 21:08:34,815 [qtp627429971-258] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,252^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,289^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,326^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,363^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,400^A1N,25,24^FD生产地址: ^FS
+^FT,437^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,474^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,511^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,548^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,585^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: ^FS
+^FT,217^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,254^A1N,25,24^FD输入功率: 5A^FS
+^FT745,291^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,328^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,365^A1N,25,24^FD防电击类型: I^FS
+^FT745,402^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 21:08:34,816 [qtp627429971-258] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp528308676447685033.txt
+2020-07-21 21:08:57,989 [qtp627429971-257] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001
+2020-07-21 21:08:57,990 [qtp627429971-257] INFO  [com.el.ks.barcode.util.SNParaseUtil] - (240)UH400(21)TEST012SN0001(11)19700101
+2020-07-21 21:08:58,004 [qtp627429971-257] INFO  [com.el.ks.barcode.model.ChinaTagModel] - execute PRODDTA.BarcodeLabelTrading ?,?,?,?
+2020-07-21 21:08:58,029 [qtp627429971-257] INFO  [com.el.ks.barcode.model.ChinaTagModel] - select * from PRODDTA.F550002 inner join PRODDTA.F550001 on RDLOTN=RHLOTN inner join PRODDTA.F4101 on RDITM=IMITM where RDLITM='UH400' and RDLOTN=N'国械注进20203010343' and RDSRP6='Y'
+2020-07-21 21:08:58,057 [qtp627429971-257] INFO  [com.el.ks.barcode.model.ChinaTagModel] - TagDetailBean(rhalph=高频手术设备, rdaitm=UH400, rdagen=AUTOCON III 400 高频手术设备主机,, rhlotn=国械注进20203010343, date=, rdcmddsc01=10年, rdadd3=KARL STORZ SE & Co. KG 卡尔史托斯公司, rdk74adl1=Dr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY, rdcmddsc06=+49 7461 708-0, rdk74adl2=Heinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY, rdadd1=卡尔史托斯内窥镜(上海)有限公司, rdadd2=800-819-9500/400-670-9500, rdcmddsc05=中国（上海）自由贸易试验区张东路1761号7、8幢, imsrp1=UAC, content=, rdadd6=220VAC-240VAC，50/60Hz, rddsc1=5A, rdcmddsc=IPX0, rddsc2=CF, rddsc3=I, rdlitm=UH400)
+2020-07-21 21:11:38,167 [qtp627429971-257] INFO  [com.el.ks.barcode.action.PrintTagAction] - ^XA
+^CW1,E:FONTR.TTF
+^SEE:GB18030.DAT^CI28,21,36
+^LH10,10
+^A@N,25,24,E:FONTR.TTF
+^FT20,30^A1N,25,24^FD产品名称: 高频手术设备^FS
+^FT20,67^A1N,25,24^FD规格型号: UH400^FS
+^FT20,104^A1N,25,24^FD产品描述: AUTOCON III 400 高频手术设备主机^FS
+^FT20,141^A1N,25,24^FD医疗器械注册证编号: 国械注进20203010343^FS
+^FT20,178^A1N,25,24^FD生产日期: 2020-07-21^FS
+^FT^A1N,25,24^FD    使用期限: 10年^FS
+^FT20,215^A1N,25,24^FD注册人/生产企业名称: ^FS
+^FT,252^A1N,25,24^FB456,2,12,
+^FDKARL STORZ SE & Co. KG 卡尔史托斯公司^FS
+^FT20,289^A1N,25,24^FD注册人/生产企业住所: ^FS
+^FT,326^A1N,25,24^FB456,2,12,
+^FDDr.-Karl-Storz-Straβe 34, 78532 Tuttlingen, GERMANY^FS
+^FT20,363^A1N,25,24^FD注册人/生产企业联系方式: +49 7461 708-0^FS
+^FT20,400^A1N,25,24^FD生产地址: ^FS
+^FT,437^A1N,25,24^FB588,2,12,
+^FDHeinrich-Hertz Strasse 4-10 D-72810, Gomaringen GERMANY^FS
+^FT20,474^A1N,25,24^FD代理人名称: 卡尔史托斯内窥镜(上海)有限公司^FS
+^FT20,511^A1N,25,24^FD代理人联系方式: 800-819-9500/400-670-9500^FS
+^FT20,548^A1N,25,24^FD代理人住所: 中国（上海）自由贸易试验区张东路1761号7、8幢^FS
+^FT20,585^A1N,25,24^FD其他内容详见说明书^FS
+^FT^A@N,31,30,E:FONTR.TTF
+^FD    合格^FS^FT715,30^A@N,120,140,E:KARLSTOR.TTF
+^FDA^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,180^A1N,25,24^FD电源连接条件: ^FS
+^FT,217^A1N,25,24^FB245,2,12,
+^FD220VAC-240VAC，50/60Hz^FS
+^FT745,254^A1N,25,24^FD输入功率: 5A^FS
+^FT745,291^A1N,25,24^FD防护等级: IPX0^FS
+^FT745,328^A1N,25,24^FD防电击程度: ^FS
+^A@N,50,30,E:KARLSTOR.TTF
+^FT^A1N,25,24^FDD^FS
+^A@N,25,24,E:FONTR.TTF
+^FT745,365^A1N,25,24^FD防电击类型: I^FS
+^FT745,402^A1N,25,24^FD订货号: UH400^FS
+^FT20,680^A1N,25,24^FB1140,1,,R
+^FDU(240)UH400(21)TEST012SN0001(11)20200721^FS
+^FT825,642
+^BXN,8,200
+^FD(240)UH400(21)TEST012SN0001(11)20200721^KS
+^MMC
+^XZ
+
+2020-07-21 21:11:38,169 [qtp627429971-257] INFO  [com.el.ks.barcode.action.PrintTagAction] - print /D:\\10.88.1.135\Zebra /users/wangdoc/log/tmp4634820194449460254.txt

@@ -32,6 +32,8 @@ public class SNParaseUtil {
 		sn = clean(sn);
 		if (sn.indexOf("(240)") < 0)
 			sn = sn.replaceFirst("240", "(240)");
+		if (sn.indexOf("(11)") < 0)
+			sn = sn + "(11)19700101";
 		log.info(sn);
 		if (util.hasKey(sn))
 			return (SNBean) util.get(sn);

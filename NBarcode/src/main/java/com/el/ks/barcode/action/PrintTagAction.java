@@ -503,7 +503,7 @@ public class PrintTagAction {
 		if (c >= 0X20 && c <= 0X40 || c >= 0X5B && c <= 0X7E) {
 			len = 0.5d;
 		} else if (c > 0X40 && c < 0X5B) {
-			len = 0.7d;
+			len = 0.9d;
 		} else {
 			len = 1d;
 		}
