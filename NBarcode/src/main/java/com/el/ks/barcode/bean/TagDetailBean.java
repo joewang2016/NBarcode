@@ -69,4 +69,19 @@ public class TagDetailBean {
 	@TagDetail(name = "订货号: ", pos = "R", index = 20)
 	private String rdlitm = "";// 订货号
 
+	@TagDetail(name = "运行模式:运行10s, 停止30s", db = false, pos = "R", index = 21)
+	private String add0 = "";// 
+	
+	@TagDetail(name = "单极切割:最大400W,500Ω,最大输出频率320KHz", db = false, pos = "R", index = 22)
+	private String add1 = "";// 
+
+	@TagDetail(name = "单极凝血:最大250W,500Ω,最大输出频率380KHz", db = false, pos = "R", index = 23)
+	private String add2 = "";// 
+
+	@TagDetail(name = "双极切割:最大400W,75Ω,最大输出频率350KHz", db = false, pos = "R", index = 24)
+	private String add3 = "";// 
+
+	@TagDetail(name = "双极凝血:最大350W,25Ω,最大输出频率380KHz", db = false, pos = "R", index = 25)
+	private String add4 = "";// 
+
 }

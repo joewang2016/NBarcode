@@ -2,9 +2,6 @@ package com.el.ks.barcode.bean;
 
 import org.springframework.stereotype.Component;
 
-import com.el.ks.barcode.util.RedisUtil;
-import com.el.ks.barcode.util.SNParaseUtil;
-
 import lombok.Data;
 
 @Component

@@ -21,6 +21,7 @@ import com.el.ks.barcode.bean.TagBean;
 import com.el.ks.barcode.bean.TagDetailBean;
 import com.el.ks.barcode.bean.TagDetailThirdBean;
 import com.el.ks.barcode.bean.TagTemplateBean;
+import com.el.ks.barcode.config.Config;
 import com.el.ks.barcode.config.PrinterConfig;
 import com.el.ks.barcode.config.TagConfig;
 import com.el.ks.barcode.config.TagDCConfig;
@@ -77,6 +78,9 @@ public class PrintTagAction {
 	Integer etop = 0;
 	Integer eleft = 0;
 	String filename = "";
+
+	private Config gconfig;
+	private Config cloneConfig;
 
 	Map<String, String> protectMap = new HashMap<String, String>();
 
@@ -272,6 +276,10 @@ public class PrintTagAction {
 
 	private void PrintRightPart() {
 		for (TagTemplateBean ele : tright) {
+			if (!tag.getEntity().getLitm().equals(rconfig.getLitm())) {
+				if (ele.getIndex() > 20)
+					continue;
+			}
 			PrintRightRow(ele);
 		}
 	}
@@ -295,6 +303,17 @@ public class PrintTagAction {
 		protectMap.put("DP-B", "J");
 		protectMap.put("DP-BF", "K");
 		protectMap.put("DP-CF", "L");
+
+		gconfig = new Config();
+		gconfig.setTconfig(config);
+		gconfig.setTrconfig(rconfig);
+
+		try {
+			cloneConfig = (Config) gconfig.clone();
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -363,24 +382,32 @@ public class PrintTagAction {
 		String value = bean.getValue();
 		String label = bean.getLabel();
 		String content = StringUtils.join(label, value);
-		List<String> list = this.LineBreak(content, Integer.parseInt(rconfig.getChars()));
+
+		if (tag.getEntity().getLitm().equals(rconfig.getLitm())) {
+			cloneConfig.getTconfig().setFontheight(rconfig.getSpc_fontheight());
+			cloneConfig.getTconfig().setFontwidth(rconfig.getSpc_fontwidth());
+			cloneConfig.getTconfig().setVpadding(rconfig.getSpc_vpadding());
+			cloneConfig.getTrconfig().setChars(rconfig.getSpc_chars());
+		}
+
+		List<String> list = this.LineBreak(content, Integer.parseInt(cloneConfig.getTrconfig().getChars()));
 		if (list.size() == 1) {
 			if (bean.getIndex() == 18) {
 				PrintRow(rleft, rtop, label);
 				ChangeFont("50", "30", 1);
 				PrintRow(0, 0, protectMap.get(value));
-				ChangeFont(config.getFontheight(), config.getFontwidth(), 0);
+				ChangeFont(cloneConfig.getTconfig().getFontheight(), cloneConfig.getTconfig().getFontwidth(), 0);
 			} else
 				PrintRow(rleft, rtop, content);
-			rtop = NextRow(rtop, Integer.parseInt(config.getVpadding()));
+			rtop = NextRow(rtop, Integer.parseInt(cloneConfig.getTconfig().getVpadding()));
 		} else if (list.size() > 1) {
 			PrintRow(rleft, rtop, label);
-			rtop = NextRow(rtop, Integer.parseInt(config.getVpadding()));
+			rtop = NextRow(rtop, Integer.parseInt(cloneConfig.getTconfig().getVpadding()));
 			Double len = StringLen(label);
 			Integer width = (int) (Integer.parseInt(rconfig.getWidth())
-					- len * Integer.parseInt(config.getFontwidth()));
+					- len * Integer.parseInt(cloneConfig.getTconfig().getFontwidth()));
 			PrintBlock(width, rtop, value);
-			rtop = NextRow(rtop, Integer.parseInt(config.getVpadding()));
+			rtop = NextRow(rtop, Integer.parseInt(cloneConfig.getTconfig().getVpadding()));
 		}
 	}
 

@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.el.ks.barcode.action.ChinaTagQueryAction;
 import com.el.ks.barcode.action.PrintTagAction;
 import com.el.ks.barcode.bean.OpenQuantityBean;
 import com.el.ks.barcode.bean.SNBean;
 import com.el.ks.barcode.bean.TagBean;
-import com.el.ks.barcode.bean.TagDetailBean;
 import com.el.ks.barcode.bean.TagScanResultBean;
 import com.el.ks.barcode.bean.ThirdSNBean;
 import com.el.ks.barcode.service.Const;
@@ -70,7 +70,7 @@ public class BarcodeController {
 		tag.setPrinter("ZJ");
 		tag.setMessage("(240)28132AA(21)AAAA");
 
-		List<TagDetailBean> lresult = tagAction.GetTagDetail();
+		//List<TagDetailBean> lresult = tagAction.GetTagDetail();
 		return "index";
 	}
 
@@ -113,7 +113,7 @@ public class BarcodeController {
 			Map<String, Object> jsonMap = new HashMap<String, Object>();
 			jsonMap.put("total", lresult.size());
 			jsonMap.put("rows", lresult);
-			JSONObject jsonObj = (JSONObject) JSONObject.toJSON(jsonMap);
+			JSONObject jsonObj = (JSONObject) JSON.toJSON(jsonMap);
 			log.info(jsonObj);
 			return jsonObj;
 		}
@@ -142,7 +142,7 @@ public class BarcodeController {
 			Map<String, Object> jsonMap = new HashMap<String, Object>();
 			jsonMap.put("total", resultList.size());
 			jsonMap.put("rows", resultList);
-			JSONObject jsonObj = (JSONObject) JSONObject.toJSON(jsonMap);
+			JSONObject jsonObj = (JSONObject) JSON.toJSON(jsonMap);
 			log.info(jsonObj);
 			return jsonObj;
 		}
@@ -164,7 +164,7 @@ public class BarcodeController {
 			Map<String, Object> jsonMap = new HashMap<String, Object>();
 			jsonMap.put("total", resultList.size());
 			jsonMap.put("rows", resultList);
-			JSONObject jsonObj = (JSONObject) JSONObject.toJSON(jsonMap);
+			JSONObject jsonObj = (JSONObject) JSON.toJSON(jsonMap);
 			log.info(jsonObj);
 			return jsonObj;
 		}

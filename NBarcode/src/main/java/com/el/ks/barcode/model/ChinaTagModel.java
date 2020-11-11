@@ -224,7 +224,7 @@ public class ChinaTagModel {
 					log.info(insertSql);
 					jdbcTemplate.update(insertSql);
 
-					updateSql = String.format(updateF56B4310Tempalte, schema, (Integer) uopn * 100, rs.getInt("ABDOCO"),
+					updateSql = String.format(updateF56B4310Tempalte, schema, uopn * 100, rs.getInt("ABDOCO"),
 							rs.getString("ABDCTO"), rs.getString("ABKCOO"), rs.getString("ABLITM"),
 							rs.getInt("ABUKID"));
 					log.info(updateSql);

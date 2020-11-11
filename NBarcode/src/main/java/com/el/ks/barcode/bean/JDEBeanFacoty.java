@@ -1,7 +1,5 @@
 package com.el.ks.barcode.bean;
 
-import java.math.BigDecimal;
-
 import com.el.ks.barcode.service.IJDEBeanFactory;
 import com.el.ks.barcode.util.StringTool;
 

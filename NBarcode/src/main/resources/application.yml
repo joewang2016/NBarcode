@@ -38,6 +38,6 @@ spring:
     view:
       prefix: /pages/
       suffix: .html
-##mybatis:
-  ##mapper-locations: classpath:mapper/*.xml
-  ##type-aliases-package: com.el.ks.barcode.entity
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.el.ks.barcode.entity

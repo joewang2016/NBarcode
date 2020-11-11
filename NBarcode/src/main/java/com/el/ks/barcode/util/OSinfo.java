@@ -12,6 +12,7 @@ public class OSinfo {
 			this.description = desc;
 		}
 
+		@Override
 		public String toString() {
 			return description;
 		}
