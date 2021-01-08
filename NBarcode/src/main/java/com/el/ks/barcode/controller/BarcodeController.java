@@ -156,6 +156,7 @@ public class BarcodeController {
 	@RequestMapping("queryList")
 	@ResponseBody
 	public JSONObject QueryLicenceList(String date, String message) {
+		log.info(message);
 		tag.setMessage(message);
 		tag.setDate(date);
 		tagAction.setTag(tag);

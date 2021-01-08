@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -281,8 +282,71 @@ public class ChinaTagModel {
 		}
 	}
 
+	@SuppressWarnings("rawtypes")
+	public List GetTagDetailByDoc() {
+
+		@SuppressWarnings("unchecked")
+		List list = (List) jdbcTemplate.execute(new CallableStatementCreator() {
+
+			@Override
+			public CallableStatement createCallableStatement(Connection con) throws SQLException {
+				// TODO Auto-generated method stub
+				String sql = "execute %s.BarcodeLabelTradingList ?,?";
+				sql = String.format(sql, schema);
+				log.info(sql);
+
+				CallableStatement cs = con.prepareCall(sql);
+				if (StringUtils.isBlank(tag.getDate()))
+					cs.setDate(1,
+							new java.sql.Date(DateTool
+									.parseDate(DateTool.convertDataToString(new Date(), "yyyy-MM-dd"), "yyyy-MM-dd")
+									.getTime()));
+				else
+					cs.setDate(1, new java.sql.Date(DateTool.parseDate(tag.getDate(), "yyyy-MM-dd").getTime()));
+				cs.setString(2, tag.getEntity().getLitm());
+				return cs;
+			}
+		}, new CallableStatementCallback() {
+
+			@Override
+			public Object doInCallableStatement(CallableStatement cs) throws SQLException, DataAccessException {
+				// TODO Auto-generated method stub
+				List resultsMap = new ArrayList();
+				cs.execute();
+				ResultSet rs = cs.executeQuery();
+				if (rs.next()) {
+					TagDetailBean detail = new TagDetailBean();
+					WrapTagDetail(rs, detail);
+					log.info(detail);
+					resultsMap.add(detail);
+				}
+				rs.close();
+				return resultsMap;
+			}
+		});
+
+		return list;
+	}
+
 	public List GetTagDetail() {
 		return GetTagDetail(false);
+	}
+
+	protected List<String> GetColumns(ResultSet rs) {
+
+		List<String> columns = new ArrayList<String>();
+		ResultSetMetaData rsmd;
+		try {
+			rsmd = rs.getMetaData();
+			int count = rsmd.getColumnCount();
+			for (int i = 0; i < count; i++)
+				columns.add(rsmd.getColumnName(i + 1));
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return columns;
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
@@ -354,7 +418,7 @@ public class ChinaTagModel {
 					+ "and %s and RDSRP6='%s'";
 			sql = String.format(sql, schema, schema, schema, tag.getEntity().getLitm(), szLotn, CFDAStus);
 			log.info(sql);
-			if (CFDAStus.equals("Y"))
+			if (LabelTy.equals("Y"))
 				jdbcTemplate.query(sql, new RowCallbackHandler() {
 
 					@Override
@@ -367,7 +431,7 @@ public class ChinaTagModel {
 						lresult.add(detail);
 					}
 				});
-			else
+			else if (LabelTy.equals("N"))
 				jdbcTemplate.query(sql, new RowCallbackHandler() {
 
 					@Override
@@ -436,13 +500,17 @@ public class ChinaTagModel {
 					TagDetail annotation = field.getAnnotation(TagDetail.class);
 					boolean db = annotation.db();
 					if (db) {
-						methodname = "set" + StringUtils.capitalize(field.getName());
-						method = clazz.getMethod(methodname, String.class);
-						method.setAccessible(true);
-						String value = rs.getString(field.getName()).trim();
-						if (StringUtils.isBlank(value) && annotation.pos().equals("R"))
-							value = Const.CORRECT;
-						method.invoke(bean, value);
+						List<String> columns = GetColumns(rs);
+						System.out.println(columns);
+						if (columns.contains(field.getName().toUpperCase())) {
+							methodname = "set" + StringUtils.capitalize(field.getName());
+							method = clazz.getMethod(methodname, String.class);
+							method.setAccessible(true);
+							String value = rs.getString(field.getName()).trim();
+							if (StringUtils.isBlank(value) && annotation.pos().equals("R"))
+								value = Const.CORRECT;
+							method.invoke(bean, value);
+						}
 					}
 				}
 			}
@@ -583,8 +651,9 @@ public class ChinaTagModel {
 		List<Map<String, Object>> list = jdbcTemplate.queryForList(sql);
 		if (list.size() > 0) {
 			Double uorg = ((Double) list.get(0).get("PLUORG"));
-			if (uorg + Integer.valueOf(tag.getCountnb().trim()) > 1)
-				return false;
+			if (uorg != null)
+				if (uorg + Integer.valueOf(tag.getCountnb().trim()) > 1)
+					return false;
 		}
 		return true;
 	}
@@ -594,10 +663,14 @@ public class ChinaTagModel {
 		sql = String.format(sql, schema, tag.getVr01(), tag.getDl01(), tag.getEntity().getLitm(),
 				tag.getEntity().getLot1());
 		log.info(sql);
-		Integer count = jdbcTemplate.queryForObject(sql, new Object[] {}, Integer.class);
-		if (count != 1)
+		try {
+			Integer count = jdbcTemplate.queryForObject(sql, new Object[] {}, Integer.class);
+			if (count != 1)
+				return false;
+			return true;
+		} catch (Exception e) {
 			return false;
-		return true;
+		}
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
@@ -605,6 +678,7 @@ public class ChinaTagModel {
 		int iJulianDate = DateFormat.CJDEInt(tag.getDate());
 		@SuppressWarnings("unchecked")
 		List<TagScanResultBean> list = new ArrayList();
+		log.info(list);
 		if (iJulianDate > 0) {
 			jdbcTemplate.execute(new CallableStatementCreator() {
 
@@ -617,6 +691,7 @@ public class ChinaTagModel {
 					CallableStatement cs = con.prepareCall(sql);
 					cs.setDate(1, new java.sql.Date(DateTool.parseDate(tag.getDate(), "yyyy-MM-dd").getTime()));
 					cs.setString(2, tag.getEntity().getLitm());
+					log.info(tag.getEntity());
 					return cs;
 				}
 			}, new CallableStatementCallback() {
@@ -629,6 +704,7 @@ public class ChinaTagModel {
 					while (rs.next()) {
 						TagScanResultBean bean = new TagScanResultBean();
 						WrapTagDetail(rs, bean);
+						log.info(bean);
 						list.add(bean);
 					}
 					rs.close();
@@ -789,5 +865,14 @@ public class ChinaTagModel {
 			}
 		});
 		return list;
+	}
+
+	public String getLitmByGtin(String gtin) {
+		String sql = "select * from %s.F584101 where IMAITM='%s'";
+		sql = String.format(sql, schema, gtin);
+		List<Map<String, Object>> list = jdbcTemplate.queryForList(sql);
+		if (list.size() > 0)
+			return (String) list.get(0).get("IMLITM");
+		return "";
 	}
 }

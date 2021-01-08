@@ -30,9 +30,17 @@ public class DateFormat extends SimpleDateFormat {
 			Calendar calendar = Calendar.getInstance();
 			calendar.set(Calendar.YEAR, v_year);
 			calendar.set(Calendar.DAY_OF_YEAR, v_day);
-			szDt = StringTool.lpad(String.valueOf(calendar.get(Calendar.MONTH) + 1), "0", 2) + "/"
-					+ StringTool.lpad(String.valueOf(calendar.get(Calendar.DAY_OF_MONTH)), "0", 2) + "/"
-					+ String.valueOf(calendar.get(Calendar.YEAR));
+			// szDt =
+			// StringTool.lpad(String.valueOf(calendar.get(Calendar.MONTH) + 1),
+			// "0", 2) + "/"
+			// +
+			// StringTool.lpad(String.valueOf(calendar.get(Calendar.DAY_OF_MONTH)),
+			// "0", 2) + "/"
+			// + String.valueOf(calendar.get(Calendar.YEAR));
+
+			szDt = String.valueOf(calendar.get(Calendar.YEAR)) + "-"
+					+ StringTool.lpad(String.valueOf(calendar.get(Calendar.MONTH) + 1), "0", 2) + "-"
+					+ StringTool.lpad(String.valueOf(calendar.get(Calendar.DAY_OF_MONTH)), "0", 2);
 			return szDt;
 		} else {
 			return null;
@@ -70,14 +78,14 @@ public class DateFormat extends SimpleDateFormat {
 		int minute = c.get(Calendar.MINUTE);
 		int second = c.get(Calendar.SECOND);
 		String sTime = String.format("%02d%02d%02d", hour, minute, second);
-		
+
 		return Integer.valueOf(sTime);
 	}
 
 	public static void main(String[] args) {
 		System.out.println(DateFormat.CJDETime());
 	}
-	
+
 	public static int getJulianDate() {
 		Date date = new Date();
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");

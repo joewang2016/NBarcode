@@ -28,10 +28,15 @@ public class ChinaTagQueryAction {
 		this.tag = tag;
 		if (StringUtils.isBlank(tag.getCountnb()))
 			tag.setCountnb("0");
-		if (tag.getEntity() == null && !StringUtils.isBlank(tag.getMessage())) {
+		if (!StringUtils.isBlank(tag.getMessage())) {
 			String message = tag.getMessage().replace("^", "(");
 			SNBean sne = new SNBean();
 			sne = util.ParseTag(message);
+			if (!StringUtils.isAllBlank(sne.getGtin())) {
+				String litm = chinaTagModel.getLitmByGtin(sne.getGtin());
+				if (!StringUtils.isAllBlank(litm))
+					sne.setLitm(litm);
+			}
 			tag.setEntity(sne);
 		}
 		chinaTagModel.setTag(tag);
@@ -64,12 +69,12 @@ public class ChinaTagQueryAction {
 	public List<TagScanResultBean> QueryLicenceList() {
 		return chinaTagModel.QueryLicenceList();
 	}
-	
-	public List<SNBean> SearchZJ(TagBean bean){
+
+	public List<SNBean> SearchZJ(TagBean bean) {
 		return chinaTagModel.SearchZJ(bean.getVr01(), bean.getDoco(), bean.getDl01());
 	}
-	
-	public void insertReprint(TagBean bean){
+
+	public void insertReprint(TagBean bean) {
 		chinaTagModel.insertReprint(bean);
 	}
 }

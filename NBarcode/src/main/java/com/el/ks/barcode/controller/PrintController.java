@@ -30,4 +30,9 @@ public class PrintController {
 		return printAction.getRconfig().toString();
 	}
 	
+	public static void main(String[] args){
+		String sql ="select * from proddta.F554801F where msky='%s'";
+		String woSql = "select * from proddta.f554801H where dwupmj>=120308 order by dwupmj,dwupmt";
+	}
+	
 }

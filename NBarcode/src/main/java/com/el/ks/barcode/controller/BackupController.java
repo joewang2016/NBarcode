@@ -28,6 +28,7 @@ import com.el.ks.barcode.bean.F560420Bean;
 import com.el.ks.barcode.bean.JDEBeanFacoty;
 import com.el.ks.barcode.config.TagConfig;
 import com.el.ks.barcode.model.ChinaTagModel;
+import com.el.ks.barcode.model.WriteExcelModel;
 import com.el.ks.barcode.util.RedisUtil;
 import com.zaxxer.hikari.HikariDataSource;
 
@@ -61,6 +62,8 @@ public class BackupController {
 		
 		String result = "";
 		List<String> columns = new ArrayList<String>();
+		
+		List<Object> list = new ArrayList<Object>();
 
 		String sql = "select column_name from information_schema.columns where TABLE_SCHEMA='%s' and TABLE_NAME='%s' ";
 		sql = String.format(sql, schema, table);
@@ -95,12 +98,18 @@ public class BackupController {
 					if (!mapResult.containsKey(key)) {
 						f0101 = (F0101Bean) factory.CreateJDE("F0101");
 						f0101 = (F0101Bean)model.WrapBean(rs, f0101);
+						list.add(f0101);
 						mapResult.put(key, f0101);
 					}
 				}
 
 			});
-
+			
+			WriteExcelModel excel = new WriteExcelModel();
+			excel.setList(list);
+			excel.WriteObject("ks.xls", "F0101");
+			list.clear();
+			
 			sql = "select * from %s.F0111";
 			sql = String.format(sql, schema);
 			jdbcTemplate.query(sql, new RowCallbackHandler() {
@@ -113,6 +122,7 @@ public class BackupController {
 					BigDecimal key = rs.getBigDecimal("WWAN8");
 					f0111 = (F0111Bean) factory.CreateJDE("F0111");
 					f0111 = (F0111Bean)model.WrapBean(rs, f0111);
+					list.add(f0111);
 					if (mapResult.containsKey(key)) {
 						f0101 = mapResult.get(key);
 						f0101.getF0111().add(f0111);
@@ -120,6 +130,10 @@ public class BackupController {
 				}
 
 			});
+			//WriteExcelModel excel = new WriteExcelModel();
+			//excel.setList(list);
+			excel.WriteObject("ks.xls", "F0111");
+			list.clear();
 
 			sql = "select * from %s.F0115";
 			sql = String.format(sql, schema);
@@ -140,6 +154,10 @@ public class BackupController {
 				}
 
 			});
+			//WriteExcelModel excel = new WriteExcelModel();
+			//excel.setList(list);
+			excel.WriteObject("ks.xls", "F0115");
+			list.clear();
 
 			sql = "select * from %s.F01151";
 			sql = String.format(sql, schema);
@@ -154,6 +172,7 @@ public class BackupController {
 					BigDecimal key = rs.getBigDecimal("EAAN8");
 					f01151 = (F01151Bean) factory.CreateJDE("F01151");
 					f01151 = (F01151Bean)model.WrapBean(rs, f01151);
+					list.add(f01151);
 					if (mapResult.containsKey(key)) {
 						f0101 = mapResult.get(key);
 						f0101.getF01151().add(f01151);
@@ -161,6 +180,10 @@ public class BackupController {
 				}
 
 			});
+			//WriteExcelModel excel = new WriteExcelModel();
+			//excel.setList(list);
+			excel.WriteObject("ks.xls", "F01151");
+			list.clear();
 
 			sql = "select * from %s.F0116";
 			sql = String.format(sql, schema);
@@ -174,6 +197,7 @@ public class BackupController {
 					BigDecimal key = rs.getBigDecimal("ALAN8");
 					f0116 = (F0116Bean) factory.CreateJDE("F0116");
 					f0116 = (F0116Bean)model.WrapBean(rs, f0116);
+					list.add(f0116);
 					if (mapResult.containsKey(key)) {
 						f0101 = mapResult.get(key);
 						f0101.getF0116().add(f0116);
@@ -181,6 +205,11 @@ public class BackupController {
 				}
 
 			});
+			//WriteExcelModel excel = new WriteExcelModel();
+			//excel.setList(list);
+			excel.WriteObject("ks.xls", "F0116");
+			list.clear();
+			
 			for (Entry ele : mapResult.entrySet()) {
 				String key = ((BigDecimal) ele.getKey()).toString();
 				F0101Bean value = (F0101Bean) ele.getValue();

@@ -3,13 +3,13 @@ package com.el.ks.barcode.util;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.el.ks.barcode.bean.SNBean;
 import com.el.ks.barcode.config.TagConfig;
-import com.el.ks.barcode.service.Const;
 
 @Component
 public class SNParaseUtil {
@@ -28,110 +28,71 @@ public class SNParaseUtil {
 		Matcher matcher = null;
 		SNBean bean = new SNBean(sn);
 
+		String reg = "";
+
 		sn = sn.trim();
 		sn = clean(sn);
 		if (sn.indexOf("(240)") < 0)
 			sn = sn.replaceFirst("240", "(240)");
-		if (sn.indexOf("(11)") < 0)
-			sn = sn + "(11)19700101";
+		// if (sn.indexOf("(11)") < 0)
+		// sn = sn + "(11)19700101";
 		log.info(sn);
-		if (util.hasKey(sn))
-			return (SNBean) util.get(sn);
+		String key = StringUtils.replace(sn, "(", "");
+		key = StringUtils.replace(key, ")", "");
+		if (util.hasKey(key))
+			return (SNBean) util.get(key);
 
-		String reg = "";
-		if (config != null)
-			reg = config.getReg();
-		else
-			reg = "\\d{0,16}[\\(]{0,}240[\\)]{0,}([\\w-*&]+)[\\(]{0,1}[\\(]{0,}([0-2,7]{0,2})[\\)]{0,}([\\w -_ ]*)[\\(]11[\\)](\\d{6,8})";
+		reg = "([\\(]{0,1}01[\\)]{0,1})(\\d{14})";
 		pattern = Pattern.compile(reg);
 		matcher = pattern.matcher(sn);
 		int c = 0;
 		if (matcher.matches()) {
-			c = matcher.groupCount();
-			switch (c) {
-			case 1:
-				bean.setLitm(matcher.group(1));
-				break;
-			case 3: {
-				bean.setLitm(matcher.group(1));
-				bean.setTag(matcher.group(2));
-				String ts = matcher.group(3);
-				switch (matcher.group(2)) {
-				case "10":
-					parse_10(bean, ts);
-					break;
-				case "21":
-					bean.setLotn(matcher.group(3));
-					bean.setLot1(matcher.group(3));
-					break;
-				case "17":
-					parse_17(bean, ts);
-				}
-
-			}
-			case 4: {
-				bean.setLitm(matcher.group(1));
-				bean.setTag(matcher.group(2));
-				bean.setDate(matcher.group(4));
-				String ts = matcher.group(3);
-				switch (matcher.group(2)) {
-				case "10":
-					parse_10(bean, ts);
-					break;
-				case "21":
-					bean.setLotn(matcher.group(3));
-					bean.setLot1(matcher.group(3));
-					break;
-				case "17":
-					parse_17(bean, ts);
-				}
-			}
-			}
+			bean.setGtin(matcher.group(1));
 		}
-		if (bean.getLot1().trim().equals("") && bean.getLotn().trim().equals(""))
-			bean.setLot1(Const.MAX_LOT1);
-		util.set(sn, bean, Const.EXPIRED);
+
+		reg = "([\\(]{1}240[\\)]{0,1})(\\w+)([\\(]{0,1}[\\w-\\(-\\)]*)";
+		pattern = Pattern.compile(reg);
+		matcher = pattern.matcher(sn);
+		if (matcher.matches()) {
+			bean.setLitm(matcher.group(2));
+		}
+
+		reg = ".*([\\(]{1}10[\\)]{0,1})([\\w-_]+)([\\(]{0,1}[\\w-\\(-\\)]*)";
+		pattern = Pattern.compile(reg);
+		matcher = pattern.matcher(sn);
+		if (matcher.matches()) {
+			bean.setLotn(matcher.group(2));
+			bean.setLot1("9999");
+			bean.setLott("10");
+		}
+
+		reg = ".*([\\(]{1}21[\\)]{0,1})([\\w-_]+)([\\(]{0,1}[\\w-\\(-\\)]*)";
+		pattern = Pattern.compile(reg);
+		matcher = pattern.matcher(sn);
+		if (matcher.matches()) {
+			bean.setLotn(matcher.group(2));
+			bean.setLot1(matcher.group(2));
+			bean.setLott("21");
+		}
+
+		reg = ".*([\\(]{1}11[\\)]{0,1})(\\d{8})([\\(]{0,1}[\\w-\\(-\\)]*)";
+		pattern = Pattern.compile(reg);
+		matcher = pattern.matcher(sn);
+		if (matcher.matches()) {
+			bean.setFrom(matcher.group(2));
+			bean.setDate(matcher.group(2));
+		}
+
+		reg = ".*([\\(]{1}17[\\)]{0,1})(\\d{8})([\\(]{0,1}[\\w-\\(-\\)]*)";
+		pattern = Pattern.compile(reg);
+		matcher = pattern.matcher(sn);
+		if (matcher.matches()) {
+			bean.setTo(matcher.group(2));
+		}
+		
+		
+		log.info(bean);
 		return bean;
-	}
-
-	private void parse_11(SNBean bean, String ts) {
-		// TODO Auto-generated method stub
-		bean.setDate(ts);
-	}
-
-	private void parse_17(SNBean bean, String ts) {
-		// TODO Auto-generated method stub
-		if (ts.compareTo("") > 0) {
-			String reg = "[\\d]{6}([0-2]{0,2})([\\w- ]*)";
-			Pattern pattern = null;
-			Matcher matcher = null;
-			pattern = Pattern.compile(reg);
-			matcher = pattern.matcher(ts);
-			if (matcher.matches()) {
-				if (matcher.group(1).equals("10")) {
-					bean.setLot1(matcher.group(2));
-				} else {
-					bean.setLotn(matcher.group(2));
-					bean.setLot1(matcher.group(2));
-				}
-			}
-		}
-	}
-
-	private void parse_10(SNBean bean, String ts) {
-		// TODO Auto-generated method stub
-		if (ts.compareTo("") > 0) {
-			String reg = "[\\w- ]+[\\(]21([\\w- ]+)";
-			Pattern pattern = null;
-			Matcher matcher = null;
-			pattern = Pattern.compile(reg);
-			matcher = pattern.matcher(ts);
-			if (matcher.matches()) {
-				bean.setLotn(matcher.group(1));
-				bean.setLot1(matcher.group(1));
-			} else
-				bean.setLot1(ts);
-		}
 	}
 
 	private String clean(String arg) {

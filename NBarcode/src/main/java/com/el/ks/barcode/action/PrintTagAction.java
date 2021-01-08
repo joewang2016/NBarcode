@@ -90,7 +90,17 @@ public class PrintTagAction {
 
 	public void PrintTagAll(Boolean reprint) {
 		init();
-		List list = model.GetTagDetail(reprint);
+		if (tag.getEntity().getLitm().equals(rconfig.getLitm())) {
+			cloneConfig.getTconfig().setFontheight(rconfig.getSpc_fontheight());
+			cloneConfig.getTconfig().setFontwidth(rconfig.getSpc_fontwidth());
+			cloneConfig.getTconfig().setVpadding(rconfig.getSpc_vpadding());
+			cloneConfig.getTrconfig().setChars(rconfig.getSpc_chars());
+		}
+		List list = null;
+		if (StringUtils.isBlank(tag.getMessage()))
+			list = model.GetTagDetailByDoc();
+		else
+			list = model.GetTagDetail(reprint);
 		if (list.size() <= 0)
 			return;
 		prnBuff = new StringBuffer();
@@ -104,7 +114,8 @@ public class PrintTagAction {
 				PrintLeftPart();
 				PrintQMark();
 				PrintLogo();
-				ChangeFont(config.getFontheight(), config.getFontwidth(), 0);
+				// Right Part
+				ChangeFont(cloneConfig.getTconfig().getFontheight(), cloneConfig.getTconfig().getFontwidth(), 0);
 				PrintRightPart();
 				PrintRightDimensionString(StringUtils.substring(detail.getImsrp1(), 0, 1) + getKSDimensionCode());
 				PrintDimensionCode(dcConfig.getLeftmargin(), dcConfig.getTopmargin(), dcConfig.getFontheight(),
@@ -159,16 +170,13 @@ public class PrintTagAction {
 		for (TagTemplateBean ele : tleft) {
 			if (ele.getValue() == null)
 				continue;
-			if (ele.getIndex() == 0) {
+			if (ele.getIndex() == 3) {
 				String desc = ele.getValue();
 				desc = desc.replace("，", ",");
 				if (desc.indexOf(",") > 0)
 					desc = desc.substring(0, desc.indexOf(","));
 				ele.setValue(desc);
 			}
-			if (ele.getIndex() == 2)
-				ele.setValue(tag.getDate());
-
 			PrintThirdRow(ele);
 		}
 	}
@@ -383,25 +391,22 @@ public class PrintTagAction {
 		String label = bean.getLabel();
 		String content = StringUtils.join(label, value);
 
-		if (tag.getEntity().getLitm().equals(rconfig.getLitm())) {
-			cloneConfig.getTconfig().setFontheight(rconfig.getSpc_fontheight());
-			cloneConfig.getTconfig().setFontwidth(rconfig.getSpc_fontwidth());
-			cloneConfig.getTconfig().setVpadding(rconfig.getSpc_vpadding());
-			cloneConfig.getTrconfig().setChars(rconfig.getSpc_chars());
-		}
-
 		List<String> list = this.LineBreak(content, Integer.parseInt(cloneConfig.getTrconfig().getChars()));
 		if (list.size() == 1) {
 			if (bean.getIndex() == 18) {
-				PrintRow(rleft, rtop, label);
-				ChangeFont("50", "30", 1);
-				PrintRow(0, 0, protectMap.get(value));
-				ChangeFont(cloneConfig.getTconfig().getFontheight(), cloneConfig.getTconfig().getFontwidth(), 0);
+				PrintRow(rleft, rtop, label, cloneConfig);
+				// Pic Font
+				if (!StringUtils.isAllBlank(protectMap.get(value))) {
+					//ChangeFont(rconfig.getPic_fontheight(), rconfig.getPic_fontwidth(), 1);
+
+					PrintPic(protectMap.get(value));
+					ChangeFont(cloneConfig.getTconfig().getFontheight(), cloneConfig.getTconfig().getFontwidth(), 0);
+				}
 			} else
-				PrintRow(rleft, rtop, content);
+				PrintRow(rleft, rtop, content, cloneConfig);
 			rtop = NextRow(rtop, Integer.parseInt(cloneConfig.getTconfig().getVpadding()));
 		} else if (list.size() > 1) {
-			PrintRow(rleft, rtop, label);
+			PrintRow(rleft, rtop, label, cloneConfig);
 			rtop = NextRow(rtop, Integer.parseInt(cloneConfig.getTconfig().getVpadding()));
 			Double len = StringLen(label);
 			Integer width = (int) (Integer.parseInt(rconfig.getWidth())
@@ -409,6 +414,12 @@ public class PrintTagAction {
 			PrintBlock(width, rtop, value);
 			rtop = NextRow(rtop, Integer.parseInt(cloneConfig.getTconfig().getVpadding()));
 		}
+	}
+	
+	private void PrintPic(String arg){
+		String row = "^FT^A@N,%s,%s,E:KARLSTOR.TTF^FD%s^FS";
+		row = String.format(row, rconfig.getPic_fontheight(), rconfig.getPic_fontwidth(),arg);
+		prnBuff.append(row).append("\r\n");
 	}
 
 	private void PrintLeftRow(TagTemplateBean bean) {
@@ -444,11 +455,17 @@ public class PrintTagAction {
 	private void PrintQMark() {
 		prnBuff.append("^FT");
 		ChangeFont("31", "30", 0);
-		prnBuff.append("^FD    合格^FS");
+		prnBuff.append("^FD    合格^FS\r\n");
 	}
 
 	private void PrintRow(Integer left, Integer top, String arg) {
-		PrintRow(left, top, config.getFontheight(), config.getFontwidth(), arg);
+		if (!StringUtils.isAllBlank(arg))
+			PrintRow(left, top, config.getFontheight(), config.getFontwidth(), arg);
+	}
+
+	private void PrintRow(Integer left, Integer top, String arg, Config config) {
+		if (!StringUtils.isAllBlank(arg))
+			PrintRow(left, top, config.getTconfig().getFontheight(), config.getTconfig().getFontwidth(), arg);
 	}
 
 	private void PrintRow(Integer left, Integer top, String height, String width, String arg) {
@@ -506,16 +523,17 @@ public class PrintTagAction {
 
 	private String getKSDimensionCode() {
 		String dc = "";
-		if (tag.getEntity() != null) {
-			dc = "(240)" + tag.getEntity().getLitm();
-			if (StringUtils.isBlank(tag.getEntity().getLotn()))
-				dc += "(10)" + tag.getEntity().getLot1();
-			else
-				dc += "(21)" + tag.getEntity().getLotn();
-		}
-		if (StringUtils.compare(tag.getDate(), " ") > 0) {
-			dc += "(11)" + StringUtils.remove(tag.getDate(), '-');
-		}
+		// if (tag.getEntity() != null) {
+		// dc = "(240)" + tag.getEntity().getLitm();
+		// if (StringUtils.isBlank(tag.getEntity().getLotn()))
+		// dc += "(10)" + tag.getEntity().getLot1();
+		// else
+		// dc += "(21)" + tag.getEntity().getLotn();
+		// }
+		// if (StringUtils.compare(tag.getDate(), " ") > 0) {
+		// dc += "(11)" + StringUtils.remove(tag.getDate(), '-');
+		// }
+		dc = tag.getEntity().toChinaString();
 		return dc;
 	}
 

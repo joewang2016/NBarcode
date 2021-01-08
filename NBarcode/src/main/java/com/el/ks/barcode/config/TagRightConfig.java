@@ -19,6 +19,8 @@ public class TagRightConfig implements Cloneable {
 	private String spc_fontheight;
 	private String spc_vpadding;
 	private String spc_chars;
+	private String pic_fontheight;
+	private String pic_fontwidth;
 
 	@Override
 	public Object clone() throws CloneNotSupportedException {
